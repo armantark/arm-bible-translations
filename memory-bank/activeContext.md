@@ -4,6 +4,12 @@
 Editor now supports per-word footnotes with corrected word anchoring, drag-and-drop reordering (books/chapters/content/footnotes), snapshot undo/redo (Cmd/Ctrl+Z), add chapter/book controls, corner X delete buttons for verses/headings, clause-based poetry layout with hanging indents, imported DOCX paragraph indent metadata (`indentLevel`), and updated poetry/FAB/sidebar UX fixes. UI copy remains centralized/localized. App builds cleanly.
 
 ## Recent Changes
+- **README screenshots added:**
+  - Captured current UI screenshots and added them under `docs/screenshots/`.
+  - Updated `README.md` with a new Screenshots section linking:
+    - `docs/screenshots/editor-overview.png`
+    - `docs/screenshots/chapter-view.png`
+    - `docs/screenshots/edit-mode.png`
 - **Licensing clarified (split model):**
   - Added root `LICENSE` with MIT for code and CC0 1.0 dedication for translation/content data and docs.
   - Updated `README.md` with a non-binding attribution request and license notes.

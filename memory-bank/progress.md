@@ -34,6 +34,7 @@
   - MIT for code
   - CC0 1.0 for translation/content data and documentation contributions
 - Updated `README.md` with non-binding attribution request and explicit license/scope notes.
+- Added README screenshots (`docs/screenshots/editor-overview.png`, `docs/screenshots/chapter-view.png`, `docs/screenshots/edit-mode.png`) and linked them in a new Screenshots section.
 
 ## Remaining
 - End-to-end editing test in browser (browser MCP not connected for automated test).
