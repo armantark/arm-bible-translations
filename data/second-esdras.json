@@ -1,0 +1,425 @@
+{
+  "id": "second-esdras",
+  "name": {
+    "english": "Second Esdras",
+    "armenian": "ԵՐԿՐՈՐԴ ԵԶՐԱՍ",
+    "classical": ""
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "content": [
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Եւ ըրաւ Յովսիա թագաւորը՝ Տիրոջը զատիկը Երուսաղէմի. եւ զենեցին Տիրոջը զատիկը առաջին ամսուն տասնչորորդին։",
+          "english": "And King Josiah did the Passover of the Lord in Jerusalem: and they slaughtered the Passover of the Lord on [the] fourteenth of the first month.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Եւ կարգեց կացուց քահանաները Տիրոջ տաճարին, ըստ ամէն օրաթիւին, քահանայութեան պատմուճան զգեցուած։",
+          "english": "And he arranged [and] made the priests stand in the temple of the Lord, according to all the day-number, dressed [in the] robe of priesthood.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Եւ ըսաւ ղեւտացի սպասաւորներուն. «Սրբեցէ՛ք ձեր հոգիները, եւ պատրաստեցէ՛ք ըստ սրբութեան Տիրոջը կտակարաններուն տապանակին, տաճարին զոր շինեց Սողոմոն թագաւորը Դաւիթի որդին։",
+          "english": "And he said to the Levite waiters, “Clean your souls, and ready according to holiness of the ark of the testaments of the Lord, in the temple that King Solomon son of David built.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Եւ չգտնուի ձեզի աղտեղութիւն եւ պղծութիւն. եւ արդ՝ պաշտեցէ՛ք ձեր Տիրոջ Աստուծոյ պաշտօնը, եւ ժողովեցէ՛ք եւ պատրաստեցէ՛ք Իսրայէլի ամէն ազգը, եւ կարգեցէ՛ք զանոնք ըստ հայրապետներուն կարգի՝ եւ իրենց ցեղերուն։",
+          "english": "And may no dirtiness and impurity be found in you: and now, minister [the] service of [the] Lord your God, and gather and ready all the nation of Israel, and arrange them according to rank of the patriarchs; and their tribes.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "որպէս կարգեց եւ գրեց Դաւիթ թագաւոր Իսրայէլի, եւ անոր որդին մեծ Սողոմոնը. եւ ղեւտացիները կը կանգնին տաճարին ըստ իրենց հայրերուն իւրաքանթիւր կարգին, իրենց եղբայրներուն առջեւ Իսրայելի որդիներուն։",
+          "english": "as David king of Israel arranged and wrote, and his son [the] great Solomon: and may the Levites stand in the temple according to rank of each their fathers, before their brothers of the sons of Israel.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Եւ ըստ առաջին կարգերուն զենեցէ՛ք զատիկը, եւ պատրաստեցէ՛ք զոհերը, եւ ըրէ՛ք զատիկը ըստ Տիրոջը հրամանի որպէս նաեւ հրամայեց Մովսէսի ձեռքին։",
+          "english": "And according to the first ranks slaughter the Passover, and ready the immolations, and do the Passover according to the order of the Lord as likewise He ordered to [the] hand of Moses.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Եւ Յովսիա շնորհեալ պարգեւեց ժողովուրդին, գառնուկներ եւ ուլեր՝ երեսուն հազար. որթեր՝ երեք հազար։",
+          "english": "And Josiah gifted [a] grant to the people, lambs and goats; thirty thousand: calves; three thousand.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Զանոնք ամէնը տուած ըստ թագաւորին հրամանի ժողովուրդին, եւ քահանաներուն եւ ղեւտացիներուն։ Եւ դարձեալ տուաւ Քեղկիայ եւ Զաքարիայ՝ քահանայապետներուն, եւ ժողովուրդին առաջնորդներուն, եւ քահանաներուն երկու հազար վեց հարիւր ոչխարներ։",
+          "english": "All these were given according to the order of the king to the people, and to the priests and to [the] Levites. And again he gave to Helkias and Zacharias, the  archpriests, and to [the] leaders of the people, and to the priests two thousand and six hundred sheep.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Եւ Յեքոնիաս, եւ Սամէաս, եւ Նաթանայէլ եղբայր, եւ Ռաբիաս, եւ Ոզիէլ, եւ Յովրամ հազարապետներ, տուին ղեւտացիներուն վասն զատիկին ոչխարներ՝ հինգ հազար, եւ հինգ հարիւր որթեր։",
+          "english": "And Jeconias, and Samaias, and brother Nathanael, and Assabias, and Ochiel, and Joram, [the] chiliarchs, gave to the Levites for the Passover sheep, five thousand, and five hundred calves.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Եւ զայս ամէնը ըրած քահանաներէն, մեծապէս եւ ամէն զարմանազան վայելջութեամբ պատրաստեցին բաղարջակերաց  զատիկը։",
+          "english": "And all this being done by the priests, largely and with all wonderful decorum they readied the Passover of the unleavened bread.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Ըստ իրենց տոհմերուն, եւ ըստ իրենց հայրերուն դասերուն կարգերուն. յօրինուած կեցան քահանաները ժողովուրդին առջեւ, Տիրոջը զատիկը մատուցաճելու ըստ Մովսէսին գրուած օրէնքին։",
+          "english": "According to their lineages, and according to [the] ranks of classes of their fathers: the priests stood arranged before the people, to offer the Passover of [the] Lord according to the written law of Moses.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Եւ այսպէս առաւօտեան հրով խորոված պատրաստեցին Տիրոջ զատիկը. եւ միւս հումը անուշութեամբ եփեցին կաթսաներու եւ սաներու մէջ։",
+          "english": "And this way in the morning roasted with fire they prepared the Passover of the Lord: and other the other raw [meat] with spices they cooked in pots and kettles.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "Եւ մատուցանեցին ժողովուրդին երեսին։ Եւ ասկէ ետք քահանայապետերը պատրաստեցին իրենք զիրենք. եւ իրենց եղբայրները Ահարոնի որդիները։",
+          "english": "And they offered [it] to the people's faces. And after this the archpriests readied themselves: and their brothers the sons of Aaron.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 14,
+          "armenian": "Քանզի քահանաները կը մատուցանէին հրոյն կիզման ճարպը. եւ ղեւտացիները պատրաստեցին իրենք զիրենք եւ իրենց եղբայրները քահանաները Ահարոնի որդիները։",
+          "english": "For the priests were offering the fat to the fire of burning. And the Levites readied themselves and their brothers [the] priests; sons of Aaron.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 15,
+          "armenian": "Եւ Ասափի որդիները՝ սաղմոսներու երգիչները՝ պատրաստեցին իրենք զիրենք, որպէս նաեւ կարգուած էր Դաւիթ թագաւորի. Ասափը, եւ Զաքարիան, եւ Եղդինոնը։",
+          "english": "And the sons of Asaph; [the] singers of psalms; readied themselves, as likewise was ordered of King David: Asaph, and Zacharias, and Jeduthun.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 16,
+          "armenian": "Եւ դռնապանները իւրաքանչիւր դուռներուն զգուշացած էին ըտ իւրաքանչիւր օրուան կարգին. Քանզի անոնք նաեւ Ղեւեայ, եւ պատրաստեցին իրենք զիրենք։",
+          "english": "And the doorkeepers of each of the doors were bewared according to each order of the day: for they were likewise sons of Levi, and they readied themselves.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 17,
+          "armenian": "Եւ ամէնքը միաբան կատարեցին Տիրոջ զոհը այն օրը։",
+          "english": "And [they] all unanimously completed the sacrifice of the Lord on that day.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 18,
+          "armenian": "Եւ մատուցանեցին Տիրոջ զատիկը սեղանին վրայ ըստ Յովսիա թագաւորին հրամանին։",
+          "english": "And they offered the Passover of the Lord upon the altar according to the order of King Josiah.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 19,
+          "armenian": "Եւ Իսրայէլի որդիները որոնք գտնուեցան այն ժամանակին արարեցին Տիրոջ զատիկը, եւ բաղարջակերաց տօնը եօթը օրերու։",
+          "english": "And the sons of Israel who were found at that time did the Passover of [the] Lord and [the] feast of the unleavened bread for seven days.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 20,
+          "armenian": "Եւ երբէք չեղաւ՝ այնպիսի զատիկ [մը] Իսրայէլի մէջ. քանզի ոչ ոք չըրաւ զատիկ [մը] Սամուել մարգարէի ժամանակներուն։",
+          "english": "And there was never in that manner a Passover inside Israel, because no one did [the] Passover from the times of Samuel the prophet.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 21,
+          "armenian": "եւ Իսրայէլի ամէն թագաւորները չըրին զատիկներ այսպէս, որպէս ըրաւ Յովսիա թագաւորը. եւ քահանաները, եւ ղեւտացիները, եւ հրեաները, եւ ամէն Իսրայէլը որ Երուսաղէմ բնակեր էին այն ժամանակին։",
+          "english": "And all the kings of Israel did not do Passovers in this manner, as did Josiah the king: and the priests, and the Levites, and the Judahites, and all [of] Israel that were living in that time in Jerusalem.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 22,
+          "armenian": "տասնըութերորդ տարուայ թագաւորութեանը Յովսիայի երաւ այն զատիկը։",
+          "english": "In [the] eighteenth year of the kingship of Josiah he did that Passover.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 23,
+          "armenian": "Եւ ուղիղ էին Յովսիայի գործերը առաջ իր Տիրոջ Աստուծոյ. եւ կը ծառայէր Տիրոջ իր ամբողջ սրտով եւ մտքով։",
+          "english": "And upright were [the] works of Josiah before the lord his God: and he served to the Lord with all heart and his mind.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 24,
+          "armenian": "Եւ այլ թագաւորները որ եղան իրմէ առաջ, վասն որու իսկ գրուած է. Որոնք մեղանչեցին եւ անօրինեցին ամէն ազգերու [մեջ]. Եւ տրտմեցուցին Տէրը, եւ կանգեցին ընդդէմ անոր խօսքին Իսրայէլի մէջ։",
+          "english": "and [the] other kings who existed before him, on account of whom it is truly written:",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 25,
+          "armenian": "Եւ Յովսիայի այս ամէն առաքինութիւններէն յետոյ՝ եկաւ Եգիպտացիներուն փարաւոն թագաւորը պատերազմելու  Կարքամուսի, Եփրատի կողմերուն. եւ ելաւ Յովսիա պատերազմելու ընդդէմ անոր։",
+          "english": "And after all these virtues of Josiah; came [the] pharaoh king of [the] Egyptians to war in Carchemish, in [the] sides of [the] Euphrates; and Josiah went out against him.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 26,
+          "armenian": "Եւ Եգիպտացիներուն թագաւորը ղրկեց դէպի անոր՝ եւ կ՚ըսէ. «Ի՞նչ կայ՝ իմ եւ քու [միջեւ,] Հրէաստանի թագաւոր»։",
+          "english": "And the king of [the] Egyptians sent unto him; and says: “What is there; [between] my [own] and your [own,] king of Israel?”",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 27,
+          "armenian": "ո՞չ թէ քեզի երբէք չառաքեց զիս տէր Աստուած. քանզի Եփրատի կողմերուն կ՚երթամ պատերազմելու, եւ այժմ Տէրն իմ հետս է, եւ մի՛ խափաներ զիս։ զի կը ստիպէ զիս Տէրն երթալ պատերազմելու Եփրատի կողմերու, ի բաց կեցիր ինծմէ, եւ մի՛ ընդդիմանար Տիրոջ։",
+          "english": "[It is] not at all that the lord God sent me to you: for in [the] sides of [the] Euphrates I go [in order] to war, and now [the] Lord is with me, and do not hinder me: for the Lord urges me to go [and] war in [the] sides of [the] Euphrates, get away from me, and do not oppose [the] Lord.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 28,
+          "armenian": "",
+          "english": "And Josiah did not turn [back]",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 29,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 30,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 31,
+          "armenian": "32",
+          "english": "32",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "content": [
+        {
+          "kind": "verse",
+          "number": 34,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 35,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 36,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 37,
+          "armenian": "38",
+          "english": "38",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 39,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 40,
+          "armenian": "41",
+          "english": "41",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "content": [
+        {
+          "kind": "verse",
+          "number": 43,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 44,
+          "armenian": "45",
+          "english": "45",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 46,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 47,
+          "armenian": "48",
+          "english": "48",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 49,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 50,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 51,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 52,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 53,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 54,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 55,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 56,
+          "armenian": "",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 57,
+          "armenian": "58",
+          "english": "58",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    }
+  ]
+}

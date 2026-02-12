@@ -1,0 +1,21 @@
+{
+  "name": "armenian-bible-translations",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "bun run server.ts",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "import": "python3 scripts/import_docx.py"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5",
+    "@tsconfig/svelte": "^5",
+    "svelte": "^5",
+    "svelte-check": "^4",
+    "typescript": "^5",
+    "vite": "^6"
+  }
+}

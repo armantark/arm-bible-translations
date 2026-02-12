@@ -1,0 +1,525 @@
+/* ── CSS Custom Properties ─────────────────────────────────────── */
+
+:root {
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-tertiary: #252540;
+  --bg-hover: #2d2d4a;
+  --bg-active: #3a3a5c;
+
+  --text-primary: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6a6a82;
+
+  --border: #2a2a44;
+  --accent: #c9a84c;
+  --accent-hover: #dbb960;
+  --accent-dim: #8a7030;
+
+  --verse-number: #c9a84c;
+  --heading-color: #d4a853;
+
+  --font-serif: 'Noto Serif', 'Noto Serif Armenian', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-armenian: 'Noto Serif Armenian', 'Noto Serif', serif;
+
+  --sidebar-width: 220px;
+  --chapter-nav-width: 140px;
+  --header-height: 56px;
+  --transition: 150ms ease;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-hover);
+}
+
+/* ── App layout ────────────────────────────────────────────────── */
+
+.app-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Header ────────────────────────────────────────────────────── */
+
+.header {
+  height: var(--header-height);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  font-family: var(--font-armenian);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.header-title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-right: auto;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 5px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+.toggle-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.toggle-btn.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.save-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 5px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+}
+
+.save-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.save-btn.saving {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.save-btn.saved {
+  color: #5cb885;
+  border-color: #3a7d5a;
+}
+
+.save-btn.error {
+  color: #e05555;
+  border-color: #a03030;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────── */
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 12px 0;
+}
+
+.sidebar-section {
+  padding: 10px 16px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.search-input {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  width: calc(100% - 32px);
+  margin: 4px 16px 8px;
+  font-family: var(--font-sans);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+.sidebar-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 6px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+}
+
+.sidebar-item:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.sidebar-item.active {
+  background: var(--bg-active);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ── Chapter nav (right sidebar) ───────────────────────────────── */
+
+.chapter-nav {
+  width: var(--chapter-nav-width);
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 12px 0;
+}
+
+.chapter-nav-title {
+  padding: 10px 16px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.chapter-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 4px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+}
+
+.chapter-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.chapter-btn.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Main content ──────────────────────────────────────────────── */
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 40px;
+  min-width: 0;
+}
+
+.book-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.book-subtitle {
+  font-family: var(--font-armenian);
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.chapter-heading {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Column headers ────────────────────────────────────────────── */
+
+.column-headers {
+  display: grid;
+  gap: 24px;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 4px;
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  z-index: 10;
+}
+
+.column-header {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* ── Grid columns ──────────────────────────────────────────────── */
+
+.cols-1 {
+  grid-template-columns: 1fr;
+}
+.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ── Section headings ──────────────────────────────────────────── */
+
+.section-heading {
+  margin: 20px 0 12px;
+  padding: 6px 0;
+}
+
+.section-heading-row {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.section-heading-text {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--heading-color);
+}
+
+.section-heading-text.armenian-heading {
+  font-family: var(--font-armenian);
+}
+
+/* ── Verse grid ────────────────────────────────────────────────── */
+
+.verse-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.verse-row {
+  display: grid;
+  gap: 24px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: background var(--transition);
+}
+
+.verse-row:hover {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+/* ── Verse cells ───────────────────────────────────────────────── */
+
+.verse-cell {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  position: relative;
+  min-height: 1.75em;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.verse-cell.armenian-cell {
+  font-family: var(--font-armenian);
+}
+
+.verse-number {
+  color: var(--verse-number);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: var(--font-sans);
+  user-select: none;
+  flex-shrink: 0;
+  min-width: 24px;
+  padding-top: 2px;
+}
+
+.verse-text {
+  cursor: text;
+  border-radius: 3px;
+  padding: 1px 4px;
+  margin: -1px -4px;
+  transition: background var(--transition);
+  flex: 1;
+  min-width: 0;
+}
+
+.verse-text:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ── Textarea (edit mode) ──────────────────────────────────────── */
+
+.verse-textarea {
+  width: 100%;
+  min-height: 2.5em;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-dim);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 6px 8px;
+  resize: none;
+  overflow: hidden;
+  flex: 1;
+}
+
+.verse-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15);
+}
+
+/* ── Footnotes ─────────────────────────────────────────────────── */
+
+.footnotes-section {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.footnote-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.footnote-marker {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* ── Empty state ───────────────────────────────────────────────── */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: var(--text-muted);
+  font-size: 16px;
+  gap: 8px;
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 960px) {
+  .sidebar {
+    width: 180px;
+  }
+  .chapter-nav {
+    width: 100px;
+  }
+  .main-content {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar,
+  .chapter-nav {
+    display: none;
+  }
+  .main-content {
+    padding: 16px;
+  }
+}

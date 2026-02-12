@@ -1,0 +1,70 @@
+{
+  "id": "wisdom-of-solomon",
+  "name": {
+    "english": "Wisdom Of Solomon",
+    "armenian": "ԻՄԱՍՏՈՒԹԻՒՆ ՍՈՂՈՄՈՆԻ",
+    "classical": ""
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ՓՆՏՌԵԼ ԱՍՏՈՒԾՈՅ ԵՒ ՓԱԽՉԻԼ ՄԵՂՔԷՆ",
+          "english": "SEEKING GOD AND FLEEING FROM SIN",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Այսուհետեւ զգոյշ եղէք անօգուտ քրթմնջանէ. եւ ի բամբասանքներէ խնայեցէ՛ք լեզուն. Քանզի գաղտնի շշուճջը՝ դատարկ պիտի չանցնի, եւ ստախօս բերանը՝ կը սպաննէ հոգին։",
+          "english": "Henceforth [you all] be careful of useless grumbling: and from gossips spare [the] tongue: because whispers of secret; will not pass, and [the] lie-speaking mouth; kills the soul.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Մի ցանկաք մահու ձեր կեանքին մոլորութեամբ. եւ մի քաշէք հոգիներուն սատակումը ձեր ձեռքերուն գործերով։",
+          "english": "Do not desire for death with aberration in your life, and do not stretch upon [your] souls extermination with [the] works of your hands.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "heading",
+          "armenian": "ԵՍԱՅԻ",
+          "english": "",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "",
+          "english": "For God did not create death, and He does not laugh at [the] loss of [the] living [ones].",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԵՍԱՅԻՆ ԿԸ ՇՐՋԷ ՄԵՐԿ ՈՒ ԲՈԿՈՏՆ",
+          "english": "",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Այն ժամանակ խօսեցաւ Տէրը Եսայեան Ամովսի որդւոյն հետ եւ կ՚ըսէ. «Գնա՛ եւ ի բաց հանէ՛ քուրձդ քու մէջքէդ, եւ լուծանէ հողաթափերդ քու ոտքերէդ». Եւ ըրաւ այնպէս, եւ գնաց մերկ ու բոկ։ 3",
+          "english": "",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    }
+  ]
+}

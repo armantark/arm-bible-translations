@@ -1,0 +1,1454 @@
+{
+  "id": "psalms",
+  "name": {
+    "english": "Psalms",
+    "armenian": "ՍԱՂՄՈՍ",
+    "classical": ""
+  },
+  "chapters": [
+    {
+      "number": 3,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՌԱՒՕՏԵԱՆ ԱՂՕԹՔ ՕԳՆՈՒԹԵԱՆ ՀԱՄԱՐ",
+          "english": "MORNING PRAYER FOR HELP",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Սաղմոս Դաւիթի. ժամանակին որ բախուցեալ էր ան իր որդւոյն Աբիսողոմին երեսէն։",
+          "english": "A psalm of David: at the time that he was a fugitive from [the] face of his son Absalom.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Տէր, որքա՜ն բազում եղան իմ նեղիչներս. բազումներ յառնեցին իմ վրաս։",
+          "english": "Lord, how many my oppressors became: many rose upon me!",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Բազումներ կ՚ըսէին իմ հոգիէս, թէ՝ չկայ փրկութիւն ասոր իր Աստուծոյն։",
+          "english": "Many were saying from my soul, that there is no salvation for this one in his God.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Իսկ Դուն, Տէր, իմ օգնականս ես, իմ փառքս եւ իմ զլխուս բարձրացուցիչը։",
+          "english": "Instead you, Lord, are my helper, my glory and the raiser of my head.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Իմ ձայնովս ես Տիրոջ կանչեցի, եւ լսեց ինծի Իր սուրբ լեռնէն։",
+          "english": "With my voice I cried unto [the] Lord, and He heard me out of His holy mountain.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Ես պառկեցայ եւ քունի եղայ, արթնցայ եւ Տէր իմ ընդունողս է։",
+          "english": "I reposed and I was in sleep, I awoke and [the] Lord is my receiving one.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Պիտի չերկնչիմ ես անոնց զօրքի բիւրերը, որոնք շուրջանակի պատած պաշարած կը պահէին զիս։",
+          "english": "I will not fear from myriads of their army, who kept me having walled [and] besieged all around.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Յառնէ, Տէր, եւ փրկէ զիս, իմ Աստուածս. զի Դուն հարեցիր ամէնը որոնք էին ինծի հետ թշնամութեամբ տարապարտ, եւ մեղաւորներու ակռաները պիտի փշրես։",
+          "english": "Arise, Lord, and save me, my God: for You beat all who were in enmity with me in vain, and You will grind [the] teeth of sinners.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Տիրոջ է փրկութիւն. Քու ժողովուրդիդ վրայ Քու օրհնութիւնդ։",
+          "english": "Salvation is of the Lord: Your blessing upon Your people.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՂՕԹՔ ԱՊԱՀՈՎՈՒԹԵԱՆ ՀԱՄԱՐ",
+          "english": "PRAYER FOR SAFETY",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Կատարածին վիճակողներուն. սաղմոս Դաւիթի։",
+          "english": "For the end for the sake of the ones who inherit.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Իմ բառերուս ականջ դիր, Տէր, եւ միտքի առ իմ աղաղակս։",
+          "english": "Give ear to my words Lord, and take to mind my outcry.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Նայէ իմ աղօթքներուս ձայնին, իմ Թագաւորս ու իմ Աստուածս։",
+          "english": "Look down to the voice of my prayers, my King and my God.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Ես Քեզի կ՚աղաչեմ, Տէր, առաւօտ պիտի լսես իմ ձայնիս. առաւօտ պատրաստ պիտի ըլլամ յանդիման ըլլալ Քեզի։",
+          "english": "I supplicate to You, Lord, in [the] morning You will hear to my voice, in [the] morning I will be ready to be opposite of You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Ոչ թէ Դուն Աստուած մըն ես Որ կը կամիս անօրէնութիւն, եւ չեն բնակեր Քեզի չարերը։",
+          "english": "Not that You [are a] God [who] wills lawlessness, and the evil ones do not  dwell by You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Անօրէնները թող չբնակեն Քու աչքերուդ առջեւի. ատեցիր զանոնք որոնք կը գործեն անօրէնութիւն։",
+          "english": "Let not the lawless dwell before Your eyes: You hated those who work lawlessness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Կը կորսնցնես ամէնը որոնք կը խօսին սուտ մը, արիւնահեղ եւ նենգաւոր այրը կը գարշես Դուն, Տէր։",
+          "english": "You make lost all who speak falsehood, You abhor [the] blood-shedding and deceitful man.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Այլ ես ըստ Քու բազում ողորմութեանդ պիտի մտնեմ Քու տանդ, եւ պիտի երկրպագեմ դէպի Քու սուրբ տաճարդ Քեզի երկիւղիւ։",
+          "english": "Instead I according to your abundant mercy will enter into your house, and I will worship in Your holy temple with fear of You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Տէր, առաջնորդէ ինծի Քու արդարութեանդ, վասն իմ թշնամիներուս. ուղիղ ըրէ իմ առջեւս Քու ճանապարհդ։",
+          "english": "Lord, lead me to your righteousness, because of my enemies: make straight in front of me your way.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Զի չկայ անոնց բերաններուն մէջ ճշմարտութիւն, եւ անոնց սիրտերը նանրացած են. որպէս բաց գերեզման մըն է անոնց կոկորդը, իրենց լեզուներով նենգաւոր եղան։",
+          "english": "For there is no truth in their mouths, and their hearts are futile, as [an] open sepulcher is their throat, with their tongues they became deceitful.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Դատէ զանոնք, Աստուած, [որպէս]զի իյնան իրենց խորհուրդներուն. ըստ անոնց բազում ամպարշտութեանը մերժէ զանոնք, զի դառնացուցին Քեզ։",
+          "english": "Judge them, God, that they may fall from their thoughts: according to their abundant ungodliness deny them, for they embittered You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Ուրախ ըլլան ամէնը որոնք յուսացեր են Քեզի, յաւիտեան ցնծան, եւ բնակես Դուն անոնց [մէջ]. պարծեն Քեզի Քու անուանդ սիրողները։",
+          "english": "May they all be happy who have hoped in You, may they rejoice to [the] age, and may You dwell in them: may [the] lovers of your name boast in You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "Զի պիտի օրհնես Դուն արդարը. Տէր, որպէս զէնքի Քու հաճութեամբդ պսակեցիր զանոնք։",
+          "english": "For You will bless the righteous: Lord, as [a] weapon with Your pleasure You crowned them.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՆՄԵՂԻ ԱՂՕԹՔԸ",
+          "english": "PRAYER OF THE SINLESS",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Աղօթք Դաւիթի։",
+          "english": "[A] prayer of David.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Քու երեսէդ իրաւութիւն ինծի թող ելլէ, եւ իմ աչքերս թող տեսնեն ուղղութիւն։",
+          "english": "From Your face let justice go out to me, and my eyes see uprightness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Փորձեցիր իմ սիրտս եւ քննեցիր գիշերի, փորձեցիր զիս եւ չգտնուեցաւ իմ մէջս անիրաւութիւն։",
+          "english": "You tried my heart and examined in [the] night, You tried me and injustice was not found in me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Չխօսի իմ բերանս գործերը մարդու որդիներուն. վասն Քու շրթունքներուդ բառերը ես պիտի պահեմ խիստ ճանապարհներ[է]։",
+          "english": "May my mouth not speak of [the] works of sons of man: because of [the] words of Your lips I will keep [from] severe ways.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Հաստատէ իմ շաւիղներս Քու ճանապարհիդ, [որպէս]զի չգայթակղեն իմ գնացքս։",
+          "english": "Firm my paths in your way, so that my goings may not stumble.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Ես Քեզի, Տէր, կանչեցի զի լսեցիր ինծի, Աստուած. խոնարհեցուր ինծի Քու ականջդ եւ լսէ իմ բառերուս։",
+          "english": "Unto You, Lord, I cried for You heard me, God: lower unto me Your ear and listen to my words.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Սքանչելի արարեցիր Քու ողորմութիւններդ, ով կը փրկես զայն որ յուսացեր են Քեզի՝ անոնցմէ որ հակառակ կը կանգնեն Քու աջդ։",
+          "english": "You created your mercies wonderful, Who save those who have hoped in You; from those who stand against Your right.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Պահէ զիս որպէս աչքի բիբ, հովանւոյն տակ Քու թեւերուդ պիտի ծածկես զիս։",
+          "english": "Keep me as [the] pupil of [the] eye, under [the] shade of Your arms cover me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Ամպարշտներուն երեսէն որոնք տառապեցուցին զիս. թշնամիները իմ հոգիս պաշարեցին։",
+          "english": "From [the] face of [the] ungodly ones who afflicted me: [the] enemies besieged my soul.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Իրենց ճարպովը արգիլուեցան. անոնց բերանները խօսեցան ամբարտաւանութիւն։",
+          "english": "With their fat they have been hindered: their mouths spoke haughtiness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Մերժեցին զիս եւ հիմա դարձեալ պատեցան շուրջս, ուշ դրին խոնարհացնել զիս երկիրի։",
+          "english": "They denied me and now again they walled [themselves] around me, they put attention to humble me to [the] earth.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Համրեցին ինծի որպէս առիւծ որ որսի կը պատրաստէ, որպէս առիւծի կորիւնը որ կը նստի դարանած։",
+          "english": "They counted me as [a] lion that readies for prey, as [a] lion’s cub that sits lying in wait.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "Յառնէ, Տէր, ժամանէ անոնց եւ խափանէ զանոնք. փրկեա իմ հոգիս ամպարիշտներէն սուրէն",
+          "english": "Arise, Lord, arrive to them and impede them: save my soul from [the] ungodly ones of [the] sword",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 14,
+          "armenian": "եւ թշնամւոյն ձեռքերէն։ Տէր, կորսնցնէ զանոնք երկիրէ, բաժնէ եւ խափանէ զանոնք իրենց կեանքին։ Քու գաղտնիքներովդ լեցուեցան անոնց որովայնները, յագեցան կերակուրներով եւ թողուցին մնացուածները իրենց տղոցը։",
+          "english": "and from [the] hands of the enemy. Lord, make them lost from [the] earth, divide and impede them in their lives. With your secrets their wombs are filled, they are satisfied with foods and left remainders to their boys.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 15,
+          "armenian": "Ես արդարութեամբ պիտի երեւիմ Քու երեսիդ, պիտի յագիմ երեւելու Քու փառքիդ։",
+          "english": "I with righteousness will appear to your face, I will be satisfied for appearing in Your glory.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՊԱՇԽԱՐՈՒԹԵԱՆ ԱՂՕԹՔ",
+          "english": "PRAYER OF REPENTANCE",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Կատարածին. սաղմոս Դաւիթի։",
+          "english": "For [the] end: a psalm of David.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "ժամանակի իբրեւ եկաւ անոր Նաթան մարգարէն, ժամը որու ան մտեր էր Բերսաբէին։",
+          "english": "in [the] time when Nathan [the] prophet came unto him, [the] hour in which he had entered unto Bathsheba.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Ողորմէ ինծի, Աստուած, ըստ Քու մեծ ողորմութեանդ, ըստ Քու բազում գթութեանդ քաւէ իմ անօրէնութիւնս։",
+          "english": "Have mercy to me, God, according to Your great mercy, according to Your abundant pity expiate my lawlessnesses.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Առաւել լուա զիս իմ անօրէնութենէս, եւ իմ մեղքերէս սուրբ ըրէ զիս։",
+          "english": "Wash me more from my lawlessness, and from my sins make me clean.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Իմ անօրէնութիւններս ես ինծմէ գիտեմ, եւ իմ մեղքս առջեւս է ամէն ժամ։",
+          "english": "I know my lawlessnesses from myself, and my sins are before me at every hour.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Քեզի միայն մեղանչեցի, Տէր, եւ չար Քու առջեւդ ըրի, որպէս արդար ըլլաս Քու բառերուդ, եւ յաղթող դատելու Քեզի։",
+          "english": "I sinned only to You, Lord, and I did evil before You: as you might be righteous in Your words, and vanquish in judging for You[rself].",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Անօրէնութեամբ յղացաւ, եւ մեղքերու ծնանեց զիս իմ մայրս։",
+          "english": "My mother conceived in lawlessness, and in sins she bore me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Դուն, Տէր, ճշմարտութիւն սիրեցիր, անյայտները եւ ծածկեալները Քու իմաստութեամբդ յայտնեցիր ինծի։",
+          "english": "You, Lord, loved truth, You revealed unrevealed [things] and covered [things] with Your wisdom to me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Ցօղէ ինծի մշտիկով եւ սուրբ պիտի ըլլամ, լուա եւ քան ձիւն աւելի ճերմակ պիտի ըլլամ։",
+          "english": "Bedew in me with hyssop and I will be clean, wash me and I will be [more] white than snow.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Լսող ըրէ ինծի ցնծութիւն եւ ուրախութիւն, եւ պիտի ցնծան իմ տառապեալ ոսկորներս։",
+          "english": "Make to me listening joy and happiness, and my afflicted bones will rejoice.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Դարձուր Քու երեսդ իմ մեղքերէս, եւ ամէն անօրէնութիւններս քաւէ ինծմէ։",
+          "english": "Turn your face from my sins, and expiate all my lawlessnesses from me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Սուրբ սիրտ մը հաստէ ինծի, Աստուած, եւ ուղիղ հոգի մը նորոգէ իմ փորիս։",
+          "english": "Assert [a] clean heart in me, God, and renew [an] upright spirit in my belly.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "Մի՛ իյնացներ զիս, Տէր Քու երեսէդ, եւ Քու Սուրբ Հոգիդ մի՛ հաներ ինծմէ։",
+          "english": "Do not make me fall, Lord from your face, and do not draw out Your Holy Spirit from me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 14,
+          "armenian": "Տուր ինծի Քու փրկութեանդ ցնծութիւնը, եւ Քու պետութեան հոգւովը հաստատէ զիս։",
+          "english": "Give to me joy of Your salvation, and with spirit of Your reign",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 15,
+          "armenian": "Պիտի ուսուցանեմ անօրէններուն Քու ճանապարհները, եւ ամպարիշտները դէպի Քեզ պիտի դառնան։",
+          "english": "I will teach [the] lawless ones Your ways, and [the] ungodly ones will turn unto You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 16,
+          "armenian": "Փրկէ զիս արիւնէ, Աստուած, իմ փրկութեանս Աստուած. պիտի ցնծայ իմ լեզուս Քու արդարութեանդ։",
+          "english": "Save me from blood, God, God of my righteousness: my tongue will rejoice at your righteousness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 17,
+          "armenian": "Տէր, եթէ իմ շրթունքներս բանաս, իմ բերանս պիտի երգէ Քու օրհնութիւններդ։",
+          "english": "Lord, if you open my lips, my mouth will sing your blessings.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 18,
+          "armenian": "Եթէ կամեցեր էիր պատարագներ՝ կը մատուցանէինք, բայց Դուն ողջակեզներու հետ իսկ չհաճեցար։",
+          "english": "If you had willed sacrifices; we were offering, but You with whole burnt offerings are not even pleased.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 19,
+          "armenian": "Պատարագ Աստուծոյ՝ խոնարհ ոգի. սուրբ սիրտ մը եւ խոնարհ ոգի մը Աստուած չի արհամարհեր։",
+          "english": "[A] sacrifice to God; [a] humble spirit: [a] clean heart and humble spirit God does not disdain.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 20,
+          "armenian": "Բարի ըրէ, Տէր, Քու կամքովդ Սիոնի, եւ պիտի շինեն պարիսպներ Երուսաղեմի։",
+          "english": "Do good, Lord, with Your will to Zion, and they will build ramparts in Jerusalem.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 21,
+          "armenian": "Այնժամ պիտի հաճիս արդարութեան պատարագներու հետ, ուխտի պատարագներ՝ պիտի հանեն Քու սեղանդ զուարակներ։",
+          "english": "In that time, You will be pleased with sacrifices of righteousness, sacrifices of covenants; they will offer bulls on Your altar.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՍՏՈՒԾՈՅ ԲԱՐԿՈՒԹԻՒՆԸ ԿԵԱՆՔԷՆ ԱԼ ՍՈՒՂ Է",
+          "english": "GOD’S ANGER IS MORE DEAR THAN LIFE",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Սաղմոս Դաւիթի, մինչ ան Հրէասստանի անապատին էր։",
+          "english": "[A] psalm of David, while he was in the desert of Judah.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Աստուած, իմ Աստուածս, ես Քեզի առաւօտ կ՚ելլեմ. ծարաւեց Քեզի իմ ոգիս, քանիպատի՞կ եւս եւ իմ մարմինս, որպէս անապատ եւ անջուր երկիր մը։",
+          "english": "God, my God, I unto You arise [in the] morning, my spirit thirsted unto You, how many times more and my flesh, as [a] desert and non-water land.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "ուր չկայ անոր ճանապարհ, այսպէս սուրբերուն պիտի երեւիմ Քեզի, տեսնել ինծի Քու զօրութիւնդ եւ Քու փառքդ։",
+          "english": "where there is no path for it, this way in holies will I appear to You, to see to me Your power and Your glory.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Վասն զի լաւ է ինծի Քու ողորմութիւնդ քան թէ իմ կեանքս, եւ իմ շրթունքներս պիտի գովեն Քեզ։",
+          "english": "Because of that better is to me Your mercy than my life, and my lips will praise You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Այսպէս պիտի օրհնեմ Քեզ իմ կեանքիս, եւ Քու անուանդ պիտի համբառնամ իմ ձեռքերս։",
+          "english": "This way will I bless You in my life, and in Your name will I ascend my hands.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Որպէս ճարպէ պարարտութենէ լեցուի իմ հոգիս, շրթունքներով ցնծութեան պիտի օրհնէ Քեզ իմ բերանս։",
+          "english": "As from fat and corpulence my soul is filled, with lips of joy will my mouth bless You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Զի թէ կը յիշէի Քեզ իմ անկողինիս մէջ, առաւօտ կանուխ կը խօսէի Քեզի հետ։",
+          "english": "For that I was remembering You in my bed, early [in the] morning I was speaking with You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Զի եղիր իմ օգնականս, Քու թեւերուդ հովանւոյ պիտի ցնծամ։",
+          "english": "For You became my helper, in [the] shade of Your arms I will rejoice.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Եկաւ Քու ետեւդ իմ հոգիս, եւ զիս ընդունեց Քու աջդ։",
+          "english": "My soul came behind You, and Your right accepted me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Եւ անոնք նանիրօրէն խնդրեցին իմ հոգիս, պիտի մտնեն երկիրի անդունդին ներքեւ։",
+          "english": "And they in vain requested my soul, they will enter underneath [the] abysses of [the] earth.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Պիտի մատնին սուրի ձեռքերուն, եւ աղուեսներու բաժինները պիտի ըլլան։",
+          "english": "they will enter into [the] hands of [the] sword, and they will be portions for foxes.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Թագաւորը յուսացաւ Տիրոջը, գովեն ամէնը որ կ՚երդուըննան Անով, խցեն բերանները անոնց որոնք կը խօսէին անիրաւութիւն։",
+          "english": "[The] king hoped in [the] Lord, all who swear with Him will praise, the mouths of those who speak injustice will be plugged.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ՕԳՆՈՒԹԵԱՆ ԱՂՕԹՔ",
+          "english": "PRAYER FOR HELP",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Կատարածին. Սաղմոս Դաւթի՝ յիշատակի փրկելու զայն Տիրոջ։",
+          "english": "For [the] end. [a] Psalm of David՝ unto remembrance of saving him to God։",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Աստուած, օգնելու ինծի նայէ, եւ, Տէր, ընկերելու ինծի փութա։",
+          "english": "God, look to help for me, and, Lord, hurry to befriend to me։",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Ամչնան եւ ամօթ ըլլան որոնք կը խնդրէին իմ հոգիս, ետ դառնան եւ ամչնան որոնք կը խորհէին ինծի չար։",
+          "english": "May they be embarrassed and may they be ashamed who request my soul, may they be turned back and may they be embarrassed who meditate upon me evil.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Դառնան անմիջապէս ամչնացածները՝ որոնք կ՚ըսէին ինծի «Վաշ վաշ»։",
+          "english": "May the embarrassed turn immediately, who say to me “Aha, aha.”",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Ցնծան եւ ուրախ ըլլան Քեզի ամէնը որոնք կը խնդրեն Քեզ, Տէր. ըսեն ամէն ժամ. «Մեծ է Աստուած» որոնք կը սիրեն Քու փրկութիւնդ։",
+          "english": "May they rejoice and may they be happy in You all who request You, Lord; may they say in all time: “Great is God,” who love Your salvation.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Ես աղքատ եւ տնանկ եմ, Աստուած, օգնէ ինծի. իմ օգնականս եւ փրկիչս ես Դուն, իմ Տէրս, մի յամենար։",
+          "english": "I am poor and homeless, God, help to me: You are my helper and savior, my Lord, do not delay.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 89,
+      "content": [
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Տէր, մեր ապաւէնը եղար ազգէ մինչեւ ազգի։",
+          "english": "Lord, you became our refuge from generation to generation.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Մինչ դեռ ոչ լեռները հաստատեր էին, եւ մինչ դեռ ոչ ստեղծեր էիր երկիրի եւ ամէն տիեզերքը, յաւիտենից մինչեւ յաւիտեանս Դուն ես։",
+          "english": "While not yet mountains had been firmed, and while not yet You had formed [the] earth and [the] whole universe, from ages until ages You are.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "եւ մի՛ դարձուր մարդ տառապանքի. [նա]եւ ըսիր. «Դարձէք Ինծի, մարդոց որդիները»։",
+          "english": "and do not turn man to afflictions: likewise You said: “Turn to me, sons of men.”",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Հազար տարի Տիրոջ աչքերուն որպէս երեկուայ օր մը որ անցաւ, որպէս գիշերուայ պահ մը։",
+          "english": "[A] thousand year[s] in [the] eyes of [the] Lord [are] as yesterday’s day that passed, as one moment of night.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "եւ անոնց տարիները անարգութեամբ պիտի ըլլան. առաւօտ որպէս դալարի մը պիտի բուսնին։",
+          "english": "and their years will be disrespect: in [the] morning as [a] green they will grow.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "առաւօտ որպէս դալարի զուարճանան եւ ծաղկեն, իրիկուան թարշամին, չորնան եւ իյնան։",
+          "english": "in [the] morning as [a] green may they delight and flower, in [the] evening may they wither, dry, and fall.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Նուազեցանք մենք Քու բարկութունէդ, եւ Քու սրտմտութենէդ խռովեցինք։",
+          "english": "We were lessened from Your anger, and from Your indignation we were perturbed.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Դրիր մեր մեղքերը Քու առջեւդ, եւ մեր կեանքը Քու երեսիդ լոյսը։",
+          "english": "You put our sins before You, and our life in [the] light of Your face.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Մեր ամէն օրերուն նուազեցան, եւ Քու բարկութենէդ խռովեցանք. մեր տարիներուն ժամանակը անդադար որպէս սարդի։",
+          "english": "All of our days fainted, and from your anger we were perturbed: the time of our years endless as [a] spider’s.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "եւ մեր տարիներուն թիւը անոնց եօթանասուն տարի. ապա թէ առաւել եւս՝ ութսուն տարի. որ ինչ աւելի քան զայն՝ ցաւով եւ հեծութեամբ. եկաւ մեզի վրայ հեզութիւն եւ խրատեցանք։",
+          "english": "and [the] number of our years in them seventy year[s]: then even more; eighty year[s]: that what more than that; with pain and groan: gentleness came on us and we were advised.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Իսկ հիմա ո՞վ պիտի գիտնայ Քու բարկութեանդ զօրութիւնը, կամ Քու ահէդ Քու սրտմտութիւնդ պիտի համրէ։",
+          "english": "but now who will know [the] power of Your anger, or will count the dread of Your indignation?",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Այսպէս ցուցուր ինծի Քու աջդ, եւ որ խոնարհ են սիրտերով՝ Քու իմաստութիւններդ։",
+          "english": "This way show to me Your right, and [those] who are humble with hearts; Your wisdoms.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "[Վերա]դարձիր, Տէր, մինչեւ ե՞րբ. մխիթարէ Քու ծառաներուդ։",
+          "english": "[Re]turn, Lord, until when? comfort for your servants.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 14,
+          "armenian": "Լեցուեցանք առաւօտի Քու ողորմութեամբդ, ցնծացանք եւ ուրախ եղանք ամէն օրերու մեր կեանքին։",
+          "english": "We were filled in [the] morning with your mercy, we rejoiced and were happy in all days of our lives.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 15,
+          "armenian": "Ուրախ եղանք փոխանակ օրերուն որ խոնարհ արարեցիր մեզ, եւ տարիներուն՝ որոնց տեսանք չարչարանք։",
+          "english": "We were happy instead of the days that You made us humble, and in the years; in which we saw torment.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 16,
+          "armenian": "Հայէ, Տէր, Քու ծառաներուդ եւ Քու ձեռքերուդ գործերուն, եւ առաջնորդէ անոնց որդիներուն։",
+          "english": "Look down, Lord, on Your servants and on [the] works of Your hands, and lead to their sons.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 17,
+          "armenian": "Ըլլայ Տիրոջ Աստուծոյն լոյս մեզի վրայ. մեր ձեռքերուն գործերը ուղիղ ըրէ մեզի, Տէր, մեր ձեռքերուն գործերը յաջողէ մեզի։",
+          "english": "May [the] light of [the] Lord God be upon us: make straight [the] works of our hands for us, [the] works of our hands [make] succeed for us.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԻՐԱՒՈՒՆՔԸ ՅԱՐԳԵԼՈՒ ԽՈՍՏՈՒՄ ՏԻՐՈՋ ԱՌԱՋ",
+          "english": "PROMISE TO RESPECT THE RIGHT BEFORE THE LORD",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Ողորմութեան եւ իրաւունքի պիտի օրհնեմ Քեզ, Տէր. սաղմոս մը պիտի ըսեմ։",
+          "english": "Of mercy and of justice I will bless You, Lord: I will say [a] psalm.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "եւ միտքի պիտի առնեմ, ամբիծ ճանապարհ մինչեւ գայ ինծի. զի կ՚երթայի ես ամբծութեան իմ սիրտիս իմ տանս մէջ։",
+          "english": "and I will take to mind, [a] spotless way until it comes to me: for I was going in the spotlessness of my heart inside my house.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Չդրի իմ աչքերուս առջեւ անիրաւութեան բաներ, որոնք կ՚ընէին ուրացութիւն՝ ատեցի, չմերձեցաւ ինծի։",
+          "english": "I did not put before my eyes things of injustice, those [who] would do apostasy; I hated, he did not approach unto me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "[Ան] որ թիւրն էր սրտով՝ խոտորած ինծմէ. անզգամին՝ ես ոչ փոյթ մը կ՚ընէի։",
+          "english": "[He] who was crooked with heart; deviated from me: to the feelingless; I was not making any heed.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "[Ան] որ կը խօսէր գաղտ[նապէս] իր ընկերոջը [մասին], զայն բացէ ի բաց կը հալածէի. [ան] որ ամբարտաւան էր աչքերով եւ ագահ սրտով, անոր հետ նաեւ հաց չուտէի։",
+          "english": "[He] who was speaking secretly about his friend, him openly I was persecuting: [he] who was haughty with eyes and with greedy heart, with him likewise I was not eating bread.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Իմ աչքերս երկիրի հաւատացեալներուն, զի պիտի նստին անոնք ինծի հետ. [ան] որ կ՚երթար ամբիծ ճանապարհի, ան կը պաշտէր զիս։",
+          "english": "My eyes on the believers of [the] earth, for they will sit with me: [he] who was going on [the] spotless path, he was ministering me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Չէր բնակեր իմ տանս մէջ՝ որ կ՚ընէր ամբարտաւանութիւն, [ան] որ կը խօսէր անօրէնութիւն՝ չէր յաջողած անոր իմ աչքերուս առջեւ։",
+          "english": "He did not dwell in my house; who was doing haughtiness, [he] who was speaking lawlessness; it had not succeeded for him in front of my eyes.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Առաւօտի կը սպանանէի ամէն երկիրի մեղաւորները, զի պիտի սատկեցնեմ Տիրոջ քաղաքին ամէնը որոնք կը գործեն անօրէնութիւն։",
+          "english": "In [the] morning I was killing all sins on [the] earth, for I will slay in [the] city of [the] Lord all who work lawlessness.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԱՍՏՈՒԱԾԸ ՍԷՐ Է",
+          "english": "GOD IS LOVE",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Օրհնէ՛, իմ հոգիս, Տէրը, եւ իմ ամէն ոսկորներս Անոր սուրբ անունը։",
+          "english": "Bless, my soul, [the] Lord, and all my bones His holy name.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Օրհնէ՛, իմ հոգիս, Տէրը, եւ մի մոռնար Անոր ամէն տուրքերը։",
+          "english": "Bless, my soul, [the] Lord, and do not forget all His givings.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Որ կը քաւէ քու մեղքերդ, կը բժշկէ քու ամէն հիւանդութիւններդ։",
+          "english": "Who expiates your sins, heals all your illnesses.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Որ կը փրկէ ապականութենէ քու կեանքդ, կը պսակէ քեզ ողորմութեամբ եւ գթութեամբ։",
+          "english": "Who saves from corruption your life, crowns you with mercy and pity.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Որ կը լեցնէ բարութենէ քու ցանկութիւնդ, պիտի նորոգուի որպէս արծիւի քու մանկութիւնդ։",
+          "english": "Who fills from goodness your desire, your youth will be renewed as [an] eagle.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Կ՚ընէ ողորմութիւններ Տէրը, եւ իրաւութիւն ամէն զրկուածներու։",
+          "english": "[The] Lord does mercies, and justices to all deprived.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Ցուցուց Տէրը Իր ճանապարհները Մովսէսին, եւ Իսրայելին որդիներուն Իր կամքը։",
+          "english": "[The] Lord showed His ways to Moses, and to the sons of Israel His will.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Գթած, ողորմած է Տէրը, երկայնամիտ եւ բազումողորմ։",
+          "english": "Pitiful, merciful is [the] Lord, long-suffering and much-merciful.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Ոչ ի սպառ բարկանայ Տէրը, եւ ոչ յաւիտեան պահէ ոխեր։",
+          "english": "[The] Lord does not anger to completion, and He does not keep resentment to [the] age.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Ոչ ըստ մեր մեղքերուս ըրաւ մեզի, եւ ոչ ըստ մեր անօրէնութեան հատուց մեզի։",
+          "english": "He did not do to us according to our sins, and He did not render to us according to our lawlessness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Այլ որպէս բարձր է երկինքը երկիրէն, այնպէս զօրացուց Տէրը Իր ողորմութիւնը Իր երկիւղածներուն։",
+          "english": "Rather as [the] heavens are high from [the] earth, that much [the] Lord strengthened His mercy to His fearful ones.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Որչափ հեռու է արեւելքը արեւմուտէն, այնպէս հեռու ըրաւ մեզմէ մեր անօրէնութիւնները։",
+          "english": "As much far the east is from [the] west, that much He made far from us our lawlessnesses.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 13,
+          "armenian": "Որպէս կը գթայ հայր մը իր որդիներուն վրայ, այնպէս պիտի գթայ Տէրը Իր երկիւղածներուն։",
+          "english": "As a father pities upon his sons, that way the Lord will pity His fearful ones.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 14,
+          "armenian": "Զի Ան գիտցաւ մեր ստեղծուածները, եւ յիշեց թէ հող ենք։",
+          "english": "For He knew our formations, and He remembered that we are soil.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 15,
+          "armenian": "Մարդու՝ որպէս խոտի են իր օրերը, որպէս վայրի ծաղիկ մը՝ այնպէս կը ծաղկէ։",
+          "english": "For man; as grass are his days, as a wild flower; that way he flowers.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 16,
+          "armenian": "Կը շնչէ անոր հողմը՝ եւ չըլլար, եւ ոչ եւս կ՚երեւի անոր տեղին։",
+          "english": "[The] wind breathes on it; and it is not [there], and it no longer appears in its place.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 17,
+          "armenian": "Բայց Տիրոջը ողորմութիւնը յաւիտեանս յաւիտենից Իր երկիւղածներուն վրայ, եւ Անոր արդարութիւնը որդիներէն մինչեւ որդիներուն։",
+          "english": "But [the] Lord’s mercy is from ages to ages on His fearful ones, and His righteousness from sons until sons.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 18,
+          "armenian": "Որոնք կը պահեն Անոր ուխտեր, կը յիշեն Անոր պատուիրանները եւ կ՚ընեն զայն։",
+          "english": "Who keep His covenants, remember His commandments",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 19,
+          "armenian": "Տէրը երկինքին պատրաստեց Իր աթոռը, Անոր արքայութիւնը ամենուն կը տիրէ։",
+          "english": "[The] Lord readied His throne in [the] heavens, and His kingdom lords all.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 20,
+          "armenian": "Օրհնեցէք Տէրը, Անոր ամէն հրեշտակները, հզօր զօրութեամբ՝ որոնք կ՚ընէք Անոր խօսքը, լսելու Անոր պատգամներուն ձայնին։",
+          "english": "Bless [the] Lord, all His angels, mighty with strength, who do His word, listening to [the] voice of His messages.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 21,
+          "armenian": "Օրհնեցէք Տէրը Անոր ամէն զօրութիւնները, Անոր կամքին պաշտօնեաները եւ ընողները։",
+          "english": "Bless [the] Lord all His strengths, ministers and doers of His will.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 22,
+          "armenian": "Օրհնեցէք Տէրը, Անոր ամէն գործերը, ամէն տեղերու է Անոր տէրութիւնը. օրհնէ, իմ հոգիս, Տէրը։",
+          "english": "Bless [the] Lord, all His works, in all places is His lordship: bless, my soul, [the] Lord.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 129,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "Ի ԽՈՐՈՑ ՍՐՏԻ",
+          "english": "FROM THE DEPTHS OF THE HEART",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Աստիճաններու օրհնութիւններ։",
+          "english": "Blessings of degrees.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Խորքերէն կանչեցի Քեզի, Տէր. Տէր, լսէ իմ ձայնիս. ըլլան Քու ականչներդ, լսելու իմ աղօթքներուս ձայնը։",
+          "english": "From [the] depths I cried unto You, Lord: Lord, listen to my voice: may Your voice be, to listening to the voice of my prayers.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Եթէ իմ անօրէնութիւններս քննես, Տէր, Տէր, իսկ ո՞վ կը կարենայ կանգնիլ Քու առջեւդ։",
+          "english": "If You examine my lawlessnesses, Lord, Lord, who even would be able to stand before You?",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Զի Քեզմէ է քաւութիւն. վասն Քու անուանդ համբերեցի, Տէր։",
+          "english": "For from You is expiation: because of Your name I waited, Lord.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Համբերեց իմ հոգիս Քու խօսքիդ, յուսացաւ իմ հոգիս Տիրոջ։",
+          "english": "My soul waited for Your word, my soul hoped in [the] Lord.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Առաւօտի պահէ մը մինչեւ երեկուայ։",
+          "english": "In [a] moment of morning until evening.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "առաւօտի պահէ մը յուսացաւ Իսրայէլը Տիրոջը. Տիրոջմէ է ողորմութիւն, եւ բազում Անկէ է փրկութիւն։",
+          "english": "in [a] moment of morning Israel hoped in [the] Lord: from [the] Lord is mercy, and much from Him is salvation.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "եւ Ան կը փրկէ Իսրայէլը անոր ամէն նեղութիւններէն։",
+          "english": "and He saves Israel from all its oppressions.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 130,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ՍԻՐՏՍ ՅԱՒԱԿՆՈՒԹԻՒՆ ՉՈՒՆԻ, ՏԷ՛Ր",
+          "english": "MY HEART DOES NOT HAVE PRETENTION, LORD",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Տէր, չբարձրացաւ իմ սիրտս, եւ չզբօսացաւ իմ աչքերս, չգացի ես մեծամեծներու հետ, եւ ոչ անոնց հետ որ [աւելի] սքանչելի եղան քան թէ զիս։",
+          "english": "Lord, my heart is not raised, and my eyes are not amused: I did not go with very great [things], and not with those that were [more] splendid than I.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Բայց եթէ խոնարհեցայ ես որպէս հատուցած մանուկ մը իր մօրը ստինքէն, եւ դարձ անոր անդրէն նոյնին. այլ եթէ հպարտացուցի արդեօք իմ հոգիս, այսպէս պիտի ըլլայ իմ հոգւոյս հատուցումը։",
+          "english": "But if I was lowered as [a] child weaned from his mother’s breast, and his turn there to [the] same, otherwise if I made prideful perhaps my soul, this way will be the rendering of my soul.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Յուսացաւ Իսրայէլը Տիրոջը այսուհետեւ մինչեւ յաւիտեան։",
+          "english": "Israel hoped in [the] Lord henceforth until [the] age.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 140,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԵՐԵԿՈՅԵԱՆ ԱՂՕԹՔ",
+          "english": "EVENING PRAYER",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Տէր, կանչեցի Քեզի, եւ լսէ ինծի, նայէ իմ աղօթքիս ձայնին իմ կանչելուս Քեզի։",
+          "english": "Lord, I cried unto You, and listen to me, look up to [the] voice of my prayer for my crying unto You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Ուղիղ ըլլան իմ աղօթքս որպէս խունկ Քու առջեւդ, Տէր, իմ ձեռքերուս համբարձումը երեկոյի պատարագ։",
+          "english": "May my prayer be upright as incense before You, Lord, the ascension of my hands [an] evening sacrifice.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Դիր, Տէր, պահապան մը իմ բերանիս, եւ ամուր դուռը իմ շրթունքներուս։",
+          "english": "Put, Lord, a keeper for my mouth, and the solid door for my lips.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "զի պիտի չխոտորէ իմ սիրտս չարութեան խօսքով, պատճառելու մեղքերու պատճառները մարդոց հետ որ կը գործեն անօրէնութիւն. պիտի չըլլամ կցորդ մը անոնց ընտրուածներուն։",
+          "english": "for my heart will not be deviated with word of evilness, to cause causes of sin with men who work lawlessness: I will not be [a] partaker to their chosen.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Պիտի խրատէ զիս արդարը ողորմութեամբ աչք յանդիման պիտի ըրէ զիս, մեղաւորին իւղը մի օծեր իմ գլուխս, եւ իմ աղօթքս ըստ անոր կամքը։",
+          "english": "The righteous [one] will advise with mercy, opposite [the] eye will he make me, do not anoint my head [with the] oil of [the] sinful, and my prayer according to his will.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Ընկղմեցան վէմին քովը անոնց դատաւորները. պիտի լսեն իմ խօսքերս, զի քաղցր են։",
+          "english": "Their judges fell next to the [solid] stone: they will hear my words, for they are sweet.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Որպէս հողին թանձրութիւն որ սփռած է երկիրի վրայ՝ պիտի ցրուին անոնց ոսկորները դժոխքին քովը։",
+          "english": "As [the] density of [the] soil that is spread out on [the] earth, their bones will be dispersed next to [the] underworld.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Քեզի, Տէր, Տէր, են իմ աչքերս, Քեզի յուսացայ, մի՛ հաներ ոգի[ս] ինծմէ։",
+          "english": "Unto You, Lord, Lord, are my eyes, I hoped in You, do not remove [my] spirit from me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Պահէ զիս որոգայթէն որ թաքուցաւ ինծի, գայթակղութենէ՝ որոնք կը գործեն անօրէնութիւն։",
+          "english": "Keep me from [the] trap that they concealed for me, from scandal; who work lawlessness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Պիտի իյնան անոր ցանցերու մեղաւորները, միայնակ եմ ես մինչեւ անցնիմ։",
+          "english": "[The] sinful [ones] will fall in his nets, I am alone until I pass.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 142,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ԽՈՆԱՐՀ ԱՂԱՉԱՆՔ",
+          "english": "HUMBLE SUPPLICATION",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Տէր, լսէ իմ աղօթքս, ականջ դիր իմ խնդրուածներուս Քու ճշարտութեամբդ. լսէ ինծի Քու արդարութեամբդ։",
+          "english": "Lord, listen to my prayer, put [an] ear to my requested [things] with Your truth: listen to me with Your righteousness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Եւ մի՛ մտներ դատաստանի Քու ծառայիդ հետ, զի չարդարնար Քու առջեւդ ամէն մսեղի։",
+          "english": "And do not enter in judgment with Your servant, for all fleshly [things] do not become righteous before you.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Հալածեց թշնամին իմ հոգիս, խոնարհ ըրաւ երկիրի իմ կեանքս. եւ նստեցուց զիս խաւարին որպէս յաւիտենից մեռածը։",
+          "english": "The enemy persecuted my soul, he has made my life low to [the] earth: and he seated me in [the] darkness as a dead [one] from the ages.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Ձանձրացաւ [իմ մէջս] իմ ոգիս, եւ իմ սիրտս խռովեցաւ [իմ մէջս]։",
+          "english": "My spirit is wearied [within] me, and my heart is perturbed [within] me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Յիշեցի առաջին օրերը, խորհեցայ Քու ամէն գործերդ. Քու ձեռքերուդ արարածներուն խորհեցայ։",
+          "english": "I remembered the days of before, I meditated on all Your works: on the created [things] of Your hands I meditated.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Համբարցուցի Քեզի իմ ձեռքերս. իմ հոգիս որպէս ծարաւ երկիր մըն է Քեզի։",
+          "english": "I ascended unto You my hands: my soul is as [a] thirsty land unto You.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 7,
+          "armenian": "Վաղվաղակի լսէ ինծի, Տէր, զի նուաղեցաւ ինծմէ իմ ոգիս. մի դարձուր Քու երեսդ ինծմէ, պիտի նմանէի անոնց որ իջնան գուբին։",
+          "english": "Swiftly listen to me, Lord, for my spirit fainted from me: do not turn Your face from me, I would resemble those who descended to [the] pit.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 8,
+          "armenian": "Լսող ըրէ ինծի առաւօտէն Քու ողորմութիւններդ, զի ես Քեզի, Տէր, յուսացայ. ցուցուր ինծի ճանապարհը որուն երթալու եմ, զի Քեզի, Տէր, համբարցուցի իմ հոգիս։",
+          "english": "Make to me listening from [the] morning Your mercies, for to You, Lord, I hoped: show to me the way in which I should go, for unto You, Lord, I ascended my soul.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 9,
+          "armenian": "Փրկէ զիս իմ թշնամիներէս, Տէր, զի Քեզ ապաւէն ինծի ըրի։",
+          "english": "Save me from my enemies, Lord, for I made You refuge for me.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 10,
+          "armenian": "Ուսուցանուր ինծի ընել Քու կամքդ, զի Դու ես իմ Աստուածս. Քու բարի Հոգիդ պիտի առաջնորդէ ինծի ուղիղ երկիրի։",
+          "english": "Teach to me to do Your will, for You are my God: Your good Spirit will lead for me to upright earth.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 11,
+          "armenian": "Վասն Քու անուանդ, Տէր պիտի կեցուցանես զիս. Քու արդարութեամբդ պիտի հանես նեղութենէ իմ հոգիս։",
+          "english": "On account of Your name, Lord, you will make me live: with Your righteousness you will draw out my soul from oppression.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 12,
+          "armenian": "Քու ողորմութեամբդ պիտի սատկեցնես իմ թշնամիներս. պիտի կորսնցնես իմ հոգւոյս նեղիչները, զի ես Քու ծառադ եմ։",
+          "english": "with Your mercy you will slay my enemies: you will make lost all oppressors of my soul, for I am your servant.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "number": 150,
+      "content": [
+        {
+          "kind": "heading",
+          "armenian": "ՓԱՌԱԲԱՆԵՑԷ՛Ք ՏԻՐՈՋԸ",
+          "english": "GLORIFY THE LORD",
+          "classical": ""
+        },
+        {
+          "kind": "verse",
+          "number": 1,
+          "armenian": "Օրհնեցէք Աստուած Անոր սրբութեանը, օրհնեցէք զԱյն Անոր զօրութեանը հաստատութեանը։",
+          "english": "Bless God in His holiness, bless Him in [the] firmament of His strength.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 2,
+          "armenian": "Օրհնեցէք զԱյն Անոր զօրութեանը, օրհնեցէք զԱյն Անոր բազում մեծութեանը։",
+          "english": "Bless Him in His strength, bless Him in His much greatness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 3,
+          "armenian": "Օրհնեցէք զԱյն օրհնութեան ձայնին, օրհնեցէք զԱյն սաղմոսներով եւ օրհնութեամբ։",
+          "english": "Bless Him in [a] voice of blessing, bless Him with psalms and with blessing.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 4,
+          "armenian": "Օրհնեցէք զԱյն ցնծութեամբ՛ գովեցէք զԱյն ուրախութեամբ։",
+          "english": "Bless Him with joy, praise Him with happiness.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 5,
+          "armenian": "Օրհնեցէք զԱյն քաղցր խօսքերու, օրհնեցէք զԱյն լսելի բարբառի. օրհնեցէք զԱյն գոհութեան ձայնին։",
+          "english": "Bless Him in sweet words, bless Him in [a] listening utterance: bless Him in [a] voice of contentment.",
+          "classical": "",
+          "footnotes": []
+        },
+        {
+          "kind": "verse",
+          "number": 6,
+          "armenian": "Ամէն ոգիներ, օրհնեցէք Տէրը։",
+          "english": "All spirits, bless [the] Lord.",
+          "classical": "",
+          "footnotes": []
+        }
+      ]
+    }
+  ]
+}
