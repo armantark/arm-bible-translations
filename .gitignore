@@ -13,3 +13,6 @@ dist/
 # Local unpacked/backup docx folders
 Krapar Asdvadzashouche Ashkharaparov/
 The Classical Armenian Bible in English/
+
+# Bun is the package manager here
+package-lock.json
