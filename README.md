@@ -23,6 +23,20 @@ In-browser editor for Armenian Bible translation work, with side-by-side multili
 - Poetry formatting with clause-based line splitting and hanging indents.
 - Centralized UI localization (`english`, `armenian`, `classical` locale files).
 
+## Screenshots
+
+### Editor overview
+
+![Editor overview](docs/screenshots/editor-overview.png)
+
+### Chapter view
+
+![Chapter view](docs/screenshots/chapter-view.png)
+
+### Edit mode
+
+![Edit mode](docs/screenshots/edit-mode.png)
+
 ## Tech Stack
 
 - Svelte 5 + TypeScript (strict)
