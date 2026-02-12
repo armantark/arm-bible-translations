@@ -45,8 +45,15 @@ export const CLASSICAL_LOCALE: LocaleStrings = {
 
   addHeading: '+ Վերնագիր',
   addVerse: '+ Համար',
+  addChapter: '+ Գլուխ',
+  addBook: '+ Գիրք',
   deleteHeading: 'Ջնջեա՛ զվերնագիրն',
   deleteVerse: 'Ջնջեա՛ զհամարն',
+  deleteChapter: 'Ջնջեա՛ զգլուխն',
+  deleteBook: 'Ջնջեա՛ զգիրքն',
+  dragToReorder: 'Քարշեա՛ ի վերադասաւորել',
+  undo: 'Յետ դարձ',
+  redo: 'Վերստին',
 
   clickToEdit: '(Սեղմեա՛ ի խմբագրել)',
   addFootnote: '+ Ծանօթագրութիւն',
@@ -55,6 +62,10 @@ export const CLASSICAL_LOCALE: LocaleStrings = {
   pickWord: 'Ընտրեա՛ զբառ',
   cancelPick: 'Չեղարկել',
   clickWordToAttach: 'Սեղմեա՛ ի վերայ բառի յայսմ սիւնակի՝ ի կապել զծանօթագրութիւնն:',
+
+  poetryMode: 'Poetry',  // TODO: translate
+  poetryOn: 'Set poetry',  // TODO: translate
+  poetryOff: 'Unset poetry',  // TODO: translate
 
   languageEnglish: 'Անգղիերէն',
   languageArmenian: 'Հայերէն',

@@ -21,7 +21,11 @@
           "armenian": "Ի սկզբանէ Աստուած արարեց երկինքն ու երկիրը:",
           "english": "In [the] beginning, God created heaven and earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -29,7 +33,11 @@
           "armenian": "Եւ երկիրն անեւեւոյթ ու անպատրաստ էր, եւ խաւարը անդունդին վրայ [էր], եւ Աստուծոյ Հոգին կը շրջէր ջուրերուն վրայ:",
           "english": "And [the] earth was invisible and unready, and darkness over [the] abysses, and the Spirit of God roamed on [the] waters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -37,7 +45,11 @@
           "armenian": "Եւ ըսաւ Աստուած. «Լոյս ըլլայ»: Եւ եղաւ լոյս:",
           "english": "And God said, “May there be light.” And light became.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -45,7 +57,11 @@
           "armenian": "Եւ Աստուած տեսաւ որ լոյսը բարի է, եւ բաժնեց Աստուած լոյսին միջեւ եւ խաւարին միջեւ:",
           "english": "And God saw the light that it is good: and God divided between the light and in the darkness.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -53,7 +69,17 @@
           "armenian": "Եւ կոչեց Աստուած լոյսը Տիւ, եւ խաւարը կոչեց Գիշեր: Եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր առաջին:",
           "english": "And God called the light Day, and the darkness Night: and it became evening and it became morning, first day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:1",
+                "text": "lit. early next day as one word",
+                "anchorWord": 18
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -61,7 +87,17 @@
           "armenian": "Եւ ըսաւ Աստուած. «Հաստատութիւն ըլլայ ջուրերուն միջեւ, եւ բաժնուին ջուրերուն միջեւ եւ ջուրերուն»: Եւ եղաւ այնպէս:",
           "english": "And God said, “May there be firmament in the waters, and may dividing be between the waters and [the] waters,” and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:2",
+                "text": "lit. your, and again in the same verse and v. 9, indicating second-person proximity, i.e. that",
+                "anchorWord": 9
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -69,23 +105,35 @@
           "armenian": "Եւ արարեց Աստուած հաստատութիւնը, եւ անջրպետեց Աստուած ջրոյն միջեւ որ հաստատութեանը ներքեւն [էր], եւ ջրոյն միջեւ որ հաստատուեանը վերն [էր]:",
           "english": "And God created the firmament, and God separated between the water that [is] under the firmament, and between the water that above the firmament.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
           "number": 8,
-          "armenian": "Եւ կոչեց Աստուած հաստատութիւնը Երկինք. եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր երկրորդ:",
-          "english": "And God called the firmament Heaven; and it became evening and it became morning, second day.",
+          "armenian": "Եւ ըսաւ Աստուած. «Ժողովին ջուրերը որոնք երկինքի ներքեւն [են] մէկ ժողովի, եւ երեւի ցամաքը». եւ եղաւ այնպէս։ Եւ ժողովեցան ջուրերը, որոնք երկինքի ներքեւն [էին]՝ իրենց ժողովներուն, եւ երեւեցաւ ցամաքը:",
+          "english": "And God said, “May the waters that [are] under [the] heavens gather in one gathering, and may the land appear,” and it happened so. And the waters gathered, that [were] under [the] heavens; in its gatherings, and the land appeared.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
           "number": 9,
-          "armenian": "Եւ ըսաւ Աստուած. «Ժողովին ջուրերը որոնք երկինքի ներքեւն [են] մէկ ժողովի, եւ երեւի ցամաքը». եւ եղաւ այնպէս։ Եւ ժողովեցան ջուրերը, որոնք երկինքի ներքեւն [էին]՝ իրենց ժողովներուն, եւ երեւեցաւ ցամաքը:",
-          "english": "And God said, “May the waters that [are] under [the] heavens gather in one gathering, and may the land appear,” and it happened so. And the waters gathered, that [were] under [the] heavens; in its gatherings, and the land appeared.",
+          "armenian": "Եւ կոչեց Աստուած հաստատութիւնը Երկինք. եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր երկրորդ:",
+          "english": "And God called the firmament Heaven; and it became evening and it became morning, second day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -93,15 +141,23 @@
           "armenian": "Եւ կոչեց Աստուած ցամաքը Երկիր, եւ ժողովուած ջուրերը կոչեց Ծովեր. եւ տեսաւ Աստուած, որ բարի է:",
           "english": "And God called the land Earth, and [the] gatherings of the waters He called Seas: and God saw that it is good.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
           "number": 11,
-          "armenian": "Եւ ըսաւ Աստուած. «Բղխէ երկիրը բանջար խոտին. սերմանելի սերմ իր ազգի եւ իր նմանութեան. եւ ծառ պտղաբեր՝ շինել պտուղ իր ազգի, որու իր սերմն իր մէջն է ըստ ազգին երկիրին վրայ»: Եւ տեսաւ Աստուած որ բարի է։ 13 Եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր երրորդ:",
+          "armenian": "Եւ ըսաւ Աստուած. «Բղխէ երկիրը բանջար խոտին. սերմանելի սերմ իր ազգի եւ իր նմանութեան. եւ ծառ պտղաբեր՝ շինել պտուղ իր ազգի, որու իր սերմն իր մէջն է ըստ ազգին երկիրին վրայ»: Եւ տեսաւ Աստուած որ բարի է։",
           "english": "And God said, “May [the] earth spring forth vegetables from grass, to sow the seed according to [its] kind and according to [its] likeness: and fruit-bearing tree, producing fruit according to its kind, of which its seed [is] in itself according to [its] kind with [its] likeness, on [the] earth,” and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -109,15 +165,29 @@
           "armenian": "",
           "english": "And [the] earth drew out vegetables from grass to sow the seed that is all over [the] earth; and fruit-bearing tree, to take fruit, of which its seed [is] in itself according to [its] kind on [the] earth; and God saw that it is good.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:3",
+                "text": "lit. wood",
+                "anchorWord": 21
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
           "number": 13,
-          "armenian": "",
+          "armenian": "Եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր երրորդ:",
           "english": "And it became night, and it became morning, third day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -125,7 +195,17 @@
           "armenian": "Եւ ըսաւ Աստուած. «Ըլլան լուսաւորներ եըկինքի հաստատութեան, որպէս լուսաւորութիւն երկիրի վրայ, եւ բազնել տիւին միջեւ եւ գիշերին միջեւ. եւ ըլլան նշաններու ու ժամանակներու եւ օրերու ու տարիներու համար։",
           "english": "And God said, “May there be luminaries in [the] firmament of [the] heavens, for illumination over [the] earth, and to separate between day and between night: and may they be for signs and for times and for days and for years.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:4",
+                "text": "or seasons",
+                "anchorWord": 35
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -133,7 +213,17 @@
           "armenian": "Եւ ըլլան որպէս լուսաւորութիւն երկինքի հաստատութեան ծագել երկիրին». եւ եղաւ այնպէս։",
           "english": "And may they be for illumination in [the] firmament of [the] heavens to dawn on the [earth],” and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:5",
+                "text": "or shine",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -141,7 +231,23 @@
           "armenian": "Եւ արարեց Աստուած երկու մեծամեծ լուսաւորներ. Մեծ լուսաւորին տիւին իշխանութեան համար, եւ փոքր լուսաւորը գիշերին իշխանութեան համար, եւ աստղերը։",
           "english": "And God created the two very great lights: the large light for principality of day, and the small light for principality of night, and [the] stars.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:1",
+                "text": "այսինքն, աստղերն ալ շինեց։",
+                "anchorWord": 19
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:6",
+                "text": "lit. great-great",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -149,7 +255,11 @@
           "armenian": "Եւ դրաւ զանոնք Աստուած երկինքին հաստատութեանը մէջ լուսատու ըլլալ երկիրին։",
           "english": "And God put them in [the] firmament of [the] heavens to be light-giving over earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -157,7 +267,11 @@
           "armenian": "Եւ իշխել տիւին եւ գիշերին, եւ բաժնել լոյսին միջեւ եւ խաւարին միջեւ. եւ տեսաւ Աստուած որ բարի է։",
           "english": "And to rule of day and night, and to separate between the light and between the darkness: and God saw that it is good.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -165,7 +279,11 @@
           "armenian": "Եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր չորրորդ:",
           "english": "And it became evening and it became morning, fourth day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -173,7 +291,22 @@
           "armenian": "Եւ ըսաւ Աստուած. «Հանեն ջուրերը զերուններ կենդանի շունչով, եւ թեւաւոր թռչուններ երկիրի վրայ ըստ երկինքի հաստատութեան. եւ եղաւ այնպէս։",
           "english": "And God said, “May [the] waters draw out reptiles of living breath, and winged birds over [the] earth in [the] firmament of [the] heavens”: and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:7",
+                "text": "lit. armed",
+                "anchorWord": 14
+              },
+              {
+                "id": "eng:8",
+                "text": "lit. according to",
+                "anchorWord": 19
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -181,7 +314,17 @@
           "armenian": "Եւ արարեց Աստուած մեծամեծ կէտեր, եւ ամէն ինչ զերուններ կենդանի շունչով՝ որոնք ջուրերը հանեցին ըստ իրենց ազգը, եւ ամէն թեւաւոր թռչունները ըստ [իր] ազգի. Եւ տեսաւ Աստուած որ բարի են։",
           "english": "And God created very great whales, and all breath of living reptiles, which were drawn out by [the] waters according to their kind, and all [the] winged birds according to their kind: and God saw that they are good.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:9",
+                "text": "or [the] waters took out",
+                "anchorWord": 19
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -189,7 +332,22 @@
           "armenian": "Եւ օրհնեց զանոնք Աստուած եւ կ՚ըսէ. «Աճեցէ՛ք եւ բազմեցէ՛ք, եւ լեցուցէ՛ք ջուրերդ որ ծովուն են, եւ թռչունները բազմապատկուին երկիրի վրայ»։",
           "english": "And God blessed them and says: “[You all,] Increase and be multiplied, and fill the waters that are in [the] seas: and the birds be multiplied.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:10",
+                "text": "lit. your or that",
+                "anchorWord": 15
+              },
+              {
+                "id": "eng:11",
+                "text": "lit. your or that",
+                "anchorWord": 24
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -197,7 +355,11 @@
           "armenian": "Եւ եղաւ երեկոյ եւ եղաւ առաւօտ՝ օր հինգերորդ։",
           "english": "And it became evening and it became morning, fifth day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -205,7 +367,11 @@
           "armenian": "Եւ ըսաւ Աստուած. «Հանէ երկիրը կենդանի շունչ ըստ իր ազգի, չորքոտանի եւ սողուններ եւ գազաններ երկիրի ըստ իր ազգի». եւ եղաւ այնպէս։",
           "english": "And God said, “May [the] earth draw out living breath according to [its] kind, four-legged [animal] and reptiles and beasts of [the] earth according to [its] kind”: and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -213,7 +379,17 @@
           "armenian": "Եւ արարեց Աստուած երկիրի գազաններ ըստ [իրենց] ազգի, եւ անասուններ ըստ իր ազգի, եւ ամէն երկիրի սողունները ըստ իրենց ազգի. եւ տեսաւ Աստուած որ բարի են։",
           "english": "And God created beasts according to [their] kind, and animals according to [their] kind, and all reptiles of [the] earth according to their kind: and God saw that they are good.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:12",
+                "text": "the word here translated as “animal” usually refers to livestock but not necessarily; used continually through Genesis",
+                "anchorWord": 10
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -221,7 +397,11 @@
           "armenian": "Եւ ըսաւ Աստուած. «Արարենք մարդ ըստ Մեր պատկերի եւ ըստ նմանութեան, եւ իշխեն ծովուն ձուկերուն եւ երկինքի թռչուններու եւ անասուններու եւ ամէն երկիրի եւ ամէն երկիրի եւ ամէն սողուններու որոնք կը սողան երկիրի վրայ։»",
           "english": "And God said, “May we make man according to Our image and according to [our] likeness, and may they rule [the] fish of [the] sea and [the] birds of [the] heavens and [the] animals and all [the] earth and all [the] reptiles that creep on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -229,7 +409,11 @@
           "armenian": "Եւ արարեց Աստուած մարդը Իր պատկերով. ըստ Աստուծոյ պատկերի արարեց զայն, արու եւ էգ արարեց զանոնք։",
           "english": "And God created man in His image: according to [the] image of God He created him, He created them male and female.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -237,7 +421,17 @@
           "armenian": "Եւ օրհնեց զանոնք Աստուած եւ կ՚ըսէ. «Աճեցէ՛ք եւ բազմապատկուեցէ՛ք եւ լեցուցէ՛ք երկիրը, եւ տիրեցէ՛ք ատոր, եւ իշխեցէ՛ք ծովուն ձուկերու եւ երկինքի թռչուններու եւ ամէն անասուններու եւ ամէն երկիրի եւ ամէն սողուններու՝ որ կը սողին երկիրի վրայ։»",
           "english": "And God blessed them and says, “[You both,] increase and be multiplied and fill [the] earth, and lord over it, and rule [the] fish of [the] sea and [the] birds of [the] heavens and [the] animals and all [the] earth and all [the] reptiles that creep on [the] earth.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:13",
+                "text": "lit. that",
+                "anchorWord": 20
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -245,7 +439,28 @@
           "armenian": "Եւ ըսաւ Աստուած. «Ահա, Ես տուած եմ ձեզի ամէն սերմանելի խոտ՝ սերմանել սերմը, որ ամէն երկիրի վրայ, եւ ամէն ծառ որ ունենայ ինքզինքին մէջ պտուղ սերմանելու սերմ՝ ձեզի ըլլայ կերակուրի համար։",
           "english": "And God said, “Behold I have given you [both] all [the] sowing grass to sow seed that is on [the] earth, and every tree which may have in itself fruit sowing seed; may [it] be food for you [both].",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:2",
+                "text": "գրաբար. փայտ",
+                "anchorWord": 20
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:14",
+                "text": "in this translation, “you both” or “you all” will be used for plural, and “you” for singular",
+                "anchorWord": 9
+              },
+              {
+                "id": "eng:15",
+                "text": "wood",
+                "anchorWord": 24
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -253,7 +468,11 @@
           "armenian": "Եւ ամէն գազաններու երկիրի, եւ ամէն թռչուններու երկինքի, եւ ամէն սողուններու որ կը սողին երկիրի վրայ՝ որ ունենայ կենդանի շունչ, ամէն դալար խոտ կերակուրի համար». եւ եղաւ այնպէս։",
           "english": "And all beasts of [the] earth, and all birds of [the] heavens, and all reptiles that creep on [the] earth; that it may have living breath, every green grass for food”: and it happened so.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -261,7 +480,11 @@
           "armenian": "Եւ տեսաւ Աստուած ամէն ինչ որ արարեց, եւ ահա բարի են շատ. եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր վեցերորդ։",
           "english": "And God saw all that He created, and behold they are very good: and it became evening, and it became morning, sixth day.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },
@@ -280,7 +503,11 @@
           "armenian": "Եւ կատարուեցան երկինքը եւ երկիրը եւ անոնց ամէն զարդը։",
           "english": "And [the] heavens and earth were completed and all their ornament.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -288,7 +515,11 @@
           "armenian": "Եւ կատարեց Աստուած վեցերորդ օրուան Իր գործերը զոր ըրաւ, եւ հանգչեց եօթերորդ օրուան Իր ամէն գործերէն զոր ըրաւ։",
           "english": "And God completed on the sixth day His works that He did, and rested on the seventh day from all the works that He did.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -296,7 +527,11 @@
           "armenian": "Եւ օրհնեց Աստուած եօթերորդ օրը եւ սրբեց զայն, զի անոր մէջ հանգչեցաւ Իր ամէն գործերէն զոր սկսաւ ընել Աստուած։",
           "english": "And God blessed the seventh day and sanctified it, for on it He rested from all His works that God began to do.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -304,7 +539,11 @@
           "armenian": "Այս է գիրը արարածներուն երկինքի եւ երկիրի օրուայ որու մէջ ստեղծեց Աստուած երկինքը եւ երկիրը։",
           "english": "This is [the] writing of [the] creatures, of heaven of earth, on the day in which God formed [the] heavens and [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -312,7 +551,11 @@
           "armenian": "Եւ ամէն բանջար վայրի՝ մինչեւ եղեր էր երկիրի վրայ, եւ ամէն խոտ վայրի մինչեւ բուսեր էր, զի դեռ չէր տեղացուցած Տէր Աստուածը երկիրի վրայ. եւ մարդ չի կար որ գործէր երկիրը։",
           "english": "And every vegetable of [the] field; until it had grown on [the] earth, and every grass of [the] field until it had grown, for God had not yet showered down on the earth: and man was not there who worked [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -320,7 +563,11 @@
           "armenian": "Բայց աղբիւր կ՚ելլէր եւ կ՚ոռոգէր ամէն երեսներ երկիրի։",
           "english": "But [the] spring was going out from [the] earth and was watering all faces of [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -328,7 +575,22 @@
           "armenian": "Եւ ստեղծեց Տէր Աստուած մարդը երկիրի հողէն. եւ փչեց անոր երեսին կենդանի շունչ, եւ մարդը եղաւ կենդանի ոգի։",
           "english": "And Lord God formed the man from the soil of [the] earth: and blew into his face [the] breath of life, and the man became a living spirit.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:16",
+                "text": "plural",
+                "anchorWord": 17
+              },
+              {
+                "id": "eng:17",
+                "text": "in Armenian, there is a slight distinction between soul and spirit, just as in English and Greek. Spirit (Arm. անձն [antsn], Gr. πνεῦμα [pneuma]) refers to the entire immaterial part of a human, and soul (Arm. հոգի/ոգի [hoki/voki], Gr. ψῡχή [psyche]) refers to the animating part of a human and can refer to one’s self; neither word is mutually exclusive",
+                "anchorWord": 28
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -336,7 +598,22 @@
           "armenian": "Եւ տնկեց Աստուած դրախտը՝ Եդեմին մէջ արեւելքին, եւ դրաւ այնտեղ մարդը զոր ստեղծեց։",
           "english": "And God planted the paradise; in Eden to [the] east, and put there the man whom He formed.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:18",
+                "text": "or garden",
+                "anchorWord": 5
+              },
+              {
+                "id": "eng:19",
+                "text": "Gr. Edem, Arm. Yedem",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -344,7 +621,11 @@
           "armenian": "Եւ բուսցուց եւս Տէր Աստուած երկիրէն ամէն գեղեցիկ ծառերը տեսնելու եւ քաղցր կերակուրի համար, եւ կեանքի ծառը դրախտին մէջտեղը, եւ ծառը գիտնալու գիտութիւն բարւոյ եւ չարի։",
           "english": "And [the] Lord God also grew from the earth every beautiful tree to see and sweet for food, and the tree of life in the midst of the paradise, and the tree of knowing the knowledge of good and evil.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -352,7 +633,17 @@
           "armenian": "Եւ գետ մը կ՚ելլէր Եդեմէն ոռոգելու դրախտը. եւ անկէ բաժնուեցաւ չորս ճիւղերու։",
           "english": "And a river went out of Eden to water the paradise: and there it divided in four branches.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:3",
+                "text": "գրաբար. առաջս",
+                "anchorWord": 12
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -360,7 +651,22 @@
           "armenian": "Անուն առաջին Փիսոն. ան է որ կը պատէ ամբողջ Եւիլատին երկիրը, այնտեղ ուր ոսկին կայ։",
           "english": "[The] name of the one [is] Pison: it is that which walls the whole land of Havilah, where there is the gold.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:20",
+                "text": "Gr. Phison, Arm. P’isovn",
+                "anchorWord": 7
+              },
+              {
+                "id": "eng:21",
+                "text": "Gr. Euilat, Arm. Yevilat",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -368,7 +674,17 @@
           "armenian": "Եւ ոսկի այն երկիրին ազնիւ. եւ այդտեղ է սուտակը ու դահանակ ակնաքար։",
           "english": "And [the] gold of that earth is good: and in that place is the ruby and emerald gem.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:22",
+                "text": "or malachite, both green stones",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -376,7 +692,17 @@
           "armenian": "Եւ անուն երկրորդ գետին Գեհովն. ան կը պատէ ամէն Եթովպացիներուն երկիրը։",
           "english": "And the name of the second river [is] Gihon: it walls the whole land of the Ethiopians.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:23",
+                "text": "Gr. Geon, Arm. Gehovn",
+                "anchorWord": 9
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -384,7 +710,17 @@
           "armenian": "Եւ երրորդ գետը՝ Տիգրիս, ան է որ կ՚երթայ Ասորեստանի յանդիման։ Եւ չորրորդ գետը Եփրատէս։",
           "english": "And the third river; Tigris, it is that which goes opposite of Assyria. And the fourth river [is] Euphrates.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:24",
+                "text": "Arm. Yep’rates",
+                "anchorWord": 19
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -392,7 +728,11 @@
           "armenian": "Եւ առաւ Տէր Աստուածը մարդը զոր արարեց, եւ դրաւ զայն դրախտին փափկութեան գործել զինք եւ պահել։",
           "english": "And [the] Lord God took the man whom He created, and put him in the paradise to work and keep it in tenderness.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -400,7 +740,11 @@
           "armenian": "Եւ պատուիրեց Տէր Աստուածը Ադամին եւ կ՚ըսէ. «Ամէն ծառէն որ է դրախտիդ՝ ուտելով կրնաս ուտել։",
           "english": "And [the] Lord God commanded to Adam and says, “From all trees that are in that paradise, you may eat.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -408,7 +752,11 @@
           "armenian": "Բայց ծառէն գիտութեան բարւոյ եւ չարի՝ մի ուտէք, զի օրուան որու ուտէք անկէ՝ մահու պիտի մեռնիք։»",
           "english": "But from the Tree of Knowledge of Good and Evil; [you all,] do not eat, for on [the] day in which you [all] eat from it, you [all] will die unto death.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -416,7 +764,17 @@
           "armenian": "Եւ ըսաւ Տէր Աստուածը. «Բարւոք չէ մարդուն համար առանձինը ըլլալ, արարենք իրեն օգնական ըստ ատոր»։",
           "english": "And God said, “It is not well for the man to be alone, let Us make for him a helper according to him.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:25",
+                "text": "lit. your or that",
+                "anchorWord": 10
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -424,7 +782,11 @@
           "armenian": "Եւ ստեղծեց եւս Տէր Աստուածը ամէն գազաններ վայրի եւ ամէն թռչուններ երկինքի, եւ բերաւ զանոնք առ Ադամը տեսնել ինչ կոչէ զանոնք, եւ ամէն ինչ որ կենդանի շունչ նաեւ անուանեց Ադամը, այն անուն է անոր։",
           "english": "And God also formed all beasts of [the] field and all birds of the heavens, and brought them to Adam to see what he might name them, and whatever Adam also named a living breath, that is [the] name for it.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -432,7 +794,11 @@
           "armenian": "Եւ կոչեց Ադամը անուաններ անասուններու, եւ ամէն երկինքի թռչուններու, եւ ամէն վայրի գազաններու. բայց Ադամին չգտնուեցաւ օգնական իրեն նման։",
           "english": "And Adam called names to all [the] animals, and all [the] birds of [the] heavens, and all [the] beasts of the field: but for Adam no helper was found like him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -440,7 +806,22 @@
           "armenian": "Եւ արկանեց Տէր Աստուած թմրութիւն Ադամին վրայ, եւ ննջեց. եւ առաւ անոր կողերէն մէկը եւ լեցուց մարմինով անոր տեղը։",
           "english": "And God cast a numbness on Adam, and he slept: and He took one of his ribs and filled flesh in its place.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:26",
+                "text": "or drowsiness",
+                "anchorWord": 5
+              },
+              {
+                "id": "eng:27",
+                "text": "or one from his sides",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -448,7 +829,17 @@
           "armenian": "Եւ շինեց Տէր Աստուածը կողը զոր առաւ Ադամէն կնոջ, եւ բերաւ զայն Ադամին։",
           "english": "And [the] Lord God built the rib that He took from Adam into a woman, and He brought her to Adam.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:28",
+                "text": "or side",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -456,7 +847,17 @@
           "armenian": "Եւ կ՚ըսէ Ադամը. «Ասիկա հիմա ոսկոր իմ ոսկորներէս եւ մարմին իմ մարմինէս [է]. ասի պիտի կոչուի Կին, զի իր մարդէն առնուեցաւ։»",
           "english": "Adam says, “This now is bone of my bones and flesh of my flesh: this one will be called Woman, for from her man she was created.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:29",
+                "text": "or gaze upon, one word in Arm.",
+                "anchorWord": 16
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -464,7 +865,11 @@
           "armenian": "Անոր համար պիտի թողու մարդ մը իր հայրը եւ իր մայրը, եւ պիտի երթայ իր կնոջը հետ, եւ պիտի ըլլան մէկ մարմինի։",
           "english": "For that, [a] man will leave his father and his mother, and will go with his woman, and the two will become one flesh.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -472,7 +877,17 @@
           "armenian": "Եւ էին երկուքը մերկ, Ադամ եւ իր կինը, եւ չէին ամչնար։",
           "english": "And they were naked, Adam and his woman, and they were not ashamed.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:30",
+                "text": "or embarrassed or shy; one-word verb in Arm.",
+                "anchorWord": 13
+              }
+            ],
+            "classical": []
+          }
         }
       ]
     },
@@ -491,7 +906,17 @@
           "armenian": "Եւ օձն աւելի իմաստուն էր քան ամէն գազաններէն որոնք երկիրի վրայ [են]՝ զոր արարեց Տէր Աստուածը. եւ կ՚ըսէ օձը կնոջը. «Ինչո՞ւ համար ըսաւ Աստուած թէ ամէն ծառերէն որ կ՚ըլլան այս դրախտին ներքին՝ մի ուտէք։»",
           "english": "And the snake was more intelligent than all [the] animals that [were] on [the] earth, that God created: and the snake says to the woman, “Why is it that God said that from all [the] trees that are in this paradise, [you both,] do not eat?”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:31",
+                "text": "in Arm., a ՞ symbol marks the intonation on the specific vowel, unlike English where the question mark is placed at the end. This creates a sense of emphasis on the word that is marked with the intonation",
+                "anchorWord": 46
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -499,7 +924,17 @@
           "armenian": "Եւ կինը կ՚ըսէ օձին. «Ծառերուն պտուղէն դրախտին կրնանք ուտել։",
           "english": "And the woman says to the snake, “We can eat from the fruit of trees in the garden.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:32",
+                "text": "lit. your or that",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -507,7 +942,11 @@
           "armenian": "Բայց պտուղէն ծառին՝ որ դրախտին մէջտեղն է, ըսաւ Աստուած, ‹Մի՛ ուտէք անկէ, ոչ ալ մօտ ըլլաք, որպէսզի չմեռնիք›»։",
           "english": "But from the fruit of the tree, that is in the midst of the paradise, God said, ‘[You both,] do not eat from it, nor be near it, in order that you [both] not die.’”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -515,7 +954,11 @@
           "armenian": "Եւ կ՚ըսէ օձը կնոջը. «Ոչ թէ մահու պիտի մեռնիք։",
           "english": "And the snake says, “[It is] not that you will die unto death.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -523,7 +966,11 @@
           "armenian": "Զի գիտէր Աստուած թէ [այդ] օրուան որու ուտէք անկէ, պիտի բանան այքը ձեր, եւ պիտի ըլլաք իբրեւ աստուածներ՝ ճանչնալ բարի եւ չար։»",
           "english": "For God knew that on the day in which you [both] eat from it, your eyes will open, and you [both] will be as gods; knowing good and evil.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -531,7 +978,11 @@
           "armenian": "Եւ տեսաւ կինը որ լաւ էր ծառը կերակուրի համար եւ հաճելի աչքերու հայելու, եւ գեղեցիկ տեսնել՝ եւ առաւ անոր պտուղէն, կերաւ. եւ տուաւ իր այրին իր հետը, եւ կերան։",
           "english": "And the woman saw that the tree was good for food and pleasing for [the] eyes to look down upon, and beautiful to see: and took from its fruit: and gave [it] to her man with her, and they ate.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -539,7 +990,11 @@
           "armenian": "Եւ բացուեցան աչքերը երկուքին, եւ գիտցան թէ մերկ էին. եւ կարեցին թզենւոյ տեւերներ, եւ արարեցին սփածանելիներ։",
           "english": "And [the] eyes of [the] two were opened, and they knew that they were naked: and they sewed fig tree leaves, and they created for themselves wrappings.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -547,7 +1002,22 @@
           "armenian": "Եւ լսեցին ձայնը գալելու Տիրոջ Աստուծոյ դրախտին մէջ այն երեկոյեան ժամանակ, եւ թաքչուեցան Ադամը եւ կինը ինքնիրենց երեսէն Տիրոջ Աստուծոյ ծառերու մէջ դրախտին։",
           "english": "And they heard [the] voice of [the] Lord God’s walking in [the] paradise at that time in the evening, and Adam and the woman hid themselves from [the] face of [the] Lord God in the trees of the paradise.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:34",
+                "text": "singular in Arm.",
+                "anchorWord": 26
+              },
+              {
+                "id": "eng:35",
+                "text": "plural in Arm., and every time “face” is used",
+                "anchorWord": 29
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -555,7 +1025,11 @@
           "armenian": "Եւ կանչեց Տէր Աստուած Ադամին, եւ կ՚ըսէ անոր. «Ո՞ւր ես»։",
           "english": "And God called Adam, and says to him: “Where are you?”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -563,7 +1037,11 @@
           "armenian": "Եւ կ՚ըսէ. «Լսեցի քու ձայնդ դրախտին մէջ այստեղ եւ երկնչեցայ, քանզի մերկ էի, եւ թաքչուեցայ»։",
           "english": "And he says, “I heard your voice in [the] paradise here and feared, for I was naked, and I hid.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -571,7 +1049,17 @@
           "armenian": "Եւ կ՚ըսէ անոր. Ով պատմեց քեզի թէ մերկ ես. բայց եթէ ծարին որմէ պատուիրեցի քեզի այն ատենէն միայն չուտել, կերա՞ր արդեօք անկէ»։",
           "english": "And He says to him, “Who told you that you are naked? Unless of the tree from which I commanded you thence only not to eat, did you eat perhaps from it?”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:4",
+                "text": "կամ այնտեղէն կամ անկէ՝ եւ նորէն ուրտեղ որ կը գրուի «այն ատենէն». գրաբար անտի",
+                "anchorWord": 17
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -579,7 +1067,17 @@
           "armenian": "Եւ կ՚ըսէ Ադամը. «Կինս զոր տուիր [ըլլալ] ինծի հետ՝ ասիկա տուաւ ինծի ծառէն այն ատենէն եւ կերայ»։",
           "english": "And Adam says, “My woman whom You gave [to be] with me; this gave me from the tree thence and I ate.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:36",
+                "text": "or this",
+                "anchorWord": 4
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -587,7 +1085,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը կնոջը. «Ի՞նչ գործեցիր ատիկա»։ Եւ կ՚ըսէ. «Օձը խաբեց զիս, եւ կերայ»։",
           "english": "And says [the] Lord God to the woman, “What [is] this you have done?” And the woman says, “The snake deceived me, and I ate.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -595,7 +1097,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը օձին. «Փոխարէն զի արարեցիր դուն ասիկա, անիծեալ եղիր դուն ամէն անասուններէն եւ ամէն գազաններէն երկիրի. քու լանջքիդ վրայ եւ որովայնիդ պիտի երթաս, եւ հող պիտի ուտես քու կեանքիդ ամէն օրերուն։",
           "english": "And [the] Lord God says to the snake: “In return because you did this, you, become cursed from all animals and from all beasts of [the] earth: on [your] chest and your belly you shall go, and you shall eat soil in all [the] days of your life.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -603,7 +1109,28 @@
           "armenian": "Եւ պիտի դնեմ թշնամութիւն քու մէջդ եւ այդ կնոջը մէջը, եւ քու զաւակին մէջը եւ ատոր զաւակին մէջը՝ Ան պիտի սպասէ քու գլխուդ. եւ դուն պիտի սպասես Անոր գարշապարին»։",
           "english": "And I shall put enmity between you and between that woman, and between your child and between that one’s child; He will await your head: and you shall await His heel.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:5",
+                "text": "ըստ գրաբարին եւ յունարէնին",
+                "anchorWord": 21
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:37",
+                "text": "in the sense of “offspring”",
+                "anchorWord": 15
+              },
+              {
+                "id": "eng:38",
+                "text": "or watch, according to Arm. and Gr. (τηρέω)",
+                "anchorWord": 23
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -611,7 +1138,17 @@
           "armenian": "Եւ կնոջը կ՚ըսէ. «Բազմացնելով պիտի բազմացնեմ քու տրտմութիւններդ եւ հեծութիւններդ՝ տրտմութեամբ պիտի ծնանես որդիներ, եւ առ քու այրիդ դարձդ [պիտի ըլլայ], եւ ան պիտի տիրէ քեզի»։",
           "english": "And to the woman He says, “With multiplying, I will multiply your sorrows and your groans, with sorrow you will bear sons, and to your man [will be] your return, and he will lord over to you.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:39",
+                "text": "or escape or refuge",
+                "anchorWord": 30
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -619,7 +1156,17 @@
           "armenian": "Եւ Ադամին կ՚ըսէ. «Փոխարէն զի լսեցիր ձայնին քու կնոջդ, եւ կերար ծառէն այն ատենէն որմէ պատուիրցի քեզի անկէ միայն չուտել, եւ կերար անկէ, անիծեալ ըլլայ երկիրը գործերուդ համար՝ տրտմութեամբ պիտի ուտես զայն ամէն օրերուն քու կեանքիդ։",
           "english": "And to Adam He says, “In return because you listened to [the] voice of your woman, and ate from the tree thence from which I commanded for you thence only not to eat, and you ate from it, cursed be [the] earth in your works; with sorrow you will eat it in all [the] days of your life.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:40",
+                "text": "or wife; they are the same word in Arm., meaning is context-dependent",
+                "anchorWord": 16
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -627,7 +1174,11 @@
           "armenian": "Փուշ եւ տատանկ պիտի բուսցնէ քեզի, եւ պիտի ուտես բանջարը վայրի։",
           "english": "Thorn and thistle will germinate for you, and you will eat [the] vegetable of [the] field.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -635,7 +1186,17 @@
           "armenian": "Քրտինքներով քու երեսիդ պիտի ուտես քու հացդ, մինչեւ վերադառնաս երկիրի ուստի առնուեցար. զի հող էիր եւ հողի պիտի վերադառնաս»։",
           "english": "With sweat of your face you will eat your bread, until you return to [the] earth whence you were created: for you were soil and to soil you will return.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:6",
+                "text": "յոգնակի գրաբարին մէջ, եւ ամէն անգամ որ երես բառը կը գործածուի",
+                "anchorWord": 3
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -643,7 +1204,11 @@
           "armenian": "Եւ կոչեց Ադամը իր կնոջը անունը Կեանք. քանի որ ան է մայր ամէն կենդանիներուն։",
           "english": "And Adam called [the] name of his woman Life: for she is the mother of all living [things].",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -651,7 +1216,17 @@
           "armenian": "Եւ արարեց Տէր Աստուածը Ադամին եւ անոր կնոջը հագուստներ մաշկեղէն, եւ զգեցուց զանոնք։",
           "english": "And [the] Lord God created for Adam and his wife clothes made of hide, and dressed them.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:41",
+                "text": "“made of hide” one word in Arm.",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "heading",
@@ -665,7 +1240,28 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը. «Ահա Ադամը եղաւ իբրեւ մէկը մեզմէ՝ գիտել բարին եւ չարը. եւ հիմա գուցէ երկնցնէ ձեռքը եւ առնէ կեանքի ծառին, ուտէ եւ ապրի յաւիտեան»։",
           "english": "And [the] Lord God says, “Behold Adam has become as one of Us; knowing good and evil: and now lest he stretch the hand and take from the tree of life, eat and live forever.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:7",
+                "text": "գրաբար. ձգէ",
+                "anchorWord": 18
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:42",
+                "text": "Gr. literally to/for, ambiguous in Arm.",
+                "anchorWord": 27
+              },
+              {
+                "id": "eng:43",
+                "text": "Gr. unto the age",
+                "anchorWord": 35
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -673,7 +1269,11 @@
           "armenian": "Եւ հանեց արձակեց զայն Տէր Աստուածը դրախտէն այն ատենէն փափկութեան՝ գործել երկիրը ուստի առնուեցաւ։",
           "english": "And [the] Lord God drew out, released him thence from [the] paradise of tenderness; to work [the] earth whence he was taken.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -681,7 +1281,17 @@
           "armenian": "Եւ հանեց Ադամը- եւ բնակեցուց յանդիման դրախտին փափկութեան, եւ հրամայեց քերովբէներու եւ վառած սուրի՝ շուրջանակի պահել ճանապարհները կեանքի ծառին։",
           "english": "And He drew out Adam, and lodged [him] opposite of [the] tenderness of the paradise, and He ordered to [the] cherubim and to [the] inflamed sword; circulatory to guard [the] ways to the tree of life.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:8",
+                "text": "գրաբար. բոցեղէն",
+                "anchorWord": 13
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },
@@ -700,7 +1310,28 @@
           "armenian": "Մտաւ Ադամը Եւային իր կինը, եւ յղացաւ եւ ծնաւ Կայինը. եւ կ՚ըսէ. «Ստացայ մարդ Աստուծմով»։",
           "english": "Adam entered unto Eve his wife, and she became pregnant and bore Cain: and he says, “I received a man through God.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:9",
+                "text": "կամ Կայէն",
+                "anchorWord": 10
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:44",
+                "text": "Gr. Eua, Arm. Yeva",
+                "anchorWord": 4
+              },
+              {
+                "id": "eng:45",
+                "text": "Gr. Kain, Arm. Kayin/Kayen",
+                "anchorWord": 13
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -708,7 +1339,38 @@
           "armenian": "Եւ աւելցուց ծնանել եղբայր անոր Հաբէլ. եւ եղաւ Հաբէլը հովիւ հօտերու, եւ Կայինը կը գործէր երկիրը։",
           "english": "And she continued to bear his brother Abel: and Abel became a shepherd of flocks, and Cain worked [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:10",
+                "text": "կամ շարունակեց",
+                "anchorWord": 2
+              },
+              {
+                "id": "arm:11",
+                "text": "կամ Աբէլ",
+                "anchorWord": 6
+              },
+              {
+                "id": "arm:12",
+                "text": "գրաբար. խաշն",
+                "anchorWord": 11
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:46",
+                "text": "literally added",
+                "anchorWord": 3
+              },
+              {
+                "id": "eng:47",
+                "text": "Gr. Habel, Arm. Habel/Abel",
+                "anchorWord": 8
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -716,7 +1378,11 @@
           "armenian": "Եւ եղաւ օրերէն յետոյ [որ] բերաւ Կայինը պտուղէն երկիրի պատարագ Աստուծոյ։",
           "english": "And it became after [the] days] [that] Cain brought from [the] fruit of [the] earth [as] sacrifice to God.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -724,7 +1390,17 @@
           "armenian": "Ածեց նաեւ Հաբէլը անդրանիկներէն իր հօտերուն եւ անոնց պարարտներէն, եւ հայեցաւ Աստուած Հաբէլին եւ անոր պատարագներուն։",
           "english": "Abel likewise fetched from [the] firstborns of his flocks and from [the] fat ones of them, and God looked down upon Abel and upon his sacrifices.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:48",
+                "text": "one word in Arm.",
+                "anchorWord": 20
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -732,7 +1408,11 @@
           "armenian": "Եւ Կայինին եւ անոր զոհերուն չնայեցաւ. եւ տրտմեցաւ Կայինը յոյժ, եւ խոնարհեցաւ ինկաւ իր երեսը։",
           "english": "And upon Cain and his immolations He did not look, and Cain was very saddened, and his face humbled [and] fell.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -740,7 +1420,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը Կայինին. «Ինչո՞ւ տրտմեցար, եւ ինչո՞ւ խոնարհեցաւ ինկաւ քու երեսդ։",
           "english": "And [the] Lord God says to Cain, “Why are you saddened, and why is your face humbled [and] fallen?",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -748,7 +1432,22 @@
           "armenian": "Իրաւ չէ՞ թէ ուղիղ մատուցանես, եւ ուղիղ չբաժնես՝ մեղանչեցիր. լուռ եղիր, քեզի պիտի ըլլայ դարձ անոր, եւ դուն պիտի տիրես անոր»։",
           "english": "Is it not truly that if you offer uprightly, and do not divide uprightly, you sinned? Be quiet, unto you will be his return, and you will lord over to him.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:49",
+                "text": "or straightly, and again in same verse",
+                "anchorWord": 9
+              },
+              {
+                "id": "eng:50",
+                "text": "or escape or refuge",
+                "anchorWord": 24
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -756,7 +1455,11 @@
           "armenian": "Եւ կ՚ըսէ Կայինը Հաբէլին իր եղբայրը. «Եկուր երթանք դաշտին». եւ եղաւ իբրեւ գացին դաշտին այնտեղ, ելաւ Կայինը Հաբէլին վրայ իր եղբօրը եւ սպաննեց զայն։",
           "english": "And Cain says to Abel his brother, “Come let us go to [the] field”: and it happened as they went to [the] field that place, Cain arose on Abel his brother and killed him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -764,7 +1467,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը Կայինին. «Ո՞ւր է Հաբէլը քու եղբայրդ»։ Եւ ան կ՚ըսէ. «Չեմ գիտեր. միթէ պահապա՞ն ըլլամ իմ եղբօրս»։",
           "english": "And [the] Lord God says to Cain, “Where is Abel your brother?” And he says, “I do not know: is it possible that I be my brother’s keeper?”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -772,7 +1479,11 @@
           "armenian": "Եւ կ՚ըսէ Աստուած. «Ատիկա ի՞նչ գործեցիր. քու եղբօրդ արեան գոչումը կը բողոքէ ինծի երկիրէն։",
           "english": "And God says, “What [is] this you have worked? The clamor of the blood of your brother cries to me from [the] earth.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -780,7 +1491,11 @@
           "armenian": "Եւ հիմա անիծեալ եղիր դուն երկիրի վրայ, որ բացաւ իր բերանը ընդունելու քու եղբօրդ արիւնը քու ձեռքերէդ։",
           "english": "And now be cursed, you, on [the] earth, which opened its mouth to accept the blood of your brother from your hands.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -788,7 +1503,33 @@
           "armenian": "Զի կը գործես երկիրը, նաեւ պիտի չաւելցնէ տալ քեզի իր զօրութիւնը. երերացած եւ տատանած պիտի ըլլաս երկիրի վրայ»։",
           "english": "For you shall work [the] earth, and it will not increase to give to you its power: trembling and wavering you shall be on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:13",
+                "text": "կամ երբ կամ որ",
+                "anchorWord": 1
+              },
+              {
+                "id": "arm:14",
+                "text": "կամ պիտի չշարունակէ",
+                "anchorWord": 7
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:51",
+                "text": "or when or that",
+                "anchorWord": 1
+              },
+              {
+                "id": "eng:52",
+                "text": "or vacillated, again in v. 14",
+                "anchorWord": 18
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -796,7 +1537,17 @@
           "armenian": "Եւ կ՚ըսէ Կային Տիրոջ Աստուծոյն. «Մեծ է իմ պատիժս քան ներելդ զիս։",
           "english": "And said Cain to [the] Lord God, “Greater is my punishment than your forgiving me.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:15",
+                "text": "գրաբար. զթողուլդ",
+                "anchorWord": 11
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -804,7 +1555,11 @@
           "armenian": "Եթէ հանես զիս այսօր երեսէն երկիրի, եւ քու երեսէդ պիտի թաքչուիմ, եւ պիտի ըլլամ երերացած եւ տատանած երկիրի, եւ պիտի ըլլայ [որ] ամէնը որ կը գտնէ զիս՝ պիտի սպաննէ զիս»։",
           "english": "If you are drawing me out today from [the] face of [the] earth, and from your face shall I be hidden: and I shall be trembling and wandering on [the] earth, and it will be [that] all who would find me; will kill me.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -812,7 +1567,17 @@
           "armenian": "Եւ կ՚ըսէ անոր Տէր Աստուածը. «Ոչ այդպէս, ամէնը որ կը սպաննէ Կայինը, եօթը հատ վրէժ պիտի լուծանէ»։ Եւ դրաւ Տէր Աստուածը նշան [մը] Կայինին՝ չսպաննել զայն ամէնը որ պիտի գտնէր զայն։",
           "english": "And says to him [the] Lord God, “Not so; all who kill Cain, seven vengeances will be loosed.” And [the] Lord God put [a] sign on Cain; for all who would find him not to kill him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:53",
+                "text": "or will be punished seven [times]",
+                "anchorWord": 18
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "heading",
@@ -826,7 +1591,17 @@
           "armenian": "Եւ ելաւ Կայինը երեսէն Աստուծոյ, եւ բնակեցաւ երկիրին Նայիդ Եդեմին յանդիման։",
           "english": "And Cain went out from the face of God, and dwelled in the land Nod opposite of Eden.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:54",
+                "text": "Gr. Naid, Arm. Nayid",
+                "anchorWord": 15
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -834,7 +1609,17 @@
           "armenian": "Մտաւ Կայինը իր կնոջը, եւ յղացաւ եւ ծնաւ զԵնովք. եւ կը շինէր քաղաք [մը], եւ կը դնէր քաղաքին անունը իր որդւոյն անուանը Ենովքին։",
           "english": "Cain entered into his wife, and she became pregnant and bore Enoch: and he was building a city, and put [a] name for the city with the name of his son Enoch.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:55",
+                "text": "Arm. Yenovk’",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -842,7 +1627,32 @@
           "armenian": "Եւ եղաւ որդի Ենովքին Գայերիդադ, եւ Գայերիդադ ծնաւ Մայիէլ, եւ Մայիէլ ծնաւ Մաթուսաղա, եւ Մաթուսաղա ծնաւ Ղամէք։",
           "english": "And Irad became son of Enoch, and Irad begot Mehujael, and Mehujael begot Methusael, and Methusael begot Lamech.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:56",
+                "text": "Gr. Gaidad, Arm. Gayeridad",
+                "anchorWord": 2
+              },
+              {
+                "id": "eng:57",
+                "text": "Gr. Maiel, Arm. Mayiel",
+                "anchorWord": 10
+              },
+              {
+                "id": "eng:58",
+                "text": "Gr. Mathousala, Arm. Mat’ousagha",
+                "anchorWord": 14
+              },
+              {
+                "id": "eng:59",
+                "text": "Arm. Ghamek’",
+                "anchorWord": 18
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -850,7 +1660,22 @@
           "armenian": "Եւ առաւ իրեն Ղամէքը երկու կանայք. անուն առաջին Ադդա, եւ անուն երկրորդին Սէլլա։",
           "english": "And Lamech took to himself two women: [the] name of the first Adah, and [the] name of the second Zillah.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:60",
+                "text": "Gr. Ada, Arm. Adda",
+                "anchorWord": 13
+              },
+              {
+                "id": "eng:61",
+                "text": "Gr. Sella, Arm. Sella",
+                "anchorWord": 20
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -858,7 +1683,17 @@
           "armenian": "Եւ ծնաւ Ադդան Յովբէլը. ան է հայր անոնց որոնք բնակող են վրաններու մէջ խաշնարածներու։",
           "english": "And Adah bore Jabal: he is [the] father of those who are dwelling in tents of shepherds.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:62",
+                "text": "Gr. Iobel, Arm. Hovbel",
+                "anchorWord": 4
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -866,7 +1701,22 @@
           "armenian": "Եւ անոր եղբօրը անունը Յովբաղ. ան է հայրը որ ցուցուց երգեր եւ քնարներ։",
           "english": "And [the] name of his brother [was] Jubal: he is [the] father who showed songs and lyres.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:63",
+                "text": "Gr. Ioubal, Arm. Hovbagh",
+                "anchorWord": 8
+              },
+              {
+                "id": "eng:64",
+                "text": "or harps",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -874,7 +1724,22 @@
           "armenian": "Եւ Սէլլա ծնաւ Թովբէլ, եւ դարբին ճարտարապետ էր՝ պղինձի եւ երկաթի. եւ քոյր Թովբէլին Նոյեման [էր]։",
           "english": "And Sella bore Tubal-cain, and he was [a] blacksmith architect; for copper and for iron: and [the] sister of Tubal-cain [was] Naamah.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:65",
+                "text": "Gr. Thobel, Arm. T’ovbel",
+                "anchorWord": 4
+              },
+              {
+                "id": "eng:66",
+                "text": "Gr. Noema, Arm. Noyema",
+                "anchorWord": 22
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -882,7 +1747,17 @@
           "armenian": "Եւ կ՚ըսէ Ղամէքը իր կանանց Ադդաին եւ Սէլլաին. «Լսեցէք իմ ձայնիս, Ղամէքի կանայք, եւ ականջ դրէ՛ք իմ խօսքերուս. զի մարդ մը սպաննեցի վէրքերու մէջ ինծի, եւ երիտասարդ՝ հարուածներու մէջ ինծի։",
           "english": "And Lamech says to his women Adah and Zillah, “[You both,] listen to my voice, women of Lamech, and give ear to my speech: for I killed [a] man into wounds to me, and a young [man]; into blows to me.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:16",
+                "text": "գրաբար. ունկն",
+                "anchorWord": 15
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -890,7 +1765,11 @@
           "armenian": "Զի եթէ եօթը անգամ վրէժներ պիտի խնդրէր Կայինէն. ապա նաեւ Ղամէքին եօթանասուն եօթ»։",
           "english": "For if seven-time vengeances would be requested, then also for Lamech for seventy-seven.“",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -898,7 +1777,17 @@
           "armenian": "Մտաւ Ադամը Եւային իր կինը, եւ յղացաւ եւ ծնաւ որդի [մը], եւ անուանեց անոր անունը Սէթ. կ՚ըսէ. «Զի յարուցանեց ինծի Աստուած ուրիշ զաւակ [մը]` փոխանակ Հաբէլի զոր սպաննեց Կայինը։",
           "english": "Adam entered to Eve his wife, and she became pregnant and bore [a] son, and named his name Seth: and says, “For God raised to me another son; instead of Abel whom Cain killed.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:67",
+                "text": "Arm. Set’",
+                "anchorWord": 19
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -906,7 +1795,17 @@
           "armenian": "Եւ Սէթին եղաւ որդի, եւ անուանեց անոր անունը Ենովս. ան յուսացաւ կոչել Տիրոջ Աստուծոյն անունը։",
           "english": "And to Seth became [a] son, and he named his name Enos: he hoped to call [the] name of the Lord.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:68",
+                "text": "Arm. Yenovs",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         }
       ]
     },
@@ -925,7 +1824,23 @@
           "armenian": "Այս է գիրքը արարածներուն մարդուն, օրուան որուն արարեց Աստուած Ադամը, ըստ պատկերի Աստուծոյ ստեղծեց զայն։",
           "english": "This is [the] book of the creatures of man, on [the] day in which God created Adam, according to [the] image of God He formed him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:17",
+                "text": "կամ գիրը",
+                "anchorWord": 3
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:69",
+                "text": "or letter",
+                "anchorWord": 4
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -933,7 +1848,11 @@
           "armenian": "Արու եւ էգ արարեց զանոնք, եւ օրհնեց զանոնք, եւ անուանեց անոնց անունը Ադա, օրուան որուն արարեց զանոնք։",
           "english": "Male and female He created them, and blessed them, and named their name Adam, on [the] day in which He created them.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -941,7 +1860,11 @@
           "armenian": "Ապրեցաւ Ադամը երկու հարիւր եւ երեսուն տարի, եւ ծնաւ ըստ իր կերպարանքին եւ ըստ իր պատկերին, եւ անուանեց անոր անունը Սէթ։",
           "english": "Adam lived two hundred thirty years, and he begot according to his likeness and according to his image, and named his name Seth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -949,7 +1872,11 @@
           "armenian": "Եւ եղան Ադամին օրերը անոր Սէթը ծնանելէն յետոյ եօթը հարիւր տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And [the] days of Adam after his begetting Seth were seven hundred years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -957,7 +1884,11 @@
           "armenian": "Եւ եղան ամէն օրերը Ադամին զոր ապրեցաւ՝ ինը հարիւր եւ երեսուն տարի, եւ մեռաւ։",
           "english": "And all [the] days of Adam were that he lived; nine hundred and thirty years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -965,7 +1896,11 @@
           "armenian": "Եւ ապրեցաւ Սէթը երկու հարիւր եւ հինգ տարի, եւ ծնաւ Ենովս։",
           "english": "And Seth lived two hundred and five years, and he begot Enos.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -973,7 +1908,11 @@
           "armenian": "Եւ ապրեցաւ Սէթը իր Ենովս ծնանելէն յետոյ եօթը հարիւր եւ եօթը տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Seth lived after his begetting Enos seven hundred and seven years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -981,7 +1920,11 @@
           "armenian": "Եւ եղան ամէն օրերը Սէթին, ինը հարիւր եւ տասնըերկու տարի, եւ մեռաւ։",
           "english": "And all [the] days of Seth were, nine hundred and twelve years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -989,7 +1932,17 @@
           "armenian": "Եւ ապրեցաւ Ենովսը հարիւր եւ իննսուն տարի, եւ ծնաւ Կայնանը։",
           "english": "And Enos lived [one] hundred and ninety years, and he begot Cainan.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:70",
+                "text": "Arm. Kaynan",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -997,7 +1950,11 @@
           "armenian": "Եւ ապրեցաւ Ենովս անոր Կայնանը ծնանելէն յետոյ եօթը հարիւր եւ տասնըհինգ տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Enos lived after his begetting Cainan seven hundred and fifteen years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1005,7 +1962,11 @@
           "armenian": "Եւ եղան ամէն օրերը Ենովսին, ինը հարիւր եւ հինգ տարի, եւ մեռաւ։",
           "english": "And all [the] days of Enos were nine hundred and five years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1013,7 +1974,17 @@
           "armenian": "Եւ ապրեցաւ Կայնանը հարիւր եւ եօթանասուն տարի, եւ ծնաւ Մաղաղայէլը։",
           "english": "And Enos lived [one] hundred and seventy years, and he begot Mahalaleel.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:71",
+                "text": "Gr. Maleleel, Arm. Maghaghayel",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1021,7 +1992,11 @@
           "armenian": "Եւ ապրեցաւ Կայնանը անոր Մաղաղայէլը ծնանելէն յետոյ եօթը հարիւր եւ քառասուն տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Enos lived after his begetting Cainan seven hundred and forty years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1029,7 +2004,11 @@
           "armenian": "Եւ եղան ամէն օրերը Կայնանին, ինը հարիւր եւ տասը տարի, եւ մեռաւ։",
           "english": "And all [the] days of Enos were nine hundred and ten years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1037,7 +2016,17 @@
           "armenian": "Եւ ապրեցաւ Մաղաղայէլը հարիւր եւ վաթսուն եւ հինգ տարի, եւ ծնաւ Յարէդը։",
           "english": "And Mahalaleel lived [one] hundred and sixty and five years, and he begot Jared.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:72",
+                "text": "Gr. Iared, Arm. Hared",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1045,7 +2034,11 @@
           "armenian": "Եւ ապրեցաւ Մաղաղայէլը անոր Յարէդը ծնանելէն յետոյ եօթը հարիւր եւ երեսուն տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Mahalaleel lived after his begetting Jared seven hundred and thirty years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1053,7 +2046,11 @@
           "armenian": "Եւ եղան ամէն օրերը Մաղաղայէլին, ութը հարիւր եւ իննսուն եւ հինգ տարի, եւ մեռաւ։",
           "english": "And all [the] days of Mahalaleel were eight hundred and ninety and five years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1061,7 +2058,17 @@
           "armenian": "Եւ ապրեցաւ Յարէդը հարիւր եւ վաթսուն եւ երկու տարի, եւ ծնաւ Ենովքը։",
           "english": "And Jared lived [one] hundred and sixty and two years, and he begot Enoch.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:73",
+                "text": "Arm. Yenovk",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1069,7 +2076,11 @@
           "armenian": "Եւ ապրեցաւ Յարէդը անոր Ենովքը ծնանելէն յետոյ ութը հարիւր տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Jared lived after his begetting Enoch eight hundred years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1077,7 +2088,11 @@
           "armenian": "Եւ եղան ամէն օրերը Յարէդին, ինը հարիւր եւ վաթսուն եւ երկու տարի, եւ մեռաւ։",
           "english": "And all [the] days of Jared were nine hundred and sixty and two years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1085,7 +2100,17 @@
           "armenian": "Եւ ապրեցաւ Ենովքը հարիւր վաթսուն եւ հինգ տարի, եւ ծնաւ Մաթուսաղան։",
           "english": "And Enoch lived [one] hundred and sixty and five years, and he begot Methusalah.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:74",
+                "text": "Gr. Mathousala, Arm. Mat’ousagha",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1093,7 +2118,11 @@
           "armenian": "Եւ հաճոյ եղաւ Ենովքը Աստուծոյ անոր Մաթուսաղան ծնանելէն յետոյ՝ եկեք հարիւր տարի, եւ ծնաւ ուստրներ եւ տուստրներ։",
           "english": "And Enoch became pleasant to God after his begetting Methusalah; three hundred years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1101,7 +2130,11 @@
           "armenian": "Եւ եղան ամէն օրերը Ենովքին երեք հարիւր եւ վաթսուն եւ հինգ տարի։",
           "english": "And all [the] days of Enoch were three hundred and sixty and five years.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1109,7 +2142,11 @@
           "armenian": "Եւ հաճոյ եղաւ Ենովքը Աստուծոյ, եւ ոչ մէկ տեղ կը գնտուէր, զի տեղափոխեց զայն Աստուածը։",
           "english": "And Enoch was pleasant to God, and was found nowhere, for God displaced him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1117,7 +2154,17 @@
           "armenian": "Եւ ապրեցաւ Մաթուսաղան հարիւր ութսուն տարի, եւ ծնաւ Ղամէքը։",
           "english": "And Methusalah lived [one] hundred eighty and seven years, and he begot Lamech.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:75",
+                "text": "Arm. Ghamek’",
+                "anchorWord": 13
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1125,7 +2172,11 @@
           "armenian": "Եւ ապրեցաւ Մաթուսաղան եօթը հարիւր ութսուն եւ երկու տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Methusalah lived after his begetting Lamech seven hundred and two years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1133,7 +2184,11 @@
           "armenian": "Եւ եղան ամէն օրերը Մաթուսակային զորոնք ապրեցաւ՝ ինը հարիւր վաթսուն եւ ինը տարի, եւ մեռաւ։",
           "english": "And all [the] days of Methusalah that he lived were; nine hundred sixty and nine years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1141,7 +2196,11 @@
           "armenian": "Եւ ապրեցաւ Ղամէքը հարիւր ութսուն եւ ութը տարի, եւ ծնաւ որդի [մը]։",
           "english": "And Lamech lived [one] hundred eighty and eight years, and he begot [a] son.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1149,7 +2208,17 @@
           "armenian": "Եւ անուանեց անոր անունը Նոյ, կ՚ըսէ. «Ասիկա պիտի հանգուցանէ մեզ մեր գործերէն եւ մեր ձեռքերուն տրտմութիւններէն, եւ երկիրէն զոր անիծեց Տէր Աստուածը»։",
           "english": "And he named his name Noah, he says, “This one will repose us from our works and from [the] sorrows of our hands, and from [the] land that [the] Lord God cursed.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:76",
+                "text": "Gr. Noe, Arm. Noy",
+                "anchorWord": 6
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1157,7 +2226,11 @@
           "armenian": "Եւ ապրեցաւ Ղամէքը անոր Նոյը ծնանելէն յետոյ հինգ հարիւր եւ վաթսուն եւ հինգ տարի, եւ ծնաւ ուստրներ եւ դուստրներ։",
           "english": "And Lamech lived after his begetting Noah five hundred and sixty and five years, and he begot sons and daughters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1165,7 +2238,11 @@
           "armenian": "Եւ եղան ամէն օրերը Ղամէքին եօթը հարիւր յիսուն եւ երեք տարի, եւ մեռաւ։",
           "english": "And all the days of Lamech were seven hundred fifty and three years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1173,7 +2250,32 @@
           "armenian": "Եւ Նոյը հինգ հարիւր տարեկան էր, եւ ծնաւ Նոյը երեք որդիներ, Սէմ, Քամ, եւ Յաբէթ։",
           "english": "And Noah was five hundred years old, and Noah begot 3 sons, Shem, Ham, and Japheth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:77",
+                "text": "lit. Noah was of five hundred years",
+                "anchorWord": 7
+              },
+              {
+                "id": "eng:78",
+                "text": "Gr. Sem, Arm. Sem",
+                "anchorWord": 13
+              },
+              {
+                "id": "eng:79",
+                "text": "Gr. Cham, Arm. K’am",
+                "anchorWord": 14
+              },
+              {
+                "id": "eng:80",
+                "text": "Gr. Iapheth, Arm. Habet’",
+                "anchorWord": 16
+              }
+            ],
+            "classical": []
+          }
         }
       ]
     },
@@ -1192,7 +2294,11 @@
           "armenian": "Եւ եղաւ երբ սկսաւ մարդիկն բազմանալ երկիրի վրայ, եւ դուստրներ ծնան անոնց։",
           "english": "And it happened when it began [for] men to multiply on [the] earth, and daughters were born to them.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1200,7 +2306,11 @@
           "armenian": "Տեսած Աստուծոյ որդիներուն մարդուն դուստրները թէ գեղեցիկ էին, առին իրենց կանայք ամէնքնէն զոր ընտրեցին։",
           "english": "The sons of God having seen the daughters of man that they were beautiful, they took to them women from all whom they chose.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1208,7 +2318,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը. «Պիտի չի մնար Իմ ոգիս այդ մարդուն յաւիտեան, վասն ըլլալու ատոնց մարմին. եւ պիտի ըլլան ատոնց օրերը հարիւր քսան տարի»։",
           "english": "And [the] Lord God says, “My spirit will not stay in that man forever, because of those ones’ being flesh; and those ones’ days will be [one] hundred twenty years.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1216,7 +2330,11 @@
           "armenian": "Եւ հսկաներ կային երկիրի վրայ այն օրերուն. եւ անկէ յետոյ, երբ կը մտնէին Աստուծոյ որդիները մարդուն դուստրներուն, եւ ծնան իրենց որդիներ, անոնք էին հսկաները որ [էին] յաւիտենից անուանի այրերը։",
           "english": "And there were giants on [the] earth in those days: and after that, when the sons of God entered to the daughters of man, and bore to them sons, they were the giants who from [the] ages [were] renowned men.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1224,7 +2342,11 @@
           "armenian": "Եւ երբ տեսաւ Տէր Աստուածը թէ բազմացան մարդուն չարիքը երկիրի վրայ. եւ ամէն ոք կը խորհէր իր սիրտին խնամով չարիքի ամէն օրերը։",
           "english": "And when [the] Lord God saw that evils of man multiplied on the earth: and everyone meditated upon in his heart with attention on evils in all days.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1232,7 +2354,11 @@
           "armenian": "Եւ ստրջացաւ Աստուած որ արարեց մարդը երկիրի վրայ, եւ մտախոհ եղաւ իր սիրտին։",
           "english": "And God regretted that He created the man on earth, and became pensive in His heart.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1240,7 +2366,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը. «Պիտի ջնջեմ ամէն մարմին զոր արարեցի երկիրի երեսէն, մարդէն մինչեւ անասունին, եւ սողուններէն մինչիւ երկինքի թռչուններուն, զի բարկացայ որ արարեցի զանոնք»։",
           "english": "And [the] Lord God says, “I will efface all flesh that I created from [the] face of [the] earth, from man until beast, from reptiles until birds of [the] heavens, for I am angered that I created them.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1248,7 +2378,11 @@
           "armenian": "Բայց Նոյը գտաւ շնորհք Տիրոջ Աստուծոյն առաջ։",
           "english": "But Noah found grace before [the] Lord God.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "heading",
@@ -1262,7 +2396,17 @@
           "armenian": "Եւ ասիկա են Նոյին ծնունդները. Նոյը արդար կատարեալ այր [մըն] էր իր ազգին այն ատէն, եւ հաճոյ եղաւ Նոյը Աստուծայ։",
           "english": "And these are [the] births of Noah: Noah was a righteous, perfect man in his nation thence, and he was pleasant to God.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:81",
+                "text": "or completed",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1270,7 +2414,11 @@
           "armenian": "Եւ ծնաւ Նոյը երեք որդիներ, Սէմ, Քամ, Յաբէթ։",
           "english": "And Noah begot three sons, Shem, Ham, Japheth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1278,7 +2426,11 @@
           "armenian": "Եւ ապատանեցաւ երկիրը Աստուծոյն առաջ, եւ լեցուեցաւ երկիրը անիրաւութիւններով։",
           "english": "And [the] earth was corrupted before God, and [the] earth was filled with injustices.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1286,7 +2438,11 @@
           "armenian": "Եւ տեսաւ Տէր Աստուածը երկիրը, եւ ապականած էր, զի ապականեց ամէն մարմին իր ճանապարհը երկիրի վրայ։",
           "english": "And [the] Lord God saw [the] earth, and it was corrupted: for all flesh corrupted its way on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1294,7 +2450,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը Նոյին. «Ժամանակը ամէն մարդուն հասած է Իմ առաջս, զի լեցուեցաւ երկիրը անիրաւութիւններով անոնցմէ. եւ ահա Ես պիտի ապականեմ զանոնք եւ երկիրը։",
           "english": "And [the] Lord God says to Noah, “[The] time [has] arrived for all man before me, for [the] earth is filled with injustices from them: and behold I will corrupt them and [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1302,7 +2462,23 @@
           "armenian": "Հիմա արարէ՛ դուն քեզի տապան [մը] քառակուսի փայտերէն, խորշեր խորշեր պիտի շինես տապանը, եւ նաւթով պիտի ծեփես զայն ներսին եւ արտաքին։",
           "english": "Now, you, make for you an ark from four-cornered woods, compartment [by] compartment you will make the ark, and with naphta you will plaster it inside and outside.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:18",
+                "text": "գրաբար. գործես, եւ նորէն ուրտեղ որ կը գրուի այսպէս",
+                "anchorWord": 12
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:82",
+                "text": "or pitch",
+                "anchorWord": 21
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1310,7 +2486,11 @@
           "armenian": "Եւ այսպէս պիտի արարեց տապանը. երեք հարիւր կանգուն երկայնութիւնը տապանին, եւ յիսուն կանգուն լայնութիւնը, եւ երեսուն կանգուն բարձրութիւնը։",
           "english": "And this way you will create the ark: of three hundred cubits [the] length of the ark, and of fifty cubits the width, and of thirty cubits the height.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1318,7 +2498,17 @@
           "armenian": "Քաղելով պիտի գործես տապանը, եւ մէկ կանգուն պիտի կատարես զայն վերեւէն, եւ տապանին դուռը կողմէն պիտի արարես. ներքնատուններ եւ միջատուններ եւ վերնատուններ պիտի շինես անոր։",
           "english": "With gathering you will build the ark, and into one cubit you will complete it from above, and [the] doors of the ark you will create from [the] side: you will make ground floors and middle floors and upper floors for it.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:83",
+                "text": "lit. work",
+                "anchorWord": 5
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1326,7 +2516,11 @@
           "armenian": "Եւ ահա ես պիտի ածեմ ջրոյ ջրհեղեղ երկիրի վրայ, ապականել ամէն մարմին որու մէջ կենդանի շունչ երկիքի ներքեւը. եւ ինչ որ ըլլայ երկիրի վրայ՝ պիտի սատկի։",
           "english": "And behold I will bring on [a] flood of water on [the] earth, to corrupt all flesh in which is the living breath under [the] heavens: and whatever may be on [the] earth; it shall perish.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1334,7 +2528,11 @@
           "armenian": "Եւ պիտի դնեմ իմ ուխտս քեզի հետ. եւ պիտի մտնես տապանին դուն եւ քու որդիներդ եւ քու կինդ եւ քու որդիներուդ կանայքը քեզի հետ։",
           "english": "And I will put my covenant with you: and you will enter to the ark, you and your sons and your wife and wives of your sons with you.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1342,7 +2540,11 @@
           "armenian": "Եւ ամէն անասուններէ եւ ամէն գազաններէ եւ ամէն մարմինէ՝ երկու երկու ամէնէն պիտի մուծանես տապանին բուծանել քեզի հետ. արու եւ էգ պիտի ըլլան։",
           "english": "And from all animals and from all beasts and from all flesh; two [by] two from all you will bring in to the ark to nourish with you: they will be male and female.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1350,7 +2552,11 @@
           "armenian": "Ամէն հաւու թռչուններէ ըստ ազգի, եւ ամէն անասուններէ ըստ ազգի, եւ ամէն երկիրի սողուններէ ըստ իրենց ազգի. երկու երկու ամէնէն պիտի մտնեն դէպի քեզ կերակրել քեզի հետ արու եւ էգ։",
           "english": "From all the fowl birds according to [their] kind, and from all the animals according to [their] kind, and from all the reptiles of [the] earth according to their kind: two [by] two from all they will enter toward you to eat with you male and female.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1358,7 +2564,17 @@
           "armenian": "Եւ դուն պիտի առնես քեզի ամէն կերակուրներէն զոր պիտի ուտէք, եւ պիտի ժողովես դուն դէպի քեզ, եւ պիտի ըլլայ քեզի եւ անոնց կերակուր»։",
           "english": "And you will take to you[rself] from all foods that you [all] will eat, and you will gather toward you[rself], and it will be for you and for them food.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:84",
+                "text": "italicized for emphasis; verbs in Armenian usually have the personal pronoun embedded in the verb, but here it is specifically uttered, which implies emphasis on the subject",
+                "anchorWord": 16
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1366,7 +2582,11 @@
           "armenian": "Եւ ըրաւ Նոյը ամէնը զոր միանգամ պատուիրեց անոր Տէր Աստուածը, նոյնպէս նաեւ ըրաւ։",
           "english": "And Noah did all that [the] Lord God ordered once to him, the same way he also did.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },
@@ -1385,7 +2605,22 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը Նոյին. «Մտի՛ր դուն եւ քու ամէն տունդ տապանին, զի քեզ տերայ արդար իմ առջեւս այդ ազգիդ։",
           "english": "And [the] Lord God says to Noah, “Enter, you and all your house into that ark: for I saw you righteous before me in your generation.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:85",
+                "text": "or that",
+                "anchorWord": 25
+              },
+              {
+                "id": "eng:86",
+                "text": "Arm. uses the same word ազգ azk for what is translated in this translation as kind, nation, and generation",
+                "anchorWord": 26
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1393,7 +2628,23 @@
           "armenian": "Եւ ամէն սուրբ անասուններէն մուծանէ քեզի հետ եօթ-եօթ արու եւ էգ, եւ ամէն անասուններէն որ սուրբ չեն՝ երկու-երկու արու եւ էգ։",
           "english": "And from all [the] clean animals bring in with you seven [by] seven male and female, and from all the animals that are not clean; two [by] two male and female.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:19",
+                "text": "յունարէն. καθαρῶν (մաքուր)",
+                "anchorWord": 3
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:87",
+                "text": "or holy",
+                "anchorWord": 5
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1401,7 +2652,11 @@
           "armenian": "Եւ երկինքի սուրբ թռչուններէն՝ եօթ-եօթ արու եւ էգ. եւ թռչուններէն որ սուրբ չեն՝ երկու-երկու արու եւ էգ, զաւակ բուծանել ամէն երկիրի վրայ։",
           "english": "And from the clean birds of [the] heavens; seven [by] seven male and female: and from [the] birds that are not clean; two [by] two male and female, to nourish offspring on all [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1409,7 +2664,22 @@
           "armenian": "Եւ եօթը օր ալ եւս, եւ Ես պիտի ածեմ անձրեւ երկիրի վրայ քառասուն տիւ եւ քառասուն գիշեր, եւ պիտի ջնջեմ ամէն հասակ զոր արարեցի երկիրի երեսէն»։",
           "english": "And also another seven day[s], and I will bring on rain upon [the] earth forty day[s] and forty night[s], and I will efface all stature that I have created from [the] face of [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:88",
+                "text": "or again",
+                "anchorWord": 2
+              },
+              {
+                "id": "eng:89",
+                "text": "explicitly rendered, see note 80",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1417,7 +2687,11 @@
           "armenian": "Եւ ըրաւ  Նոյը ամէնը զոր միանգամ պատուիրեց անոր Տէր Աստուածը։",
           "english": "And Noah did all that [the] Lord God once commanded to him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1425,7 +2699,17 @@
           "armenian": "Նոյը վեց հարիւր տարուայ էր, եւ ջուրին ջրհեղեղ եղաւ երկիրի վրայ։",
           "english": "Noah was six hundred years old, and [the] flood of the waters was on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:90",
+                "text": "see note 74",
+                "anchorWord": 6
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1433,7 +2717,11 @@
           "armenian": "Եւ մտաւ Նոյը եւ իր որդիները եւ անոր կինը եւ անոր որդիներուն կանայքը անոր հետ տապանին վասն հեղեղի ջուրերը։",
           "english": "And Noah entered and his sons and his wife and his sons’ wives with him into the ark because of [the] flood of the waters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1441,7 +2729,11 @@
           "armenian": "Եւ սուրբ թռչուններէն, եւ թռչուններէն որ սուրբ չեն, եւ սուրբ անասուններէն, եւ անասուններէն որ սուրբ չեւ, եւ ամէն սողուններէն որ կը սողին երկիրի վրայ։",
           "english": "And from [the] clean birds, and from [the] birds that were not clean, and from [the] clean animals, and from [the] animals which are not clean, and from all [the] reptiles that creep on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1449,7 +2741,11 @@
           "armenian": "Երկու երկու մտան դէպի Նոյին տապանին այնտեղ՝ արու եւ էգ, որպէս պատուիրեց անոր Տէր Աստուածը։",
           "english": "Two [by] two they entered unto Noah into [the] ark there; male and female, as [the] Lord God commanded to him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1457,7 +2753,11 @@
           "armenian": "Եւ եղաւ եօթը օրէն յետոյ, եւ ջուր ջրհեղեղին եղաւ երկիրի վրայ։",
           "english": "And it happened after seven days, and [the] water of the flood was on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1465,7 +2765,11 @@
           "armenian": "Վեղհարիւրորդ տարուան Նոյին կեանքին, երկրորդ ամսուան քսան եւ եօթը ամսուն, նաեւ պատրուեցան ամէն բազում անդունդքին աղբիւրները, եւ երկինքի սահանքը բացուեցաւ։",
           "english": "In the six hundredth year of Noah’s life, in the second month on the twenty and seventh of the month, also all the springs of the many depths tore, and the flows of [the] heavens opened.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1473,7 +2777,11 @@
           "armenian": "Եւ եղաւ անձրեւ երկիրի վրայ քառասուն տիւ եւ քառասուն գիշիեր։",
           "english": "And rain was on [the] earth forty days and forty nights.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1481,7 +2789,11 @@
           "armenian": "Այն օրուան Նոյը մտաւ, Սէմը, Քամը, Յաբեթը, Նոյին որդիները, եւ Նոյին կինը, եւ անոր որդիներուն երեք կանայքը անոր հետ տապանին մէջ այնտեղ։",
           "english": "On that day Noah entered, Shem, Ham, Japheth, [the] sons of Noah, and Noah’s wife, and [the] three wives of his sons with him into [the] ark there.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1489,7 +2801,11 @@
           "armenian": "Անոնք եւ ամէն գազանները ըստ ազգի, եւ ամէն անասուն ըստ իրենց ազգի, եւ ամէն սողուն շարժուն երկիրի վրայ ըստ իրենց ազգի, եւ ամէն հաւ թռչուն ըստ իր ազգի։",
           "english": "They and all beasts according to [the] kind, and every animal according to their kind, and every reptiles moving on [the] earth according to their kind, and every fowl bird according to its kind.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1497,7 +2813,11 @@
           "armenian": "Մտան դէպի Նոյին տապանին մէջ այնտեղ երկու-երկու ամէն մարմինէն որուն մէջ է կենդանի շունչ։",
           "english": "They entered unto Noah into [the] ark there two [by] two from all flesh in which is the living breath.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1505,7 +2825,11 @@
           "armenian": "Եւ [անոնք] որոնք մտած էին, արու եւ էգ ամէն մարմինէն կը մտնէին, որպէս Աստուած պատուիրեց Նոյին. եւ փակեց Տէր Աստուածը անոր դուրսէն տապանին։",
           "english": "And [they] that had entered; male and female from all flesh they were entering, as God commanded to Noah, and [the] Lord God shut from outside of him the ark.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1513,7 +2837,17 @@
           "armenian": "Եւ եղաւ ջրհեղեղը քառասուն տիւ եւ քառասուն գիշեր երկիրի վրայ. եւ բազմացաւ ջուրը եւ վերցուց տապանը եւ բարձրացաւ երկիրէն։",
           "english": "And the flood happened forty days and forty nights on [the] earth: and the water was multiplied and it lifted the ark and rose above [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:91",
+                "text": "roots in Arm. literally mean “became high” (բարձր partsr [high] + -անալ -anal [ichoative verb ending]); same wherever “rose” or “rise” is used",
+                "anchorWord": 24
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1521,7 +2855,17 @@
           "armenian": "Եւ զօրացաւ ջուրը եւ շատ բազմացաւ երկիրի վրայ, եւ կը սրջէր տապանը ջրերուն վրայ։",
           "english": "And the water strengthened and multiplied greatly on [the] earth, and the ark was roaming on [the] waters.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:20",
+                "text": "գրաբար. յոյժ",
+                "anchorWord": 5
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1529,7 +2873,17 @@
           "armenian": "Եւ սաստկացաւ ջուրը շատ-շատ երկիրի վրայ, եւ կը ծածկէր բարձր լեռները որոնք երկինքի ներքինն էին։",
           "english": "And the water grew severe very greatly on [the] earth, and was covering all [the] high mountains that were under [the] heavens.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:92",
+                "text": "one word in Arm.",
+                "anchorWord": 5
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1537,7 +2891,11 @@
           "armenian": "Տասնըհինգ կանգուն բարձրացաւ ջուրը վերին, եւ ծածկեց ամէն լեռները։",
           "english": "The water rose fifteen cubits above, and it covered all [the] mountains.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1545,7 +2903,11 @@
           "armenian": "Եւ մեռաւ ամէն շարժուն մարմին երկիրի վրայ, թռչուններու եւ անասուններու եւ գազաններու, եւ ամէն սողուն զեռուն երկիրի վրայ, եւ ամէն մարդ։",
           "english": "And all moving flesh died on [the] earth, of birds and of animals and of beasts: and every creeping reptile on [the] earth, and every man.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1553,7 +2915,11 @@
           "armenian": "Ամէնը որ կենդանի շունչ ունէր իր ռունգերուն մէջ, եւ ամէն ինչ որ ցամաքի վրայ էր՝ մեռաւ։",
           "english": "All that had living breath in its nostrils, and everything that was on the land; died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1561,7 +2927,11 @@
           "armenian": "Եւ ջնջեց ամէն հասակ որ երկիրի երեսին վրայ էր, մարդէ մինչեւ անասուն եւ սողուններէ մինչեւ երկինքի թռչուններու, եւ ջնջուեցան երկիրէն։ Եւ մնաց միայն Նոյը եւ [անոնք] որոնք անոր հետն էին տապանին այնտեղ։",
           "english": "And He effaced all stature that was on [the] earth, from man until animal and from reptiles until birds of [the] heavens, and they were effaced from [the] earth. And only Noah remained and [those] who were with him on [the] ark there.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1569,7 +2939,11 @@
           "armenian": "Եւ բարձրացաւ ջուրը երկիրի վրայ հարիւր եւ յիսուն օր։",
           "english": "And the water rose on [the] earth [one] hundred and fifty days.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },
@@ -1588,7 +2962,11 @@
           "armenian": "Եւ յիշեց Աստուած Նոյը եւ ամէն գազանները եւ ամէն անասունները եւ ամէն թռչունները որ անոր հետն էին տապանին այնտեղ, եւ ածեց Աստուած հողմ [մը] երկիրի վրայ, եւ դադրեցաւ ջուրը։",
           "english": "And God remembered Noah and all [the] beasts and all [the] animals and all [the] birds that were with him on [the] ark there, and God brought on [a] wind on [the] earth, and the water ceased.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1596,7 +2974,11 @@
           "armenian": "Եւ խցուեցան անդունդքին աղբիւրները եւ երկինքի սահանքը, եւ արգիլուեցաւ անձրեւը երկինքէն։",
           "english": "And [the] springs of [the] depths were plugged and [the] cascades of [the] heavens, and the rain of [the] heavens were hindered.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1604,7 +2986,17 @@
           "armenian": "Եւ կը զիջանէր տակաւ, կ՚երթար ջուրը եւ կը թուլնար երկիրէն եւ կը նուազէր ջուրը հարիւր եւ յիսուն օրէն յետոյ։",
           "english": "And it was yielding little by little, the water was going and was weakening from [the] earth and the water was lessening after [one] hundred and fifty days.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:93",
+                "text": "one word in Arm.",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1612,7 +3004,11 @@
           "armenian": "Եւ նստաւ տապանը եօթերորդ ամսուան քսասեօթին ամսուն Արարատ լեռներուն։",
           "english": "And the ark sat in the seventh month on the twenty and seventh of the month on the mountains of Ararat.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1620,7 +3016,11 @@
           "armenian": "Եւ ջուրը կ՚երթար եւ կը նուազէր մինչեւ տասներորդ ամիսը. իսկ տասնըմէկերորդ ամուան, որ առաջին օրն էր ամսուն՝ երեւցան լեռներուն գլուխները։",
           "english": "And the water was going and was lessening until the tenth month: besides in the eleventh month, which was on [the] first day of the month, [the] heads of mountains appeared.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1628,7 +3028,11 @@
           "armenian": "Եւ եղաւ քառասուն օրէն յետոյ Նոյը բացաւ տապանին պատուհանը զոր արարեց։",
           "english": "And it happened after forty day[s] Noah opened [the] window of the ark that he created.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1636,7 +3040,11 @@
           "armenian": "Եւ արձակեց ագռաւը, եւ ելաւ եւ այնտեղէն չվերադարձաւ մինչեւ ջրոյն ցամաքելուն երկիրէն։",
           "english": "And he released the crow, and it exited and from there it did not return until the drying up of the water from the earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1644,7 +3052,17 @@
           "armenian": "Եւ արձակեց աղաւնին անոր ետքը տեսնել թէ ցածցուցե՞ր եղած կ՚ըլլայ ջուրը երկիրի երեսէն։",
           "english": "And he released the dove after him to see if the water would be lowered from [the] face of [the] earth?",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:94",
+                "text": "or with it",
+                "anchorWord": 7
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1652,7 +3070,17 @@
           "armenian": "Եւ գտած չըլլալով աղաւնւոյն հանգիստ իր ոտքերուն՝ վերադարձաւ այնտեղէն դէպի անոր տապանին այնտեղ. զի ջուրը դեռ ունէր ամէն երկիրի երեսը. եւ ձգտեց ձեռքը եւ ընդունեցաւ զայն, եւ առաւ զայն այնտեղէն դէպի իրեն տապանին այնտեղ։",
           "english": "And having not found for the dove repose for its feet; it returned from there unto him into the ark there: for the water still had all the face of [the] earth: and he extended the hand and accepted it, and took it from there to him into the ark.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:95",
+                "text": "plural in Arm.",
+                "anchorWord": 29
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1660,7 +3088,17 @@
           "armenian": "Եւ դադրեցաւ եօթը օր եւս, եւ վերադարձաւ արձակեց աղաւնին տապանէն այն ատենէն։",
           "english": "And he ceased for seven more days, and returned [and] released the dove from the ark there.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:21",
+                "text": "կամ դարձեալ",
+                "anchorWord": 7
+              }
+            ],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1668,7 +3106,11 @@
           "armenian": "Եւ վերադարձաւ դէպի անոր աղաւնին իրիկուան, եւ ունէր ձիթենւոյ շիւղի տերեւ [մը] իր բերանին. եւ գիտցաւ Նոյը, թէ ցածցած են ջուրերը երկիրէն։",
           "english": "And the dove returned to him toward the evening, and it had [an] olive tree twig leaf in its mouth: and Noah knew that the waters have lowered from [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1676,7 +3118,23 @@
           "armenian": "Եւ դադրեցաւ եօթը օր եւս, եւ դարձեալ արձակեց աղաւնին, եւ ոչ եւս աւելցաւ վերադառնալ դէպի անոր։",
           "english": "And he ceased for seven more days, and again he released the dove, and did not continue more to return to him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:22",
+                "text": "կամ շարունակեց",
+                "anchorWord": 13
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:96",
+                "text": "lit. add",
+                "anchorWord": 17
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1684,7 +3142,11 @@
           "armenian": "Եւ եղաւ վեց հարիւր առաջին տարի Նոյին կեանքին, առաջին ամսուան որ առաջին օրն էր անսուն, նուազեց ջուրը երկիրի երեսէն. եւ բացաւ Նոյը տապանին ձեղունը զոր արարեց, եւ տեսաւ որ նուազեր էր ջուրը երկիրի երեսէն։",
           "english": "And it happened in [the] six hundred and first year of Noah’s life, in the first month that was [the] first day of the month, the water lessened from [the] face of [the] earth: and Noah opened the ceiling of the ark that he created, and he saw that the water had lessened from [the] face of [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1692,7 +3154,11 @@
           "armenian": "Իսկ երկրորդ ամսուան, որ քսան եւ եօթը օրն էր ամսուն՝ ցամաքեցաւ երկիրը։",
           "english": "Besides in the second month, that was [the] twentieth and seventh day of the month; [the] earth dried up.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1700,7 +3166,11 @@
           "armenian": "Եւ խօսեցաւ Տէր Աստուածը Նոյին հետ եւ կ՚ըսէ.",
           "english": "And [the] Lord God spoke with Noah and says:",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1708,7 +3178,11 @@
           "armenian": "«Ելիր տապանէն այնտեղէն դուն եւ քու կինդ եւ քու որդիներդ եւ քու որդիներուդ կանայք քեզի հետ։",
           "english": "“Exit from [the] ark thence you and your wife and your sons and [the] wives of your sons with you.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1716,7 +3190,11 @@
           "armenian": "Եւ ամէն գազանները որ քեզի հետ են, եւ ամէն մարմին թռչուններէն մինչեւ անասունները. եւ երկիրի ամէն սողուն զերուն հանէ քեզի հետ, եւ պիտի զեռան երկիրի վրայ. եւ աճեցէք եւ բազմացէք երկիրի վրայ»։",
           "english": "And all beasts that are with you, and all flesh from birds until animals, and every creeping reptile of [the] earth draw out with you, and they shall swarm on [the] earth: and [you all,] increase and be multiplied on [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1724,7 +3202,11 @@
           "armenian": "Եւ ելաւ Նոյը եւ անոր կինը եւ անոր որդիները եւ անոր որդիներուն կանայքը անոր հետ։",
           "english": "And Noah exited and his wife and his sons and [the] wives of his sons with him.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1732,7 +3214,11 @@
           "armenian": "Եւ ամէն գազանները եւ ամէն շարժուն սողուն եւ ամէն թռչուն երկիրէն ըստ իրենց ազգի ելան տապանէն այնտեղ։",
           "english": "And all beasts and every moving reptile and every bird from [the] earth according to their kind exited from [the] ark thence.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "heading",
@@ -1746,7 +3232,27 @@
           "armenian": "Եւ շինեց Նոյը սեղան [մը] Աստուծոյ, եւ առաւ ամէն սուրբ անասունները եւ ամէն սուրբ թռչունները, եւ հանեց ողջակէզ սեղանին վրայ։",
           "english": "And Noah built [an] altar to God, and took from all clean animals and all clean birds, and he offered a whole burnt offering on the altar.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:97",
+                "text": "lit. table",
+                "anchorWord": 5
+              },
+              {
+                "id": "eng:98",
+                "text": "lit. drew out",
+                "anchorWord": 20
+              },
+              {
+                "id": "eng:99",
+                "text": "one word in Arm.",
+                "anchorWord": 24
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1754,7 +3260,43 @@
           "armenian": "Եւ հոտոտեցաւ Տէր Աստուածը անուշ հոտին։ Եւ կ՚ըսէ Տէր Աստուածը՝ ածեալ մտքով. «Ոչ եւս պիտի աւելցնեմ անիծել երկիրը վասն մարդու գործերուն, զի մարդու միտքը հաստատեալ է չարի խնամք իր մանկութենէ. հիմա ոչ եւս պիտի աւելցնեմ հարկանել ամէն կենդանի մարմին որպէս ըրի։",
           "english": "And [the] Lord God smelled the sweet smell. And [the] Lord God says; with driven mind, “I will not again continue to curse [the] earth because of works of man, for [the] mind of man is firmed in care of evil from his youth: now not again will I continue to strike all living flesh as I did.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [
+              {
+                "id": "arm:23",
+                "text": "կամ պիտի շարունակեմ",
+                "anchorWord": 16
+              },
+              {
+                "id": "arm:24",
+                "text": "կամ պիտի շարունակեմ",
+                "anchorWord": 35
+              }
+            ],
+            "english": [
+              {
+                "id": "eng:100",
+                "text": "or pleasant",
+                "anchorWord": 7
+              },
+              {
+                "id": "eng:101",
+                "text": "lit. add",
+                "anchorWord": 21
+              },
+              {
+                "id": "eng:102",
+                "text": "plural in Arm.",
+                "anchorWord": 33
+              },
+              {
+                "id": "eng:103",
+                "text": "lit. add",
+                "anchorWord": 50
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1762,7 +3304,11 @@
           "armenian": "Այսուհետեւ ամէն օրերու երկիրի՝ սերմն ու հունձք, ցուրտ ու տօթ, ամառն ու գարուն, տիւ եւ գիշեր պիտի չդադրին»։",
           "english": "Henceforth in all days of [the] earth; seed and harvest, cold and heat, summer and spring, day and night they shall not cease.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },
@@ -1781,7 +3327,11 @@
           "armenian": "Եւ օրհնեց Աստուած Նոյը եւ անոր որդիները, եւ կ՚ըսէ անոնց. «Աճեցէք եւ բազմացէք եւ լցէք երկիրը եւ տիրեցէք ատոր։",
           "english": "And God blessed Noah and his sons, and says, “[You all,] increase and be multiplied and fill [the] earth and lord over that.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1789,7 +3339,11 @@
           "armenian": "Եւ ձեր ահը եւ երկիւղը պիտի ըլլայ ամէն երկիրի գազաններու վրայ, եւ ամէն երկինքի թռչուններու վրայ, եւ ամէն երկիրի զեռուններու վրայ, եւ ամէն ծովու ձուկերու վրայ, զորոնք ձեր ձեռքին տակ տուի։",
           "english": "And your dread and fear shall be on all beasts of [the] earth, and on all birds of [the] heavens, and on all reptiles of [the] earth, and on all fish of [the] sea, that I gave you under your hand.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1797,7 +3351,11 @@
           "armenian": "Եւ ամէն զեռուն որ կենդանի է՝ ձեզի պիտի ըլլայ կերակուրի. իբրեւ խոտի բանջարը տուի ձեզի ամէնը։",
           "english": "And every reptile that is living; for you [all] it will be for food: as vegetable of grass I gave to you [all] all [things].",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1805,7 +3363,17 @@
           "armenian": "Բայց շունչի արեամբ միս պիտի չուտէք։",
           "english": "But meat with blood of breath [you all,] do not eat.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:104",
+                "text": "or soul",
+                "anchorWord": 6
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1813,7 +3381,11 @@
           "armenian": "Քանզի նաեւ ձեր շունչի արիւնը պիտի խնդրեմ. ձեռքերէն ամէն գազաններու պիտի խնդրեմ զայն եւ մարդու ձեռքերէն. այրին ձերքերուն իր եղբօրը շունչ պիտի խնդրեմ։",
           "english": "Because also your blood of breath will I request: out of [your] hands of all beasts will I request it, and out of [the] hands of man: out of the hands of [a] man will I request [the] breath of his brother.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1821,7 +3393,17 @@
           "armenian": "Ով որ կը հեղու մարդու արիւնը, փոխանակ անոր արիւնի պիտի հեղուի անոր արիւնը, զի Աստուծոյ պատտերին արարեցի Ես մարդը։",
           "english": "Whoever sheds the [the] blood of man, instead of his blood, his blood will be shed, for in [the] image of God I made man.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:105",
+                "text": "as in, the other’s",
+                "anchorWord": 12
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1829,7 +3411,11 @@
           "armenian": "Իսկ դուք աճեցէք եւ բազմացէք եւ լցէք երկիրը, եւ բազմացէք ատոր վրայ»։",
           "english": "Instead you [all] increase and be multiplied and fill [the] earth, and be multiplied on that.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1837,7 +3423,11 @@
           "armenian": "Եւ խօսեցաւ Տէր Աստուածը Նոյին հետ եւ անոր որդիներուն հետ որ անոր հետն էին եւ կ՚ըսէ.",
           "english": "And [the] Lord God spoke with Noah and his sons who were with him and says:",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1845,7 +3435,17 @@
           "armenian": "«Եւ ահաւասիկ Ես կը հաստատեմ իմ ուխտս ձեզի հետ, եւ ձեր զաւակին ձեզմէ յետոյ։",
           "english": "“And behold I firm my covenant with you [all], and with your child after you.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:106",
+                "text": "in the sense of “offspring”",
+                "anchorWord": 13
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1853,7 +3453,11 @@
           "armenian": "Եւ ամէն կենդանի շունչի հետ որ ձեզի հետ են, թռչուններէ եւ անասուններէ եւ ամէն երկիրի գազաններէն որ ձեզի հետ [են], եւ ամէնէն որ ելան տապանէն այնտեղ, եւ ամէն երկիրի անասուններէն։",
           "english": "And with all living breath that are with you, from birds and from animals and from beasts of [the] earth that [are] with you, and from all that exited out of [the] ark thence, and from all animals of [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1861,7 +3465,11 @@
           "armenian": "Եւ պիտի հաստատեմ իմ ուխտս ձեզի հետ. եւ ոչ եւս պիտի մեռնի ամէն մարմին ջրհեղեղ [մը], եւ ոչ եւս պիտի ըլլայ ջուրերու ջրհեղեղ [մը] ապականել ամէն երկիրը»։",
           "english": "And I will firm my covenant with you [all]: and not again will all flesh die from [a] flood, and not again [a] flood of waters happen to corrupt all [the] earth.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1869,7 +3477,11 @@
           "armenian": "Եւ կ՚ըսէ Տէր Աստուածը Նոյին. «Այս է ուխտին նշանը զոր Ես պիտի տամ իմ եւ ձեր միջեւ, եւ ամէն կենդանի շունչի մէջ որ ձեզի հետ է, յաւիտենից ազգերու։",
           "english": "And [the] Lord God says to Noah, “This is [a] sign of the covenant that I will give between me and you [all], and in [the] midst of all living breath that is with you [all], into generations of [the] ages.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1877,7 +3489,11 @@
           "armenian": "Իմ աղեղս պիտի դնեմ ամպերուն, եւ յաւիտենական նշանակի պիտի ըլլայ իմ եւ ամէն երկիրի միջեւ ուխտին։",
           "english": "I will put my bow in [the] clouds, and it will be for an eternal mark of the covenant between me and all [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1885,7 +3501,11 @@
           "armenian": "Եւ գումարելը ինծի ամպերը երկիրի վրայ պիտի ըլլայ, պիտի երեւի իմ աղեղս ամպերուն։",
           "english": "And accumulating [the] clouds on the earth to me will happen, and my bow will appear in [the] clouds.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1893,7 +3513,17 @@
           "armenian": "Եւ պիտի յիշեմ իմ ուխտս որ իմ եւ ձեր միջեւ[ն է], եւ ամէն կենդանի շունչին մէջ ամէն մարմինի. եւ ոչ եւս պիտի ըլլայ ջրհեղեղ տապալելու ամէն մարմին։",
           "english": "And I will remember my covenant that [is] between me and you [all], and in [the] midst of all living breath in all flesh: and not again will [a] flood be to make perish all flesh.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:107",
+                "text": "one word in Arm.",
+                "anchorWord": 34
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1901,7 +3531,11 @@
           "armenian": "Եւ պիտի ըլլայ իմ աղեղս ամպերուն, եւ պիտի տեսնամ՝ յիշել յաւիտենական ուխտը իմ մէջս եւ ամէն կենդանի շունչի մէջ ամէն մարմինի որ երկիրի վրայ է»։",
           "english": "And my bow will be in [the] clouds, and I will see: remembering the eternal covenant in [the] midst of me and [the] midst of all living breath in all flesh that is on [the] earth.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1909,7 +3543,11 @@
           "armenian": "Եւ Աստուած կ՚ըսէ Նոյին. «Այս է ուխտին նշանը զոր ուխտըցի Ես իմ եւ ձեր միջեւ, եւ ամէն մարմինի մէջ որ երկիրի վրայ է»։",
           "english": "And God says to Noah, “This is [a] sign of the covenant that I vowed between me and you [all], and in [the] midst of all flesh that is on [the] earth.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "heading",
@@ -1923,7 +3561,22 @@
           "armenian": "Եւ էին Նոյին որդիները որ ելան տապանէն այնտեղի, Սէմ, Քամ, Յաբէջ. Քամը Քանանին հայրն էր։",
           "english": "And [the] sons of Noah who exited from [the] ark there were, Shem, Ham, Japheth: Ham was [the] father of Canaan.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:108",
+                "text": "see notes 74-76",
+                "anchorWord": 15
+              },
+              {
+                "id": "eng:109",
+                "text": "Gr. Chanaan, Arm. K’anan",
+                "anchorWord": 21
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1931,7 +3584,11 @@
           "armenian": "Այս երեքը Նոյին որդիներն էին, եւ ասոնցմէ սփռեցան ամէն երկիրի վրայ։",
           "english": "These three were [the] sons of Noah, and from these they were scattered on all [the] earth.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1939,7 +3596,17 @@
           "armenian": "Եւ սկսաւ Նոյը, հողագործ այր [մը], երկիրը գործել. եւ տնկեց այգի [մը]։",
           "english": "And Noah began, a farmer, working the ground: and he planted [a] vineyard.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:110",
+                "text": "lit. soil-worker",
+                "anchorWord": 5
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1947,7 +3614,17 @@
           "armenian": "Եւ խմեց գինիէն եւ արբեցաւ, եւ մերկացաւ իր տանը մէջ։",
           "english": "And he drank out of the wine and he was drunk, and became naked in his house.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:111",
+                "text": "one word in Arm.",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1955,7 +3632,11 @@
           "armenian": "Եւ տեսաւ Քամը, Քանանին հայրը, իր հօրը մերկութիւնը եւ ելաւ պատմեց իր երկու եղբայրներուն դուրսը։",
           "english": "And Ham, father of Canaan, saw his father’s nakedness and exited [and] told his two brothers outside.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1963,7 +3644,17 @@
           "armenian": "Եւ Սեմի եւ Յաբէթի հանդերձ առած, դրին երկուքին դեկներուն վրայ, եւ գացին ետ-ետ եւ ծածկեցին իրենց հօրը մերկութիւնը. եւ իրենց երեսները ետեւին ընդդէմ ունէին, եւ իրենց հօրը մերկութիւնը չտեսան։",
           "english": "And Shem and Japheth having taken a garment, they put [it] on both shoulders, and went and covered their father’s nakedness: and they had their faces opposite of [the] behind, and they did not see their father’s nakedness.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:112",
+                "text": "or backs",
+                "anchorWord": 14
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1971,7 +3662,11 @@
           "armenian": "Եւ սթափեցաւ Նոյը գինիէն այնտեղէն իրմէ, եւ գիտցաւ ինչ ըրաւ անոր հետ իր կրտսեր որդին, եւ կ՚ըսէ.",
           "english": "And Noah awoke from his wine thence, and he knew what his younger son did with him, and he says,",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1979,7 +3674,17 @@
           "armenian": "«Անիծեալ Քանան, մանուկ, եւ ծառայ պիտի ըլլայ իր եղբայրներուն»։",
           "english": "“Cursed Canaan, child, he will be [a] servant to his brothers.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [
+              {
+                "id": "eng:113",
+                "text": "in the sense of “young person”",
+                "anchorWord": 3
+              }
+            ],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1987,7 +3692,11 @@
           "armenian": "Եւ կ՚ըսէ. «Օրհնեալ Տէր Աստուածը, Աստուած Սէմին, եւ Քանան անոր ծառան պիտի ըլլայ։",
           "english": "And he says, “Blessed [is the] Lord God, God of Shem, and Canaan will be his servant.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -1995,7 +3704,11 @@
           "armenian": "Աստուած պիտի նդարձակէ Յաբէթին, եւ պիտի բնակէ Սէմին տանը, եւ Քանանը անոնց ծառան պիտի ըլլայ»։",
           "english": "God will expand Japheth, and He will dwell in the house of Shem, and Canaan will be their servant.”",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -2003,7 +3716,11 @@
           "armenian": "Եւ ապրեցաւ Նոյը ջրհեղեղին յետոյ երեք հարիւր եւ յիսուն տարի։",
           "english": "And Noah lived after the flood three hundred and fifty years.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         },
         {
           "kind": "verse",
@@ -2011,7 +3728,11 @@
           "armenian": "Եւ եղան ամէն օրերը Նոյին ինը հարիւր եւ յիսուն տարի, եւ մեռաւ։",
           "english": "And all [the] days of Noah were nine hundred and fifty years, and he died.",
           "classical": "",
-          "footnotes": []
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          }
         }
       ]
     },

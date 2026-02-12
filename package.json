@@ -17,5 +17,8 @@
     "svelte-check": "^4",
     "typescript": "^5",
     "vite": "^6"
+  },
+  "dependencies": {
+    "@dnd-kit-svelte/svelte": "^0.1.6"
   }
 }

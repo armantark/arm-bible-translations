@@ -42,6 +42,38 @@ async function handleApi(req: Request): Promise<Response | null> {
     });
   }
 
+  /* POST /api/books — create a new book file */
+  if (path === '/api/books' && req.method === 'POST') {
+    try {
+      const raw = await req.text();
+      const parsed = JSON.parse(raw) as { id?: string };
+      const bookId = parsed.id;
+      if (!bookId || !/^[a-z0-9_-]+$/.test(bookId)) {
+        return new Response(JSON.stringify({ error: 'Invalid book id' }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      const filePath = join(DATA_DIR, `${bookId}.json`);
+      if (existsSync(filePath)) {
+        return new Response(JSON.stringify({ error: 'Book already exists' }), {
+          status: 409,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      writeFileSync(filePath, raw, 'utf-8');
+      return new Response(JSON.stringify({ ok: true }), {
+        status: 201,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    } catch {
+      return new Response(JSON.stringify({ error: 'Invalid JSON body' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+  }
+
   /* GET/PUT /api/books/:id */
   const match = path.match(/^\/api\/books\/([a-z0-9_-]+)$/);
   if (match) {

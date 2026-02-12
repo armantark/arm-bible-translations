@@ -49,3 +49,12 @@ export async function saveBook(book: BookData): Promise<void> {
   );
   if (!res.ok) throw new Error(`Failed to save book ${book.id}: ${res.statusText}`);
 }
+
+export async function createBook(book: BookData): Promise<void> {
+  const res = await fetchWithRetry(`${API_BASE}/books`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(book, null, 2),
+  });
+  if (!res.ok) throw new Error(`Failed to create book ${book.id}: ${res.statusText}`);
+}

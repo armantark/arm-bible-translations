@@ -20,11 +20,24 @@
   - Column visibility toggles (Armenian/English/Classical)
 - Production Bun server created.
 - `svelte-check` passes with 0 errors, Vite build succeeds.
+- Next-session fix pack implemented and verified:
+  - Reorder mutation/undo reliability improved (`applyBookMutation` snapshot path + robust DnD index resolution).
+  - Per-verse poetry toggle moved away from drag handle conflict; section poetry toggle made inline and usable.
+  - Sidebar footer overflow resolved for gear + display-language controls.
+  - Floating edit FAB now uses Material Symbols `edit_square` icon (consistent across both modes, yellow when active).
+  - Poetry rendering updated to clause-based line splitting with hanging indent CSS and left-aligned poetry text.
+  - DOCX importer now captures paragraph indentation metadata and stores per-verse `indentLevel` when present.
+  - `python3 scripts/import_docx.py` re-run; `data/*.json` regenerated with imported indent metadata.
+  - Column header scroll bleed-through resolved by restructuring layout (headers fixed outside scroll area; only verse grid scrolls).
+- Root `README.md` added with setup/install instructions, command reference, architecture summary, API routes, data model example, and workflow guidance.
+- Added root `LICENSE` with split licensing:
+  - MIT for code
+  - CC0 1.0 for translation/content data and documentation contributions
+- Updated `README.md` with non-binding attribution request and explicit license/scope notes.
 
 ## Remaining
 - End-to-end editing test in browser (browser MCP not connected for automated test).
-- Footnote editing UI (data model supports it, UI not yet built).
-- Heading editing support.
+- Locale placeholder translations remain in non-English locale files (poetry strings at minimum).
 - Genesis Chapter 10 has empty content (placeholder in source DOCX).
 - Isaiah content merged into Wisdom of Solomon (DOCX structural mismatch).
 - Export-to-DOCX feature for print workflow.

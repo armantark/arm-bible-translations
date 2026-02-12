@@ -1,9 +1,18 @@
 /* ── Data model for the Armenian Bible translation editor ── */
 
-export interface Footnote {
-  readonly id: string;
-  marker: string;
+export type UILanguage = 'english' | 'armenian' | 'classical';
+
+export interface WordFootnote {
+  id: string;
   text: string;
+  /** 1-based word index in the verse text */
+  anchorWord: number;
+}
+
+export interface VerseFootnotes {
+  armenian: WordFootnote[];
+  english: WordFootnote[];
+  classical: WordFootnote[];
 }
 
 export interface VerseItem {
@@ -12,7 +21,11 @@ export interface VerseItem {
   armenian: string;
   english: string;
   classical: string;
-  footnotes: Footnote[];
+  footnotes: VerseFootnotes;
+  /** When true, this verse is part of a poetry section (alternating indentation). */
+  poetry?: boolean;
+  /** Optional imported paragraph indent level from DOCX (q-like override). */
+  indentLevel?: number;
 }
 
 export interface HeadingItem {
@@ -55,4 +68,13 @@ export function isVerse(item: ChapterItem): item is VerseItem {
 
 export function isHeading(item: ChapterItem): item is HeadingItem {
   return item.kind === 'heading';
+}
+
+/* ── i18n helpers ── */
+
+export function bookDisplayName(
+  name: BookName,
+  lang: UILanguage,
+): string {
+  return name[lang] || name.english;
 }

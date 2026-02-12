@@ -1,0 +1,50 @@
+Armenian Bible Translations Editor
+Copyright (c) 2026 Arman Tarkhanian
+
+Split license model:
+
+1) Code license (MIT)
+2) Content/data/documentation dedication (CC0 1.0 Universal)
+
+This license declaration applies only to original contributions in this repository.
+Underlying scripture/source materials may have separate rights status depending on jurisdiction and source edition.
+
+===============================================================================
+1) MIT License (Code)
+===============================================================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===============================================================================
+2) CC0 1.0 Universal (Content/Data/Documentation)
+===============================================================================
+
+To the extent possible under law, the authors have dedicated original
+translation/content data and documentation contributions in this repository to
+the public domain under CC0 1.0 Universal.
+
+You can copy, modify, distribute, and perform this material, even for
+commercial purposes, all without asking permission.
+
+Full legal code:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Human-readable deed:
+https://creativecommons.org/publicdomain/zero/1.0/
+

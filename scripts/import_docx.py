@@ -16,23 +16,164 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+WML = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+NS = {"w": WML}
 
-# ── DOCX paragraph extraction ──────────────────────────────────────
+# Footnote markers embedded in paragraph text:  \x00FN:<prefix>:<id>\x00
+# The NUL bytes ensure these never collide with real text or verse-number regex.
+FN_MARKER_RE = re.compile(r"\x00FN:([^:]+):(\d+)\x00")
 
 
-def extract_paragraphs(docx_path: Path) -> list[str]:
-    """Read plain-text paragraphs from a .docx file (stdlib only)."""
-    ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
-    with zipfile.ZipFile(docx_path) as zf:
-        xml_bytes = zf.read("word/document.xml")
-    root = ET.fromstring(xml_bytes)
-    result: list[str] = []
-    for para in root.findall(".//w:body/w:p", ns):
-        texts = [t.text or "" for t in para.findall(".//w:t", ns)]
-        line = "".join(texts).strip()
-        if line:
-            result.append(line)
+def _strip_markers(text: str) -> str:
+    """Remove all embedded footnote markers from text."""
+    return FN_MARKER_RE.sub("", text)
+
+
+def _parse_int(raw: str | None) -> int | None:
+    if raw is None:
+        return None
+    try:
+        return int(raw)
+    except ValueError:
+        return None
+
+
+def _paragraph_indent_level(para: ET.Element) -> int | None:
+    """Best-effort paragraph indent level from DOCX paragraph properties.
+
+    Returns:
+        1+ when indentation metadata is present, otherwise None.
+    """
+    ppr = para.find("w:pPr", NS)
+    if ppr is None:
+        return None
+    ind = ppr.find("w:ind", NS)
+    if ind is None:
+        return None
+
+    left_twips = (
+        _parse_int(ind.get(f"{{{WML}}}start"))
+        or _parse_int(ind.get(f"{{{WML}}}left"))
+        or 0
+    )
+    left_chars = (
+        _parse_int(ind.get(f"{{{WML}}}startChars"))
+        or _parse_int(ind.get(f"{{{WML}}}leftChars"))
+        or 0
+    )
+
+    level_from_twips = max(0, left_twips // 360)
+    level_from_chars = max(0, left_chars // 200)
+    level = max(level_from_twips, level_from_chars)
+    return level if level > 0 else None
+
+
+# ── DOCX paragraph + footnote extraction ──────────────────────────
+
+
+def _load_footnote_map(zf: zipfile.ZipFile) -> dict[int, str]:
+    """Parse word/footnotes.xml → {footnote_id: text}."""
+    if "word/footnotes.xml" not in zf.namelist():
+        return {}
+    fn_tree = ET.fromstring(zf.read("word/footnotes.xml"))
+    result: dict[int, str] = {}
+    for fn in fn_tree.findall(".//w:footnote", NS):
+        fn_id_str = fn.get(f"{{{WML}}}id")
+        fn_type = fn.get(f"{{{WML}}}type", "normal")
+        if not fn_id_str or fn_type in ("separator", "continuationSeparator"):
+            continue
+        texts = [t.text or "" for t in fn.findall(".//w:t", NS)]
+        text = "".join(texts).strip()
+        if text:
+            result[int(fn_id_str)] = text
     return result
+
+
+def extract_paragraphs(
+    docx_path: Path, prefix: str
+) -> tuple[list[tuple[str, int | None]], dict[str, str]]:
+    """Read paragraphs with inline footnote markers, plus a prefixed fn map.
+
+    Each footnote reference in the DOCX is replaced by a NUL-delimited marker
+    ``\\x00FN:<prefix>:<id>\\x00`` so that it flows harmlessly through the
+    verse-number regex split and can be extracted per-verse later.
+
+    Returns:
+        (paragraphs, fn_map)  where fn_map keys are ``prefix:id``.
+    """
+    with zipfile.ZipFile(docx_path) as zf:
+        doc_xml = zf.read("word/document.xml")
+        raw_fn = _load_footnote_map(zf)
+
+    fn_map: dict[str, str] = {f"{prefix}:{k}": v for k, v in raw_fn.items()}
+
+    doc_tree = ET.fromstring(doc_xml)
+    paragraphs: list[tuple[str, int | None]] = []
+
+    for para in doc_tree.findall(".//w:body/w:p", NS):
+        text = ""
+        for run in para.findall(".//w:r", NS):
+            fn_ref = run.find("w:footnoteReference", NS)
+            if fn_ref is not None:
+                fn_id = fn_ref.get(f"{{{WML}}}id")
+                if fn_id:
+                    text += f"\x00FN:{prefix}:{fn_id}\x00"
+            for t_elem in run.findall("w:t", NS):
+                text += t_elem.text or ""
+        line = text.strip()
+        indent_level = _paragraph_indent_level(para)
+        # Keep paragraphs that have real text (ignoring markers)
+        if _strip_markers(line):
+            paragraphs.append((line, indent_level))
+
+    return paragraphs, fn_map
+
+
+def _anchor_word_from_offset(text: str, offset: int) -> int:
+    """Convert a character offset into a 1-based word index."""
+    bounded_offset = max(0, min(offset, len(text)))
+    before = text[:bounded_offset].rstrip()
+    words = before.split()
+    return max(1, len(words))
+
+
+def _extract_footnotes(
+    text: str, fn_map: dict[str, str]
+) -> tuple[str, list[dict[str, object]]]:
+    """Strip markers and return (clean_text, anchored footnotes)."""
+    pieces: list[str] = []
+    anchors: list[tuple[str, str, int]] = []  # (key, fn_text, raw_offset)
+    last_idx = 0
+    clean_len = 0
+
+    for m in FN_MARKER_RE.finditer(text):
+        seg = text[last_idx : m.start()]
+        pieces.append(seg)
+        clean_len += len(seg)
+        key = f"{m.group(1)}:{m.group(2)}"
+        fn_text = fn_map.get(key, "")
+        if fn_text:
+            anchors.append((key, fn_text, clean_len))
+        last_idx = m.end()
+
+    tail = text[last_idx:]
+    pieces.append(tail)
+    raw_clean = "".join(pieces)
+    ltrim = len(raw_clean) - len(raw_clean.lstrip())
+    clean_text = raw_clean.strip()
+
+    anchored: list[dict[str, object]] = []
+    for key, fn_text, raw_offset in anchors:
+        adjusted_offset = max(0, raw_offset - ltrim)
+        anchor_word = _anchor_word_from_offset(clean_text, adjusted_offset)
+        anchored.append(
+            {
+                "id": key,
+                "text": fn_text,
+                "anchorWord": anchor_word,
+            }
+        )
+    return clean_text, anchored
 
 
 # ── Heuristic helpers ──────────────────────────────────────────────
@@ -40,21 +181,25 @@ def extract_paragraphs(docx_path: Path) -> list[str]:
 
 def is_chapter_number(text: str) -> int | None:
     """Return chapter number if the paragraph is just a standalone integer."""
-    m = re.fullmatch(r"\d{1,3}", text.strip())
+    m = re.fullmatch(r"\d{1,3}", _strip_markers(text).strip())
     return int(m.group()) if m else None
 
 
 def is_heading(text: str) -> bool:
     """Return True if a paragraph looks like a section heading (all-uppercase)."""
-    alpha = [c for c in text if c.isalpha()]
+    clean = _strip_markers(text)
+    alpha = [c for c in clean if c.isalpha()]
     return len(alpha) > 2 and all(c.isupper() for c in alpha)
 
 
 def split_verses(text: str) -> list[tuple[int, str]]:
     """Split a paragraph into (verse_number, verse_text) pairs.
 
-    Handles false-positive digit matches (e.g. "begot 3 sons") by
-    checking that verse numbers increase sequentially.
+    Verse text may still contain embedded footnote markers — they are
+    stripped later by ``_extract_footnotes``.
+
+    Handles false-positive digit matches by checking that verse numbers
+    increase sequentially (with a small forward-gap tolerance of ≤5).
     """
     tokens = re.split(r"(\d{1,3})\s+", text.strip())
     verses: list[tuple[int, str]] = []
@@ -63,7 +208,8 @@ def split_verses(text: str) -> list[tuple[int, str]]:
     while i < len(tokens) - 1:
         num = int(tokens[i])
         txt = tokens[i + 1].strip()
-        if expected is None or num == expected:
+        # Accept if: first verse, exact next, OR small forward gap (≤5)
+        if expected is None or (num >= expected and num <= expected + 5):
             verses.append((num, txt))
             expected = num + 1
         elif verses:
@@ -79,33 +225,40 @@ def split_verses(text: str) -> list[tuple[int, str]]:
 
 # ── Event-based paragraph stream ───────────────────────────────────
 
-Event = tuple[str, str | int]  # ('chapter', int) | ('heading', str) | ('text', str)
+ParagraphInfo = tuple[str, int | None]
+TextEvent = dict[str, object]
+Event = tuple[str, object]  # ('chapter', int) | ('heading', str) | ('text', TextEvent)
 
 
-def paragraphs_to_events(paragraphs: list[str]) -> list[Event]:
+def paragraphs_to_events(paragraphs: list[ParagraphInfo]) -> list[Event]:
     """Convert raw paragraphs into a tagged event stream."""
     events: list[Event] = []
-    for para in paragraphs:
+    for para, indent_level in paragraphs:
         ch = is_chapter_number(para)
         if ch is not None:
             events.append(("chapter", ch))
         elif is_heading(para):
             events.append(("heading", para))
         else:
-            events.append(("text", para))
+            events.append(("text", {"text": para, "indentLevel": indent_level}))
     return events
 
 
 # ── Multi-book parsing ─────────────────────────────────────────────
 
-ChapterData = dict[str, list[tuple[int, str]] | dict[int, str]]
+# verses value keeps text + optional indent metadata
+VersePayload = dict[str, object]  # { "text": str, "indentLevel": int | None }
+ChapterData = dict[str, list[tuple[int, str]] | dict[int, VersePayload]]
 BookChapters = dict[int, ChapterData]
 BookEntry = tuple[str, BookChapters]
 
 
-def parse_multibook(docx_path: Path) -> list[BookEntry]:
-    """Parse a DOCX into a list of (book_name, {ch_num: {headings, verses}})."""
-    paragraphs = extract_paragraphs(docx_path)
+def parse_multibook(docx_path: Path, prefix: str) -> tuple[list[BookEntry], dict[str, str]]:
+    """Parse a DOCX into a list of (book_name, {ch_num: {headings, verses}}).
+
+    Returns the book list and the footnote map (keyed as ``prefix:id``).
+    """
+    paragraphs, fn_map = extract_paragraphs(docx_path, prefix)
     events = paragraphs_to_events(paragraphs)
 
     books: list[BookEntry] = []
@@ -120,17 +273,15 @@ def parse_multibook(docx_path: Path) -> list[BookEntry]:
         typ, val = events[i]
 
         # ── Detect book boundary ──────────────────────────────────
-        # Pattern: HEADING followed immediately by a CHAPTER number
-        # that is ≤ the highest chapter seen so far (i.e. a restart).
         if typ == "heading" and isinstance(val, str):
             if i + 1 < len(events) and events[i + 1][0] == "chapter":
-                next_ch = events[i + 1][1]
-                assert isinstance(next_ch, int)
+                next_ch_raw = events[i + 1][1]
+                assert isinstance(next_ch_raw, int)
+                next_ch = next_ch_raw
                 if current_book_name == "" or next_ch <= max_ch:
-                    # Commit previous book
                     if current_book_name or current_chapters:
                         books.append((current_book_name, current_chapters))
-                    current_book_name = val
+                    current_book_name = _strip_markers(val)
                     current_chapters = {}
                     current_ch = None
                     max_ch = 0
@@ -145,7 +296,7 @@ def parse_multibook(docx_path: Path) -> list[BookEntry]:
                     current_ch, {"headings": [], "verses": {}}
                 )
                 heading_list: list[tuple[int, str]] = ch_data["headings"]  # type: ignore[assignment]
-                heading_list.append((next_verse, val))
+                heading_list.append((next_verse, _strip_markers(val)))
             i += 1
             continue
 
@@ -159,14 +310,21 @@ def parse_multibook(docx_path: Path) -> list[BookEntry]:
             continue
 
         # ── Verse text ────────────────────────────────────────────
-        if typ == "text" and isinstance(val, str) and current_ch is not None:
+        if typ == "text" and isinstance(val, dict) and current_ch is not None:
             ch_data = current_chapters.setdefault(
                 current_ch, {"headings": [], "verses": {}}
             )
-            verse_dict: dict[int, str] = ch_data["verses"]  # type: ignore[assignment]
-            for num, txt in split_verses(val):
-                verse_dict[num] = txt
-                last_verse = num
+            verse_dict: dict[int, VersePayload] = ch_data["verses"]  # type: ignore[assignment]
+            para_text_raw = val.get("text")
+            if isinstance(para_text_raw, str):
+                indent_raw = val.get("indentLevel")
+                indent_level = indent_raw if isinstance(indent_raw, int) else None
+                for num, txt in split_verses(para_text_raw):
+                    verse_dict[num] = {
+                        "text": txt,  # still has footnote markers
+                        "indentLevel": indent_level,
+                    }
+                    last_verse = num
 
         i += 1
 
@@ -174,7 +332,7 @@ def parse_multibook(docx_path: Path) -> list[BookEntry]:
     if current_book_name or current_chapters:
         books.append((current_book_name, current_chapters))
 
-    return books
+    return books, fn_map
 
 
 # ── Filter out empty / placeholder books ───────────────────────────
@@ -183,9 +341,11 @@ def parse_multibook(docx_path: Path) -> list[BookEntry]:
 def has_real_content(chapters: BookChapters) -> bool:
     """True if at least one verse has ≥10 characters of actual text."""
     for ch_data in chapters.values():
-        verse_dict: dict[int, str] = ch_data["verses"]  # type: ignore[assignment]
-        for txt in verse_dict.values():
-            if len(txt.strip()) >= 10:
+        verse_dict: dict[int, VersePayload] = ch_data["verses"]  # type: ignore[assignment]
+        for payload in verse_dict.values():
+            txt_raw = payload.get("text")
+            txt = txt_raw if isinstance(txt_raw, str) else ""
+            if len(_strip_markers(txt).strip()) >= 10:
                 return True
     return False
 
@@ -200,6 +360,7 @@ def make_book_id(name: str) -> str:
 def merge_chapters(
     arm_chs: BookChapters,
     eng_chs: BookChapters,
+    fn_map: dict[str, str],
 ) -> list[dict[str, object]]:
     """Merge Armenian and English chapter data into a single list."""
     all_ch_nums = sorted(set(arm_chs) | set(eng_chs))
@@ -213,8 +374,8 @@ def merge_chapters(
         eng_hdg: dict[int, str] = {v: t for v, t in eng["headings"]}  # type: ignore[union-attr]
         hdg_positions = sorted(set(arm_hdg) | set(eng_hdg))
 
-        arm_verses: dict[int, str] = arm["verses"]  # type: ignore[assignment]
-        eng_verses: dict[int, str] = eng["verses"]  # type: ignore[assignment]
+        arm_verses: dict[int, VersePayload] = arm["verses"]  # type: ignore[assignment]
+        eng_verses: dict[int, VersePayload] = eng["verses"]  # type: ignore[assignment]
         all_verses = sorted(set(arm_verses) | set(eng_verses))
 
         content: list[dict[str, object]] = []
@@ -233,16 +394,41 @@ def merge_chapters(
                 )
                 hdg_idx += 1
 
-            content.append(
-                {
-                    "kind": "verse",
-                    "number": v_num,
-                    "armenian": arm_verses.get(v_num, ""),
-                    "english": eng_verses.get(v_num, ""),
-                    "classical": "",
-                    "footnotes": [],
-                }
+            # Extract clean text + footnotes for each language
+            arm_payload = arm_verses.get(v_num, {"text": "", "indentLevel": None})
+            eng_payload = eng_verses.get(v_num, {"text": "", "indentLevel": None})
+            arm_text_raw_obj = arm_payload.get("text")
+            eng_text_raw_obj = eng_payload.get("text")
+            arm_text_raw = arm_text_raw_obj if isinstance(arm_text_raw_obj, str) else ""
+            eng_text_raw = eng_text_raw_obj if isinstance(eng_text_raw_obj, str) else ""
+            arm_clean, arm_fns = _extract_footnotes(arm_text_raw, fn_map)
+            eng_clean, eng_fns = _extract_footnotes(eng_text_raw, fn_map)
+            arm_indent = arm_payload.get("indentLevel")
+            eng_indent = eng_payload.get("indentLevel")
+            indent_level = (
+                arm_indent
+                if isinstance(arm_indent, int)
+                else eng_indent
+                if isinstance(eng_indent, int)
+                else None
             )
+
+            verse_item: dict[str, object] = {
+                "kind": "verse",
+                "number": v_num,
+                "armenian": arm_clean,
+                "english": eng_clean,
+                "classical": "",
+                "footnotes": {
+                    "armenian": arm_fns,
+                    "english": eng_fns,
+                    "classical": [],
+                },
+            }
+            if indent_level is not None:
+                verse_item["indentLevel"] = indent_level
+
+            content.append(verse_item)
 
         # Trailing headings
         while hdg_idx < len(hdg_positions):
@@ -265,6 +451,7 @@ def merge_chapters(
 def merge_and_write(
     arm_books: list[BookEntry],
     eng_books: list[BookEntry],
+    fn_map: dict[str, str],
     output_dir: Path,
 ) -> None:
     """Merge parallel book lists and write JSON files."""
@@ -277,7 +464,7 @@ def merge_and_write(
     count = min(len(arm_books), len(eng_books))
     if len(arm_books) != len(eng_books):
         print(
-            f"⚠  Book count mismatch: Armenian={len(arm_books)}, English={len(eng_books)}. "
+            f"\u26a0  Book count mismatch: Armenian={len(arm_books)}, English={len(eng_books)}. "
             f"Merging first {count}."
         )
 
@@ -285,13 +472,20 @@ def merge_and_write(
         arm_name, arm_chs = arm_books[idx]
         eng_name, eng_chs = eng_books[idx]
 
-        chapters = merge_chapters(arm_chs, eng_chs)
+        chapters = merge_chapters(arm_chs, eng_chs, fn_map)
         book_id = make_book_id(eng_name)
         total_verses = sum(
             1
             for ch in chapters
             for item in ch["content"]  # type: ignore[union-attr]
             if isinstance(item, dict) and item.get("kind") == "verse"
+        )
+        total_fns = sum(
+            len(fns.get("armenian", [])) + len(fns.get("english", [])) + len(fns.get("classical", []))  # type: ignore[union-attr]
+            for ch in chapters
+            for item in ch["content"]  # type: ignore[union-attr]
+            if isinstance(item, dict) and item.get("kind") == "verse"
+            for fns in [item.get("footnotes", {})]  # type: ignore[union-attr]
         )
 
         book = {
@@ -309,8 +503,8 @@ def merge_and_write(
             json.dumps(book, ensure_ascii=False, indent=2), encoding="utf-8"
         )
         print(
-            f"  ✓ {eng_name.title():40s} → {out_path.name:30s} "
-            f"({len(chapters)} ch, {total_verses} verses)"
+            f"  \u2713 {eng_name.title():40s} \u2192 {out_path.name:30s} "
+            f"({len(chapters)} ch, {total_verses} verses, {total_fns} footnotes)"
         )
 
 
@@ -328,13 +522,16 @@ if __name__ == "__main__":
             raise SystemExit(1)
 
     print("Parsing Armenian DOCX...")
-    arm_books = parse_multibook(arm_docx)
-    print(f"  Found {len(arm_books)} sections (before filtering)")
+    arm_books, arm_fn_map = parse_multibook(arm_docx, "arm")
+    print(f"  Found {len(arm_books)} sections, {len(arm_fn_map)} footnotes")
 
     print("Parsing English DOCX...")
-    eng_books = parse_multibook(eng_docx)
-    print(f"  Found {len(eng_books)} sections (before filtering)")
+    eng_books, eng_fn_map = parse_multibook(eng_docx, "eng")
+    print(f"  Found {len(eng_books)} sections, {len(eng_fn_map)} footnotes")
+
+    # Merge footnote maps
+    fn_map = {**arm_fn_map, **eng_fn_map}
 
     print("\nMerging and writing JSON files...")
-    merge_and_write(arm_books, eng_books, out_dir)
+    merge_and_write(arm_books, eng_books, fn_map, out_dir)
     print("\nDone! JSON files are in data/")

@@ -43,6 +43,38 @@ function bibleApiPlugin(): Plugin {
             return;
           }
 
+          // POST /api/books — create a new book file
+          if (url === '/api/books' && req.method === 'POST') {
+            let body = '';
+            req.on('data', (chunk: Buffer | string) => {
+              body += typeof chunk === 'string' ? chunk : chunk.toString();
+            });
+            req.on('end', () => {
+              try {
+                const parsed = JSON.parse(body) as { id?: string };
+                const bookId = parsed.id;
+                if (!bookId || !/^[a-z0-9_-]+$/.test(bookId)) {
+                  res.writeHead(400, { 'Content-Type': 'application/json' });
+                  res.end(JSON.stringify({ error: 'Invalid book id' }));
+                  return;
+                }
+                const filePath = join(dataDir, `${bookId}.json`);
+                if (existsSync(filePath)) {
+                  res.writeHead(409, { 'Content-Type': 'application/json' });
+                  res.end(JSON.stringify({ error: 'Book already exists' }));
+                  return;
+                }
+                writeFileSync(filePath, body, 'utf-8');
+                res.writeHead(201, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ ok: true }));
+              } catch {
+                res.writeHead(400, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Invalid JSON body' }));
+              }
+            });
+            return;
+          }
+
           // GET/PUT /api/books/:id
           const match = url.match(/^\/api\/books\/([a-z0-9_-]+)$/);
           if (match) {
