@@ -2,11 +2,14 @@
   import {
     chapterNumbers,
     currentChapter,
+    bookData,
     locale,
     editMode,
     addChapter,
+    deleteChapter,
     reorderChapters,
   } from '../lib/stores';
+  import { isVerse } from '../lib/types';
   import { DragDropProvider } from '@dnd-kit-svelte/svelte';
   import SortableItem from './SortableItem.svelte';
 
@@ -44,6 +47,26 @@
     return null;
   }
 
+  function chapterHasContent(chapterNumber: number): boolean {
+    if (!$bookData) return false;
+    const chapter = $bookData.chapters.find((c) => c.number === chapterNumber);
+    if (!chapter) return false;
+    return chapter.content.some((item) => {
+      if (isVerse(item)) {
+        return !!(item.armenian.trim() || item.english.trim() || item.classical.trim());
+      }
+      return !!(item.armenian.trim() || item.english.trim() || item.classical.trim());
+    });
+  }
+
+  function handleDeleteChapter(chapterNumber: number): void {
+    if ($chapterNumbers.length <= 1) return;
+    if (chapterHasContent(chapterNumber)) {
+      if (!window.confirm($locale.confirmDeleteChapter)) return;
+    }
+    deleteChapter(chapterNumber);
+  }
+
   function handleChapterDragEnd(event: {
     operation: {
       source: { id: string | number } | null;
@@ -78,6 +101,17 @@
         >
           {$locale.chapter} {num}
         </button>
+        {#if $editMode && $chapterNumbers.length > 1}
+          <button
+            class="x-delete-btn chapter-delete-btn"
+            type="button"
+            onclick={() => handleDeleteChapter(num)}
+            title={$locale.deleteChapter}
+            aria-label={$locale.deleteChapter}
+          >
+            x
+          </button>
+        {/if}
       </SortableItem>
     {/each}
   </DragDropProvider>

@@ -46,15 +46,15 @@ export const ARMENIAN_LOCALE: LocaleStrings = {
 
   addHeading: '+ Վերնագիր',
   addVerse: '+ Համար',
-  addChapter: '+ Chapter',  // TODO: translate
-  addBook: '+ Book',  // TODO: translate
+  addChapter: '+ Գլուխ',
+  addBook: '+ Գիրք',
   deleteHeading: 'Ջնջել վերնագիրը',
   deleteVerse: 'Ջնջել համարը',
-  deleteChapter: 'Delete chapter',  // TODO: translate
-  deleteBook: 'Delete book',  // TODO: translate
-  dragToReorder: 'Drag to reorder',  // TODO: translate
-  undo: 'Undo',  // TODO: translate
-  redo: 'Redo',  // TODO: translate
+  deleteChapter: 'Ջնջել գլուխը',
+  deleteBook: 'Ջնջել գիրքը',
+  dragToReorder: 'Քաշեցէ՛ք վերադասաւորելու համար',
+  undo: 'Յետարկել',
+  redo: 'Յառաջարկել',
 
   clickToEdit: '(Սեղմեցէ՛ք խմբագրելու համար)',
   addFootnote: '+ Ծանօթագրութիւն',
@@ -64,9 +64,14 @@ export const ARMENIAN_LOCALE: LocaleStrings = {
   cancelPick: 'Չեղարկել',
   clickWordToAttach: 'Սեղմեցէ՛ք այս սիւնակի որեւէ բառի վրայ՝ ծանօթագրութիւնը կապելու համար:',
 
-  poetryMode: 'Poetry',  // TODO: translate
-  poetryOn: 'Set poetry',  // TODO: translate
-  poetryOff: 'Unset poetry',  // TODO: translate
+  poetryMode: 'Տաղաչափութիւն',
+  poetryOn: 'Միացնել տաղաչափութիւնը',
+  poetryOff: 'Անջատել տաղաչափութիւնը',
+
+  confirmDeleteNonEmpty: 'Այս բաժինը տեքստ կը պարունակէ: Վստա՞հ էք որ կ՚ուզէք ջնջել:',
+  confirmDeleteChapter: 'Վստա՞հ էք որ կ՚ուզէք ջնջել այս գլուխը եւ իր ամբողջ բովանդակութիւնը:',
+  confirmDeleteBook: 'Վստա՞հ էք որ կ՚ուզէք ջնջել այս ամբողջ գիրքը: Այս գործողութիւնը անդառնալի է:',
+  editBookName: 'Խմբագրել գիրքի անունը',
 
   languageEnglish: 'Անգլերէն',
   languageArmenian: 'Հայերէն',

@@ -10,7 +10,7 @@ import type {
   HeadingItem,
 } from './types';
 import { isVerse } from './types';
-import { saveBook, createBook as createBookApi } from './api';
+import { saveBook, createBook as createBookApi, deleteBook as deleteBookApi } from './api';
 import { getLocale, type FootnoteDisplayMode } from './locales';
 import { hasRedo, hasUndo, pushSnapshot, redoSnapshot, undoSnapshot } from './undoStack';
 
@@ -179,6 +179,27 @@ export function redoLatest(): void {
   bookData.set(next);
   syncUndoState();
   scheduleAutoSave();
+}
+
+/* ── Book name mutation ── */
+
+export function updateBookName(
+  field: 'armenian' | 'english' | 'classical',
+  value: string,
+): void {
+  applyBookMutation((data) => ({
+    ...data,
+    name: { ...data.name, [field]: value },
+  }));
+  /* Also update the sidebar summary list */
+  const currentId = get(currentBookId);
+  if (currentId) {
+    books.update((list) =>
+      list.map((b) =>
+        b.id === currentId ? { ...b, name: { ...b.name, [field]: value } } : b,
+      ),
+    );
+  }
 }
 
 /* ── Verse/heading/content mutation helpers ── */
@@ -450,6 +471,27 @@ export function addChapter(): void {
   currentChapter.set(nextChapterNumber);
 }
 
+export function deleteChapter(chapterNumber: number): void {
+  const data = get(bookData);
+  if (!data) return;
+  if (data.chapters.length <= 1) return; /* don't delete the last chapter */
+
+  applyBookMutation((d) => {
+    const remaining = d.chapters.filter((c) => c.number !== chapterNumber);
+    const renumbered = remaining.map((c, idx) => ({ ...c, number: idx + 1 }));
+    return { ...d, chapters: renumbered };
+  });
+
+  /* Select closest valid chapter */
+  const nextData = get(bookData);
+  if (nextData && nextData.chapters.length > 0) {
+    const firstChapter = nextData.chapters[0];
+    if (firstChapter) {
+      currentChapter.set(firstChapter.number);
+    }
+  }
+}
+
 export function reorderChapters(fromIndex: number, toIndex: number): void {
   const current = get(currentChapter);
   let nextCurrent = current;
@@ -532,6 +574,20 @@ export async function createBook(): Promise<void> {
   currentChapter.set(1);
   isDirty.set(false);
   saveStatus.set('idle');
+}
+
+export async function deleteBook(bookId: string): Promise<void> {
+  await deleteBookApi(bookId);
+  books.update((list) => {
+    const next = list.filter((b) => b.id !== bookId);
+    persistBookOrder(next);
+    return next;
+  });
+  if (get(currentBookId) === bookId) {
+    currentBookId.set(null);
+    bookData.set(null);
+    currentChapter.set(1);
+  }
 }
 
 export function reorderBooks(fromIndex: number, toIndex: number): void {

@@ -367,6 +367,7 @@ body {
   cursor: pointer;
   transition: all var(--transition);
   font-family: var(--font-sans);
+  white-space: nowrap;
 }
 
 .chapter-btn:hover {
@@ -406,6 +407,7 @@ body {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-bottom: 32px;
 }
 
@@ -424,19 +426,91 @@ body {
   padding: 32px 40px;
 }
 
+.header-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-title-left {
+  min-width: 0;
+}
+
 .book-title {
   font-family: var(--font-serif);
   font-size: 28px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.book-title.editable {
+  cursor: text;
+  border-radius: 4px;
+  transition: background var(--transition);
+}
+
+.book-title.editable:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.book-title-input {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-dim);
+  border-radius: 4px;
+  padding: 2px 8px;
+  width: 100%;
+}
+
+.book-title-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15);
 }
 
 .book-subtitle {
   font-family: var(--font-armenian);
   font-size: 16px;
   color: var(--text-muted);
-  margin-bottom: 24px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.book-subtitle.editable {
+  cursor: text;
+  border-radius: 3px;
+  transition: background var(--transition);
+}
+
+.book-subtitle.editable:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.book-subtitle-input {
+  font-family: var(--font-armenian);
+  font-size: 16px;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-dim);
+  border-radius: 3px;
+  padding: 1px 6px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.book-subtitle-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15);
 }
 
 .chapter-heading {
@@ -444,9 +518,9 @@ body {
   font-size: 22px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ── Column headers ────────────────────────────────────────────── */
@@ -569,7 +643,7 @@ body {
 
 .verse-row-tools {
   position: absolute;
-  top: 4px;
+  top: -2px;
   right: 0;
   display: flex;
   align-items: center;
@@ -577,6 +651,11 @@ body {
   opacity: 0;
   transition: opacity var(--transition);
   z-index: 3;
+  background: var(--bg-primary);
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .verse-row:hover .verse-row-tools,
@@ -605,7 +684,7 @@ body {
   position: relative;
   min-height: 1.75em;
   display: flex;
-  gap: 0;
+  gap: 6px;
   align-items: flex-start;
   text-align: justify;
   hyphens: auto;
@@ -641,6 +720,45 @@ body {
   padding-top: 2px;
 }
 
+/* ── Copy verse button ──────────────────────────────────────── */
+.verse-cell {
+  position: relative;
+}
+
+.copy-verse-btn {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 2px;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.copy-verse-btn .material-symbols-outlined {
+  font-size: 14px;
+}
+
+.verse-cell:hover .copy-verse-btn {
+  opacity: 0.4;
+}
+
+.copy-verse-btn:hover {
+  opacity: 1 !important;
+  color: var(--accent);
+}
+
+.copy-verse-btn.copied {
+  opacity: 1 !important;
+  color: var(--success, #6cc070);
+}
+
 .verse-text {
   border-radius: 3px;
   padding: 1px 4px;
@@ -650,8 +768,10 @@ body {
   min-width: 0;
 }
 
+/* first-line-indent styles are set inline via firstLineIndentStyle() */
+
 .verse-word {
-  white-space: pre-wrap;
+  white-space: normal;
 }
 
 .word-anchor-btn {
@@ -847,6 +967,16 @@ body {
   flex: 1;
 }
 
+.sidebar-delete-btn {
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.sidebar-item-sortable:hover .sidebar-delete-btn {
+  opacity: 1;
+}
+
 .footnote-sortable {
   display: flex;
   align-items: flex-start;
@@ -971,6 +1101,16 @@ body {
 .sidebar-add-btn,
 .chapter-add-btn {
   width: 100%;
+}
+
+.chapter-delete-btn {
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.chapter-sortable:hover .chapter-delete-btn {
+  opacity: 1;
 }
 
 .fn-textarea {
@@ -1172,12 +1312,15 @@ body {
 
 .poetry-text {
   text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .poetry-line {
-  --poetry-base-indent: 2em;
-  padding-left: var(--poetry-base-indent);
-  text-indent: -2em;
+  --poetry-continuation-indent: 2em;
+  --poetry-hanging-offset: 2em;
+  padding-left: var(--poetry-continuation-indent);
+  text-indent: calc(-1 * var(--poetry-hanging-offset));
   text-align: left;
 }
 

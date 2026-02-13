@@ -14,5 +14,8 @@ dist/
 Krapar Asdvadzashouche Ashkharaparov/
 The Classical Armenian Bible in English/
 
+# Soft-deleted books (recoverable)
+data/.trash/
+
 # Bun is the package manager here
 package-lock.json

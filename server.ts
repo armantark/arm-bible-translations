@@ -11,6 +11,7 @@ import {
   readdirSync,
   existsSync,
   mkdirSync,
+  renameSync,
 } from 'node:fs';
 import { join, resolve } from 'node:path';
 
@@ -96,6 +97,21 @@ async function handleApi(req: Request): Promise<Response | null> {
       const body = await req.text();
       writeFileSync(filePath, body, 'utf-8');
       return new Response(JSON.stringify({ ok: true }), {
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    if (req.method === 'DELETE') {
+      if (existsSync(filePath)) {
+        const trashDir = join(DATA_DIR, '.trash');
+        if (!existsSync(trashDir)) mkdirSync(trashDir, { recursive: true });
+        renameSync(filePath, join(trashDir, `${bookId}.json`));
+        return new Response(JSON.stringify({ ok: true }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      return new Response(JSON.stringify({ error: 'Not found' }), {
+        status: 404,
         headers: { 'Content-Type': 'application/json' },
       });
     }

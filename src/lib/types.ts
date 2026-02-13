@@ -26,6 +26,8 @@ export interface VerseItem {
   poetry?: boolean;
   /** Optional imported paragraph indent level from DOCX (q-like override). */
   indentLevel?: number;
+  /** Optional imported DOCX first-line indent (em units, can be negative for hanging). */
+  firstLineIndent?: number;
 }
 
 export interface HeadingItem {

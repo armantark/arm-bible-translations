@@ -1,0 +1,23 @@
+---
+description: Never write or modify Armenian/Classical Armenian text in locale files
+globs: src/lib/locales/armenian.ts,src/lib/locales/classical.ts
+alwaysApply: false
+---
+
+# No Armenian Copy
+
+Claude cannot produce correct Armenian. Follow these rules strictly:
+
+- **Never write, modify, or translate Armenian or Classical Armenian text.** This includes both Western Armenian (armenian.ts) and Grabar (classical.ts).
+- **Never delete or overwrite existing Armenian text** in these files, even accidentally (e.g. via a full-file rewrite).
+- When adding new locale keys, use **English placeholder strings** with a `// TODO: translate` comment.
+- If you need to restore corrupted Armenian text, use `git checkout` to recover from version control.
+- Armenian translations must be provided by the user or by Gemini. Do not attempt them without explicit user approval.
+
+```typescript
+// GOOD - English placeholder with TODO
+confirmDelete: 'Are you sure?',  // TODO: translate
+
+// BAD - Attempting Armenian
+confirmDelete: 'Համozna...',
+```

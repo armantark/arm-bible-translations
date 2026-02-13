@@ -67,6 +67,11 @@ export const ENGLISH_LOCALE: LocaleStrings = {
   poetryOn: 'Set poetry',
   poetryOff: 'Unset poetry',
 
+  confirmDeleteNonEmpty: 'This item contains text. Are you sure you want to delete it?',
+  confirmDeleteChapter: 'Are you sure you want to delete this chapter and all its content?',
+  confirmDeleteBook: 'Are you sure you want to delete this entire book? This cannot be undone.',
+  editBookName: 'Edit book name',
+
   languageEnglish: 'English',
   languageArmenian: 'Armenian',
   languageClassical: 'Classical Armenian',

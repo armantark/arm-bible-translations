@@ -30,7 +30,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -114,13 +115,14 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
           "number": 8,
           "armenian": "Զանոնք ամէնը տուած ըստ թագաւորին հրամանի ժողովուրդին, եւ քահանաներուն եւ ղեւտացիներուն։ Եւ դարձեալ տուաւ Քեղկիայ եւ Զաքարիայ՝ քահանայապետներուն, եւ ժողովուրդին առաջնորդներուն, եւ քահանաներուն երկու հազար վեց հարիւր ոչխարներ։",
-          "english": "All these were given according to the order of the king to the people, and to the priests and to [the] Levites. And again he gave to Helkias and Zacharias, the  archpriests, and to [the] leaders of the people, and to the priests two thousand and six hundred sheep.",
+          "english": "All these were given according to the order of the king to the people, and to the priests and to [the] Levites. And again he gave to Helkias and Zacharias, the archpriests, and to [the] leaders of the people, and to the priests two thousand and six hundred sheep.",
           "classical": "",
           "footnotes": {
             "armenian": [],
@@ -180,14 +182,15 @@
         {
           "kind": "verse",
           "number": 10,
-          "armenian": "Եւ զայս ամէնը ըրած քահանաներէն, մեծապէս եւ ամէն զարմանազան վայելջութեամբ պատրաստեցին բաղարջակերաց  զատիկը։",
+          "armenian": "Եւ զայս ամէնը ըրած քահանաներէն, մեծապէս եւ ամէն զարմանազան վայելջութեամբ պատրաստեցին բաղարջակերաց զատիկը։",
           "english": "And all this being done by the priests, largely and with all wonderful decorum they readied the Passover of the unleavened bread.",
           "classical": "",
           "footnotes": {
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -311,7 +314,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -401,12 +405,13 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
           "number": 25,
-          "armenian": "Եւ Յովսիայի այս ամէն առաքինութիւններէն յետոյ՝ եկաւ Եգիպտացիներուն փարաւոն թագաւորը պատերազմելու  Կարքամուսի, Եփրատի կողմերուն. եւ ելաւ Յովսիա պատերազմելու ընդդէմ անոր։",
+          "armenian": "Եւ Յովսիայի այս ամէն առաքինութիւններէն յետոյ՝ եկաւ Եգիպտացիներուն փարաւոն թագաւորը պատերազմելու Կարքամուսի, Եփրատի կողմերուն. եւ ելաւ Յովսիա պատերազմելու ընդդէմ անոր։",
           "english": "And after all these virtues of Josiah; came [the] pharaoh king of [the] Egyptians to war in Carchemish, in [the] sides of [the] Euphrates; and Josiah went out against him.",
           "classical": "",
           "footnotes": {
@@ -424,7 +429,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -536,7 +542,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -584,7 +591,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -613,7 +621,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -637,7 +646,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -661,7 +671,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",

@@ -17,11 +17,14 @@ Each book file (`data/{book-id}.json`) contains:
     "number": 1,
     "content": [
       { "kind": "heading", "armenian": "...", "english": "...", "classical": "" },
-      { "kind": "verse", "number": 1, "armenian": "...", "english": "...", "classical": "", "footnotes": [], "indentLevel": 1 }
+      { "kind": "verse", "number": 1, "armenian": "...", "english": "...", "classical": "", "footnotes": [], "indentLevel": 1, "firstLineIndent": 1.0 }
     ]
   }]
 }
 ```
+
+## Hard Rules
+- **NEVER write Armenian or Classical Armenian text.** Claude/Codex cannot produce correct Armenian. When adding new locale keys to `armenian.ts` or `classical.ts`, use English placeholder strings with `// TODO: translate` comments. Never modify existing Armenian text. Armenian translations require explicit user approval and must be authored by the user or by Gemini.
 
 ## Key Patterns
 - **Immutable store updates:** `updateVerse()` in `stores.ts` produces new objects via spread.

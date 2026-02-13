@@ -58,3 +58,12 @@ export async function createBook(book: BookData): Promise<void> {
   });
   if (!res.ok) throw new Error(`Failed to create book ${book.id}: ${res.statusText}`);
 }
+
+export async function deleteBook(bookId: string): Promise<void> {
+  /* Soft delete: server moves the file to data/.trash/ */
+  const res = await fetchWithRetry(
+    `${API_BASE}/books/${encodeURIComponent(bookId)}`,
+    { method: 'DELETE' },
+  );
+  if (!res.ok) throw new Error(`Failed to delete book ${bookId}: ${res.statusText}`);
+}

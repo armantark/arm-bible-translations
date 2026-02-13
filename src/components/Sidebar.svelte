@@ -2,15 +2,17 @@
   import {
     books,
     currentBookId,
+    bookData,
     uiLanguage,
     locale,
     showOptions,
     editMode,
     createBook,
+    deleteBook,
     reorderBooks,
   } from '../lib/stores';
-  import { bookDisplayName } from '../lib/types';
-  import type { UILanguage } from '../lib/types';
+  import { bookDisplayName, isVerse } from '../lib/types';
+  import type { UILanguage, BookSummary } from '../lib/types';
   import { DragDropProvider } from '@dnd-kit-svelte/svelte';
   import SortableItem from './SortableItem.svelte';
 
@@ -39,6 +41,11 @@
     const id = String(idValue);
     if (!id.startsWith(BOOK_ITEM_ID_PREFIX)) return null;
     return id.slice(BOOK_ITEM_ID_PREFIX.length);
+  }
+
+  function handleDeleteBook(book: BookSummary): void {
+    if (!window.confirm($locale.confirmDeleteBook)) return;
+    void deleteBook(book.id);
   }
 
   function handleBookDragEnd(event: {
@@ -88,6 +95,17 @@
         >
           {bookDisplayName(book.name, $uiLanguage)}
         </button>
+        {#if $editMode}
+          <button
+            class="x-delete-btn sidebar-delete-btn"
+            type="button"
+            onclick={() => handleDeleteBook(book)}
+            title={$locale.deleteBook}
+            aria-label={$locale.deleteBook}
+          >
+            x
+          </button>
+        {/if}
       </SortableItem>
     {/each}
   </DragDropProvider>

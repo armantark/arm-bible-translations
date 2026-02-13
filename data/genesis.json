@@ -25,7 +25,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -49,7 +50,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -97,7 +99,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -114,18 +117,6 @@
         {
           "kind": "verse",
           "number": 8,
-          "armenian": "Եւ ըսաւ Աստուած. «Ժողովին ջուրերը որոնք երկինքի ներքեւն [են] մէկ ժողովի, եւ երեւի ցամաքը». եւ եղաւ այնպէս։ Եւ ժողովեցան ջուրերը, որոնք երկինքի ներքեւն [էին]՝ իրենց ժողովներուն, եւ երեւեցաւ ցամաքը:",
-          "english": "And God said, “May the waters that [are] under [the] heavens gather in one gathering, and may the land appear,” and it happened so. And the waters gathered, that [were] under [the] heavens; in its gatherings, and the land appeared.",
-          "classical": "",
-          "footnotes": {
-            "armenian": [],
-            "english": [],
-            "classical": []
-          }
-        },
-        {
-          "kind": "verse",
-          "number": 9,
           "armenian": "Եւ կոչեց Աստուած հաստատութիւնը Երկինք. եւ եղաւ երեկոյ, եւ եղաւ առաւօտ՝ օր երկրորդ:",
           "english": "And God called the firmament Heaven; and it became evening and it became morning, second day.",
           "classical": "",
@@ -137,6 +128,19 @@
         },
         {
           "kind": "verse",
+          "number": 9,
+          "armenian": "Եւ ըսաւ Աստուած. «Ժողովին ջուրերը որոնք երկինքի ներքեւն [են] մէկ ժողովի, եւ երեւի ցամաքը». եւ եղաւ այնպէս։ Եւ ժողովեցան ջուրերը, որոնք երկինքի ներքեւն [էին]՝ իրենց ժողովներուն, եւ երեւեցաւ ցամաքը:",
+          "english": "And God said, “May the waters that [are] under [the] heavens gather in one gathering, and may the land appear,” and it happened so. And the waters gathered, that [were] under [the] heavens; in its gatherings, and the land appeared.",
+          "classical": "",
+          "footnotes": {
+            "armenian": [],
+            "english": [],
+            "classical": []
+          },
+          "firstLineIndent": 1.0
+        },
+        {
+          "kind": "verse",
           "number": 10,
           "armenian": "Եւ կոչեց Աստուած ցամաքը Երկիր, եւ ժողովուած ջուրերը կոչեց Ծովեր. եւ տեսաւ Աստուած, որ բարի է:",
           "english": "And God called the land Earth, and [the] gatherings of the waters He called Seas: and God saw that it is good.",
@@ -145,7 +149,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -205,7 +210,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -306,7 +312,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -371,7 +378,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -401,7 +409,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -460,7 +469,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -507,7 +517,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -774,7 +785,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -916,7 +928,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1017,7 +1030,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1208,7 +1222,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1261,7 +1276,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1331,7 +1347,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1459,7 +1476,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1601,7 +1619,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1787,7 +1806,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1840,7 +1860,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1864,7 +1885,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1900,7 +1922,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1942,7 +1965,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -1984,7 +2008,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2026,7 +2051,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2068,7 +2094,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2110,7 +2137,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2164,7 +2192,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2200,7 +2229,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2275,7 +2305,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         }
       ]
     },
@@ -2298,7 +2329,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2406,7 +2438,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2620,7 +2653,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -2684,7 +2718,7 @@
         {
           "kind": "verse",
           "number": 5,
-          "armenian": "Եւ ըրաւ  Նոյը ամէնը զոր միանգամ պատուիրեց անոր Տէր Աստուածը։",
+          "armenian": "Եւ ըրաւ Նոյը ամէնը զոր միանգամ պատուիրեց անոր Տէր Աստուածը։",
           "english": "And Noah did all that [the] Lord God once commanded to him.",
           "classical": "",
           "footnotes": {
@@ -2966,7 +3000,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3032,7 +3067,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3146,7 +3182,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3170,7 +3207,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3252,7 +3290,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3331,7 +3370,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3427,7 +3467,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3576,7 +3617,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3606,7 +3648,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",
@@ -3720,7 +3763,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         },
         {
           "kind": "verse",

@@ -3,6 +3,7 @@
   import {
     editMode,
     currentChapter,
+    bookData,
     updateFootnotes,
     reorderFootnotes,
     footnoteDisplayMode,
@@ -52,22 +53,62 @@
 
   let editingField = $state<LangField | null>(null);
   let editValue = $state('');
+  let editDirty = $state(false);
   let editingFnLang = $state<LangField | null>(null);
   let editingFnIdx = $state<number>(-1);
   let fnEditValue = $state('');
   let pickingAnchor = $state<{ lang: LangField; idx: number } | null>(null);
+  let copiedLang = $state<LangField | null>(null);
+
+  async function copyVerseText(lang: LangField): Promise<void> {
+    const text = verse[lang];
+    if (!text) return;
+    // Strip newlines (manual poetry overrides) for a clean single-line copy
+    const clean = text.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
+    // Build attribution: --Book Chapter:Verse
+    const bookName = $bookData?.name?.[lang] || $bookData?.name?.english || '';
+    const chapter = $currentChapter;
+    const verseNum = verse.number;
+    const attribution = bookName ? ` --${bookName} ${chapter}:${verseNum}` : '';
+    const formatted = `\u201C${clean}\u201D${attribution}`;
+    await navigator.clipboard.writeText(formatted);
+    copiedLang = lang;
+    setTimeout(() => {
+      if (copiedLang === lang) copiedLang = null;
+    }, 1200);
+  }
 
   function startEdit(field: LangField): void {
     if (!$editMode) return;
     editingField = field;
-    editValue = verse[field];
+    editDirty = false;
+    const rawText = verse[field];
+    // In poetry mode, pre-populate with heuristic line breaks as \n
+    // so the user can freely add/remove them for precise control.
+    if (verse.poetry === true && !rawText.includes('\n')) {
+      const lines = poetryLines(rawText, field);
+      editValue = lines
+        .map((lineSegs) => lineSegs.map((s) => s.text).join(''))
+        .join('\n')
+        .trim();
+    } else {
+      editValue = rawText;
+    }
   }
 
   function commitEdit(): void {
     if (editingField) {
-      onUpdate(verse.number, editingField, editValue.trim());
+      // Do not persist auto-generated preview line breaks unless the user
+      // actually modified the textarea content.
+      if (editDirty) {
+        onUpdate(verse.number, editingField, editValue.trim());
+      }
       editingField = null;
     }
+  }
+
+  function markEditDirty(): void {
+    editDirty = true;
   }
 
   function handleKeydown(e: KeyboardEvent): void {
@@ -243,11 +284,18 @@
     return out;
   }
 
-  const ENGLISH_CLAUSE_BREAK_RE = /[.;:,!?]|\u2014/u;
-  const ARMENIAN_CLAUSE_BREAK_RE = /[.,:;!?։՝՞՜]/u;
+  // Strong punctuation indicates multi-couplet boundaries
+  const ENGLISH_STRONG_RE = /[.;:!?]|\u2014/u;
+  const ARMENIAN_STRONG_RE = /[.;:!?։]/u;
+  // All punctuation (including commas) — used for midpoint breaks
+  const ENGLISH_ANY_PUNCT_RE = /[.;:,!?]|\u2014/u;
+  const ARMENIAN_ANY_PUNCT_RE = /[.,:;!?։՝]/u;
 
-  function clauseBreakRegex(lang: LangField): RegExp {
-    return lang === 'english' ? ENGLISH_CLAUSE_BREAK_RE : ARMENIAN_CLAUSE_BREAK_RE;
+  function strongPunctRe(lang: LangField): RegExp {
+    return lang === 'english' ? ENGLISH_STRONG_RE : ARMENIAN_STRONG_RE;
+  }
+  function anyPunctRe(lang: LangField): RegExp {
+    return lang === 'english' ? ENGLISH_ANY_PUNCT_RE : ARMENIAN_ANY_PUNCT_RE;
   }
 
   function trimLineSegments(line: TextSegment[]): TextSegment[] {
@@ -258,31 +306,157 @@
     return line.slice(start, end);
   }
 
-  function poetryLines(text: string, lang: LangField): TextSegment[][] {
-    const parts = segments(text, lang);
-    const breakRe = clauseBreakRegex(lang);
-    const lines: TextSegment[][] = [];
-    let current: TextSegment[] = [];
+  /** Find the index (within `parts`) of the last real word segment. */
+  function lastWordIdx(parts: TextSegment[]): number {
+    for (let i = parts.length - 1; i >= 0; i -= 1) {
+      if (parts[i]?.isWord) return i;
+    }
+    return -1;
+  }
 
-    for (const seg of parts) {
-      current.push(seg);
-      if (seg.isWord && breakRe.test(seg.text)) {
-        const trimmed = trimLineSegments(current);
-        if (trimmed.length > 0) lines.push(trimmed);
-        current = [];
+  /**
+   * Find the word-segment index in `parts[start..end)` whose cumulative
+   * character position is closest to the character midpoint of that range.
+   * Only considers segments matching `re`.  Ignores the very last word
+   * (end-of-verse punctuation shouldn't trigger a break).
+   */
+  function nearestPunctToMid(
+    parts: TextSegment[],
+    start: number,
+    end: number,
+    re: RegExp,
+  ): number {
+    const lastWord = lastWordIdx(parts.slice(start, end));
+    let totalChars = 0;
+    for (let i = start; i < end; i += 1) totalChars += (parts[i]?.text ?? '').length;
+    const mid = totalChars / 2;
+
+    let cum = 0;
+    let bestIdx = -1;
+    let bestDist = Infinity;
+    for (let i = start; i < end; i += 1) {
+      cum += (parts[i]?.text ?? '').length;
+      const seg = parts[i];
+      if (!seg?.isWord) continue;
+      if (i - start === lastWord) continue; // skip last word
+      if (!re.test(seg.text)) continue;
+      const dist = Math.abs(cum - mid);
+      if (dist < bestDist) {
+        bestDist = dist;
+        bestIdx = i;
+      }
+    }
+    return bestIdx;
+  }
+
+  function poetryLines(text: string, lang: LangField): TextSegment[][] {
+    // Manual override: if the text has explicit newlines, use those
+    if (text.includes('\n')) {
+      const manualLines = text.split('\n').filter((l) => l.trim().length > 0);
+      const result: TextSegment[][] = [];
+      for (const line of manualLines) {
+        const segs = segments(line.trim(), lang);
+        const trimmed = trimLineSegments(segs);
+        if (trimmed.length > 0) result.push(trimmed);
+      }
+      if (result.length > 0) return result;
+    }
+
+    const parts = segments(text, lang);
+    const strong = strongPunctRe(lang);
+    const any = anyPunctRe(lang);
+    const lastWord = lastWordIdx(parts);
+
+    // 1. Collect strong-punctuation break indices (skip last word)
+    const strongBreaks: number[] = [];
+    for (let i = 0; i < parts.length; i += 1) {
+      const seg = parts[i];
+      if (!seg?.isWord || i === lastWord) continue;
+      if (strong.test(seg.text)) strongBreaks.push(i);
+    }
+
+    // 2. Build ranges separated by strong breaks
+    type Range = { start: number; end: number };
+    const ranges: Range[] = [];
+    let rangeStart = 0;
+    for (const bi of strongBreaks) {
+      ranges.push({ start: rangeStart, end: bi + 1 });
+      rangeStart = bi + 1;
+    }
+    if (rangeStart < parts.length) {
+      ranges.push({ start: rangeStart, end: parts.length });
+    }
+
+    // 3. For each range, find the weak punct nearest the midpoint
+    const allBreaks = new Set(strongBreaks);
+    for (const r of ranges) {
+      const midIdx = nearestPunctToMid(parts, r.start, r.end, any);
+      if (midIdx >= 0 && !allBreaks.has(midIdx)) {
+        allBreaks.add(midIdx);
       }
     }
 
-    const tail = trimLineSegments(current);
+    // 4. Build lines from sorted break indices
+    const sorted = [...allBreaks].sort((a, b) => a - b);
+    const lines: TextSegment[][] = [];
+    let lineStart = 0;
+    for (const bi of sorted) {
+      const line = trimLineSegments(parts.slice(lineStart, bi + 1));
+      if (line.length > 0) lines.push(line);
+      lineStart = bi + 1;
+    }
+    const tail = trimLineSegments(parts.slice(lineStart));
     if (tail.length > 0) lines.push(tail);
-    if (lines.length === 0) return [[{ text: '\u00A0', isWord: false, wordIndex: 0, footnotes: [] }]];
+
+    if (lines.length === 0) {
+      return [[{ text: '\u00A0', isWord: false, wordIndex: 0, footnotes: [] }]];
+    }
     return lines;
   }
 
+  /** Global line index drives alternation: even = left, odd = indented. */
   function poetryBaseIndentEm(lineIndex: number): number {
     const explicit = Math.max(0, Math.floor(verse.indentLevel ?? 0));
     const alternating = lineIndex % 2 === 1 ? 1 : 0;
     return 2 + (explicit + alternating) * 2;
+  }
+
+  function poetryContinuationIndentEm(lineIndex: number): number {
+    const base = poetryBaseIndentEm(lineIndex);
+    // Even-indexed lines (left-aligned) need extra indent for wrapped continuations
+    return lineIndex % 2 === 0 ? base + 2 : base;
+  }
+
+  function poetryHangingOffsetEm(lineIndex: number): number {
+    return lineIndex % 2 === 0 ? 4 : 2;
+  }
+
+  function poetryLineStyle(lineIndex: number): string {
+    return [
+      `--poetry-continuation-indent:${poetryContinuationIndentEm(lineIndex)}em`,
+      `--poetry-hanging-offset:${poetryHangingOffsetEm(lineIndex)}em`,
+    ].join(';');
+  }
+
+  function firstLineIndentEm(): number | null {
+    const raw = verse.firstLineIndent;
+    if (typeof raw !== 'number' || !Number.isFinite(raw)) return null;
+    const clamped = Math.max(-6, Math.min(6, raw));
+    if (Math.abs(clamped) < 0.01) return null;
+    return clamped;
+  }
+
+  function firstLineIndentStyle(): string | undefined {
+    if (verse.poetry === true) return undefined;
+    const indent = firstLineIndentEm();
+    if (indent === null) return undefined;
+    if (indent < 0) {
+      // Hanging indent: pad-left by |indent| so continuation lines are
+      // indented, then text-indent pulls the first line back to the left.
+      const abs = Math.abs(indent);
+      return `padding-left:${abs}em;text-indent:${indent}em;`;
+    }
+    return `text-indent:${indent}em;`;
   }
 
   function wordTooltip(lang: LangField, notes: WordFootnote[]): string {
@@ -366,29 +540,31 @@
 </script>
 
 <div class="verse-row {gridClass}">
-  <div class="verse-row-tools">
-    {#if $editMode && onTogglePoetry}
-      <button
-        class="poetry-toggle-btn verse-poetry-toggle-btn"
-        class:active={verse.poetry === true}
-        onclick={onTogglePoetry}
-        title={verse.poetry ? $locale.poetryOff : $locale.poetryOn}
-      >
-        {$locale.poetryMode}
-      </button>
-    {/if}
-    {#if canDelete}
-      <button
-        class="x-delete-btn"
-        type="button"
-        onclick={onDelete}
-        title={deleteTitle}
-        aria-label={deleteTitle}
-      >
-        x
-      </button>
-    {/if}
-  </div>
+  {#if ($editMode && onTogglePoetry) || canDelete}
+    <div class="verse-row-tools">
+      {#if $editMode && onTogglePoetry}
+        <button
+          class="poetry-toggle-btn verse-poetry-toggle-btn"
+          class:active={verse.poetry === true}
+          onclick={onTogglePoetry}
+          title={verse.poetry ? $locale.poetryOff : $locale.poetryOn}
+        >
+          {$locale.poetryMode}
+        </button>
+      {/if}
+      {#if canDelete}
+        <button
+          class="x-delete-btn"
+          type="button"
+          onclick={onDelete}
+          title={deleteTitle}
+          aria-label={deleteTitle}
+        >
+          x
+        </button>
+      {/if}
+    </div>
+  {/if}
   {#if showClassical}
     <div class="verse-col">
       <div class="verse-cell armenian-cell" lang="hy">
@@ -397,6 +573,7 @@
           <textarea
             class="verse-textarea"
             bind:value={editValue}
+            oninput={markEditDirty}
             onblur={commitEdit}
             onkeydown={handleKeydown}
             use:initTextarea
@@ -405,6 +582,8 @@
           <span
             class="verse-text"
             class:poetry-text={verse.poetry === true}
+            class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('classical')}
@@ -412,7 +591,7 @@
           >
             {#if verse.poetry}
               {#each poetryLines(verse.classical || '\u00A0', 'classical') as line, lineIdx}
-                <div class="poetry-line" style={`--poetry-base-indent:${poetryBaseIndentEm(lineIdx)}em;`}>
+                <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}
                     {#if seg.isWord}
                       {#if $editMode && pickingAnchor?.lang === 'classical'}
@@ -432,59 +611,50 @@
                         <span
                           class="verse-word"
                           class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                          title={seg.footnotes.length > 0 ? wordTooltip('classical', seg.footnotes) : ''}
-                        >
-                          {seg.text}
-                          {#if $footnoteDisplayMode === 'superscript'}
-                            {#each seg.footnotes as fn}
-                              <sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>
-                            {/each}
-                          {/if}
-                        </span>
+                          title={seg.footnotes.length > 0 ? wordTooltip('classical', seg.footnotes) : undefined}
+                        >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>{/each}{/if}</span>
                       {/if}
-                    {:else}
-                      <span>{seg.text}</span>
-                    {/if}
-                  {/each}
-                </div>
+                {:else}{' '}{/if}
               {/each}
-            {:else}
-              {#each segments(verse.classical || '\u00A0', 'classical') as seg}
-                {#if seg.isWord}
-                  {#if $editMode && pickingAnchor?.lang === 'classical'}
-                    <button
-                      class="word-anchor-btn verse-word"
-                      type="button"
-                      onclick={(e) => onWordClick(e, 'classical', seg.wordIndex)}
-                    >
-                      {seg.text}
-                      {#if $footnoteDisplayMode === 'superscript'}
-                        {#each seg.footnotes as fn}
-                          <sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>
-                        {/each}
-                      {/if}
-                    </button>
-                  {:else}
-                    <span
-                      class="verse-word"
-                      class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                      title={seg.footnotes.length > 0 ? wordTooltip('classical', seg.footnotes) : ''}
-                    >
-                      {seg.text}
-                      {#if $footnoteDisplayMode === 'superscript'}
-                        {#each seg.footnotes as fn}
-                          <sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>
-                        {/each}
-                      {/if}
-                    </span>
+            </div>
+          {/each}
+        {:else}
+          {#each segments(verse.classical || '\u00A0', 'classical') as seg}
+            {#if seg.isWord}
+              {#if $editMode && pickingAnchor?.lang === 'classical'}
+                <button
+                  class="word-anchor-btn verse-word"
+                  type="button"
+                  onclick={(e) => onWordClick(e, 'classical', seg.wordIndex)}
+                >
+                  {seg.text}
+                  {#if $footnoteDisplayMode === 'superscript'}
+                    {#each seg.footnotes as fn}
+                      <sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>
+                    {/each}
                   {/if}
-                {:else}
-                  <span>{seg.text}</span>
-                {/if}
-              {/each}
-            {/if}
+                </button>
+              {:else}
+                <span
+                  class="verse-word"
+                  class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
+                  title={seg.footnotes.length > 0 ? wordTooltip('classical', seg.footnotes) : undefined}
+                >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('classical', fn.id)}</sup>{/each}{/if}</span>
+              {/if}
+            {:else}{' '}{/if}
+          {/each}
+        {/if}
           </span>
         {/if}
+        <button
+          class="copy-verse-btn"
+          class:copied={copiedLang === 'classical'}
+          type="button"
+          title="Copy verse text"
+          onclick={(e) => { e.stopPropagation(); copyVerseText('classical'); }}
+        >
+          <span class="material-symbols-outlined">content_copy</span>
+        </button>
       </div>
       {#if showList('classical')}
         <div class="cell-footnotes">
@@ -556,6 +726,7 @@
           <textarea
             class="verse-textarea"
             bind:value={editValue}
+            oninput={markEditDirty}
             onblur={commitEdit}
             onkeydown={handleKeydown}
             use:initTextarea
@@ -564,6 +735,8 @@
           <span
             class="verse-text"
             class:poetry-text={verse.poetry === true}
+            class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('armenian')}
@@ -571,7 +744,7 @@
           >
             {#if verse.poetry}
               {#each poetryLines(verse.armenian || '\u00A0', 'armenian') as line, lineIdx}
-                <div class="poetry-line" style={`--poetry-base-indent:${poetryBaseIndentEm(lineIdx)}em;`}>
+                <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}
                     {#if seg.isWord}
                       {#if $editMode && pickingAnchor?.lang === 'armenian'}
@@ -591,19 +764,10 @@
                         <span
                           class="verse-word"
                           class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                          title={seg.footnotes.length > 0 ? wordTooltip('armenian', seg.footnotes) : ''}
-                        >
-                          {seg.text}
-                          {#if $footnoteDisplayMode === 'superscript'}
-                            {#each seg.footnotes as fn}
-                              <sup class="fn-sup" title={fn.text}>{footnoteNumber('armenian', fn.id)}</sup>
-                            {/each}
-                          {/if}
-                        </span>
+                          title={seg.footnotes.length > 0 ? wordTooltip('armenian', seg.footnotes) : undefined}
+                        >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('armenian', fn.id)}</sup>{/each}{/if}</span>
                       {/if}
-                    {:else}
-                      <span>{seg.text}</span>
-                    {/if}
+                    {:else}{' '}{/if}
                   {/each}
                 </div>
               {/each}
@@ -627,23 +791,23 @@
                     <span
                       class="verse-word"
                       class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                      title={seg.footnotes.length > 0 ? wordTooltip('armenian', seg.footnotes) : ''}
-                    >
-                      {seg.text}
-                      {#if $footnoteDisplayMode === 'superscript'}
-                        {#each seg.footnotes as fn}
-                          <sup class="fn-sup" title={fn.text}>{footnoteNumber('armenian', fn.id)}</sup>
-                        {/each}
-                      {/if}
-                    </span>
+                      title={seg.footnotes.length > 0 ? wordTooltip('armenian', seg.footnotes) : undefined}
+                    >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('armenian', fn.id)}</sup>{/each}{/if}</span>
                   {/if}
-                {:else}
-                  <span>{seg.text}</span>
-                {/if}
+                {:else}{' '}{/if}
               {/each}
             {/if}
           </span>
         {/if}
+        <button
+          class="copy-verse-btn"
+          class:copied={copiedLang === 'armenian'}
+          type="button"
+          title="Copy verse text"
+          onclick={(e) => { e.stopPropagation(); copyVerseText('armenian'); }}
+        >
+          <span class="material-symbols-outlined">content_copy</span>
+        </button>
       </div>
       {#if showList('armenian')}
         <div class="cell-footnotes">
@@ -715,6 +879,7 @@
           <textarea
             class="verse-textarea"
             bind:value={editValue}
+            oninput={markEditDirty}
             onblur={commitEdit}
             onkeydown={handleKeydown}
             use:initTextarea
@@ -723,6 +888,8 @@
           <span
             class="verse-text"
             class:poetry-text={verse.poetry === true}
+            class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('english')}
@@ -730,7 +897,7 @@
           >
             {#if verse.poetry}
               {#each poetryLines(verse.english || '\u00A0', 'english') as line, lineIdx}
-                <div class="poetry-line" style={`--poetry-base-indent:${poetryBaseIndentEm(lineIdx)}em;`}>
+                <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}
                     {#if seg.isWord}
                       {#if $editMode && pickingAnchor?.lang === 'english'}
@@ -750,19 +917,10 @@
                         <span
                           class="verse-word"
                           class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                          title={seg.footnotes.length > 0 ? wordTooltip('english', seg.footnotes) : ''}
-                        >
-                          {seg.text}
-                          {#if $footnoteDisplayMode === 'superscript'}
-                            {#each seg.footnotes as fn}
-                              <sup class="fn-sup" title={fn.text}>{footnoteNumber('english', fn.id)}</sup>
-                            {/each}
-                          {/if}
-                        </span>
+                          title={seg.footnotes.length > 0 ? wordTooltip('english', seg.footnotes) : undefined}
+                        >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('english', fn.id)}</sup>{/each}{/if}</span>
                       {/if}
-                    {:else}
-                      <span>{seg.text}</span>
-                    {/if}
+                    {:else}{' '}{/if}
                   {/each}
                 </div>
               {/each}
@@ -786,23 +944,23 @@
                     <span
                       class="verse-word"
                       class:fn-word={seg.footnotes.length > 0 && $footnoteDisplayMode === 'tooltip'}
-                      title={seg.footnotes.length > 0 ? wordTooltip('english', seg.footnotes) : ''}
-                    >
-                      {seg.text}
-                      {#if $footnoteDisplayMode === 'superscript'}
-                        {#each seg.footnotes as fn}
-                          <sup class="fn-sup" title={fn.text}>{footnoteNumber('english', fn.id)}</sup>
-                        {/each}
-                      {/if}
-                    </span>
+                      title={seg.footnotes.length > 0 ? wordTooltip('english', seg.footnotes) : undefined}
+                    >{seg.text}{#if $footnoteDisplayMode === 'superscript'}{#each seg.footnotes as fn}<sup class="fn-sup" title={fn.text}>{footnoteNumber('english', fn.id)}</sup>{/each}{/if}</span>
                   {/if}
-                {:else}
-                  <span>{seg.text}</span>
-                {/if}
+                {:else}{' '}{/if}
               {/each}
             {/if}
           </span>
         {/if}
+        <button
+          class="copy-verse-btn"
+          class:copied={copiedLang === 'english'}
+          type="button"
+          title="Copy verse text"
+          onclick={(e) => { e.stopPropagation(); copyVerseText('english'); }}
+        >
+          <span class="material-symbols-outlined">content_copy</span>
+        </button>
       </div>
       {#if showList('english')}
         <div class="cell-footnotes">

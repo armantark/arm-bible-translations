@@ -63,9 +63,14 @@ export const CLASSICAL_LOCALE: LocaleStrings = {
   cancelPick: 'Չեղարկել',
   clickWordToAttach: 'Սեղմեա՛ ի վերայ բառի յայսմ սիւնակի՝ ի կապել զծանօթագրութիւնն:',
 
-  poetryMode: 'Poetry',  // TODO: translate
-  poetryOn: 'Set poetry',  // TODO: translate
-  poetryOff: 'Unset poetry',  // TODO: translate
+  poetryMode: 'Տաղաչափութիւն',
+  poetryOn: 'Եդ զտաղաչափութիւն',
+  poetryOff: 'Լոյծ զտաղաչափութիւն',
+
+  confirmDeleteNonEmpty: 'Այս բաժին ունի զբնագիր: Վստա՞հ ես զի կամիս ջնջել:',
+  confirmDeleteChapter: 'Վստա՞հ ես զի կամիս ջնջել զգլուխս զայս եւ զամենայն բովանդակութիւն նորա:',
+  confirmDeleteBook: 'Վստա՞հ ես զի կամիս ջնջել զբովանդակ գիրքս զայս: Այս ոչ եւս դառնայ:',
+  editBookName: 'Խմբագրեա՛ զանուն գրոցն',
 
   languageEnglish: 'Անգղիերէն',
   languageArmenian: 'Հայերէն',

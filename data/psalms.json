@@ -41,7 +41,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "poetry": false
         },
         {
           "kind": "verse",
@@ -60,7 +61,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -73,7 +74,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -86,7 +87,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -99,7 +100,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -118,7 +119,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -137,7 +138,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -150,7 +151,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -163,7 +164,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         }
       ]
     },
@@ -180,7 +181,7 @@
           "kind": "verse",
           "number": 1,
           "armenian": "Կատարածին վիճակողներուն. սաղմոս Դաւիթի։",
-          "english": "For the end for the sake of the ones who inherit.",
+          "english": "For the end for the sake of the ones who inherit: a song of David.",
           "classical": "",
           "footnotes": {
             "armenian": [],
@@ -197,7 +198,8 @@
               }
             ],
             "classical": []
-          }
+          },
+          "poetry": false
         },
         {
           "kind": "verse",
@@ -210,7 +212,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -234,7 +236,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -253,13 +255,13 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
           "number": 5,
           "armenian": "Ոչ թէ Դուն Աստուած մըն ես Որ կը կամիս անօրէնութիւն, եւ չեն բնակեր Քեզի չարերը։",
-          "english": "Not that You [are a] God [who] wills lawlessness, and the evil ones do not  dwell by You.",
+          "english": "Not that You [are a] God [who] wills lawlessness, and the evil ones do not dwell by You.",
           "classical": "",
           "footnotes": {
             "armenian": [
@@ -283,20 +285,20 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
           "number": 6,
           "armenian": "Անօրէնները թող չբնակեն Քու աչքերուդ առջեւի. ատեցիր զանոնք որոնք կը գործեն անօրէնութիւն։",
-          "english": "Let not the lawless dwell before Your eyes: You hated those who work lawlessness.",
+          "english": "Let not the lawless dwell before Your eyes:\nYou hated those who work lawlessness.",
           "classical": "",
           "footnotes": {
             "armenian": [],
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -326,7 +328,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -350,33 +352,33 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
           "number": 9,
           "armenian": "Տէր, առաջնորդէ ինծի Քու արդարութեանդ, վասն իմ թշնամիներուս. ուղիղ ըրէ իմ առջեւս Քու ճանապարհդ։",
-          "english": "Lord, lead me to your righteousness, because of my enemies: make straight in front of me your way.",
+          "english": "Lord, lead me to your righteousness,\nbecause of my enemies:\nmake straight in front of me your way.",
           "classical": "",
           "footnotes": {
             "armenian": [],
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
           "number": 10,
           "armenian": "Զի չկայ անոնց բերաններուն մէջ ճշմարտութիւն, եւ անոնց սիրտերը նանրացած են. որպէս բաց գերեզման մըն է անոնց կոկորդը, իրենց լեզուներով նենգաւոր եղան։",
-          "english": "For there is no truth in their mouths, and their hearts are futile, as [an] open sepulcher is their throat, with their tongues they became deceitful.",
+          "english": "For there is no truth in their mouths, and their hearts are futile:\nas [an] open sepulcher is their throat, with their tongues they became deceitful.",
           "classical": "",
           "footnotes": {
             "armenian": [],
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -389,7 +391,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -402,7 +404,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -415,7 +417,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         }
       ]
     },
@@ -438,7 +440,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "poetry": false
         },
         {
           "kind": "verse",
@@ -473,7 +476,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -486,7 +489,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -499,7 +502,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -512,7 +515,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -531,7 +534,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -550,7 +553,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -569,7 +572,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -582,7 +585,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -595,7 +598,7 @@
             "english": [],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -620,7 +623,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -644,7 +647,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -663,7 +666,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -687,7 +690,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         },
         {
           "kind": "verse",
@@ -706,7 +709,7 @@
             ],
             "classical": []
           },
-          "indentLevel": 1
+          "poetry": true
         }
       ]
     },
@@ -770,8 +773,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -795,8 +797,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -808,8 +809,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -821,8 +821,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -834,8 +833,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -847,8 +845,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -866,8 +863,7 @@
             ],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -885,8 +881,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -904,8 +899,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -923,8 +917,7 @@
             ],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -952,8 +945,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -971,8 +963,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -990,8 +981,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1003,8 +993,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1016,8 +1005,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1040,8 +1028,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1053,8 +1040,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1077,8 +1063,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1101,8 +1086,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -1164,8 +1148,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1183,8 +1166,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1202,8 +1184,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1215,8 +1196,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1228,8 +1208,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1241,8 +1220,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1265,8 +1243,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1284,8 +1261,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1297,8 +1273,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1310,8 +1285,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1323,8 +1297,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -1359,8 +1332,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1378,8 +1350,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1391,8 +1362,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1404,8 +1374,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1417,8 +1386,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -1441,8 +1409,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1454,8 +1421,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1473,8 +1439,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1486,8 +1451,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1505,8 +1469,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1524,8 +1487,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1537,8 +1499,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1556,8 +1517,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1569,8 +1529,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1582,8 +1541,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1606,8 +1564,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1619,8 +1576,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1632,8 +1588,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1645,8 +1600,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1658,8 +1612,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1677,8 +1630,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1696,8 +1648,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -1720,8 +1671,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1733,8 +1683,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1746,8 +1695,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1759,8 +1707,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1778,8 +1725,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1791,8 +1737,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1804,8 +1749,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1823,8 +1767,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -1847,8 +1790,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1860,8 +1802,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1873,8 +1814,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1886,8 +1826,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1899,8 +1838,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1912,8 +1850,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1931,8 +1868,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1950,8 +1886,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1963,8 +1898,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1976,8 +1910,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -1995,8 +1928,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2014,8 +1946,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2027,8 +1958,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2040,8 +1970,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2053,8 +1982,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2066,8 +1994,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2079,8 +2006,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2092,8 +2018,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2111,8 +2036,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2130,8 +2054,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2149,8 +2072,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2162,8 +2084,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -2204,8 +2125,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2217,8 +2137,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2230,8 +2149,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2243,8 +2161,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2256,8 +2173,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2269,8 +2185,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2293,8 +2208,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -2339,8 +2253,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2373,8 +2286,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2386,8 +2298,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -2426,8 +2337,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2439,8 +2349,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2452,8 +2361,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2465,8 +2373,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2484,8 +2391,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2497,8 +2403,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2521,8 +2426,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2540,8 +2444,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2553,8 +2456,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2566,8 +2468,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -2590,8 +2491,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2609,8 +2509,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2633,8 +2532,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2646,8 +2544,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2665,8 +2562,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2678,8 +2574,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2697,8 +2592,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2716,8 +2610,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2729,8 +2622,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2748,8 +2640,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2772,8 +2663,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2785,8 +2675,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -2820,8 +2709,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2833,8 +2721,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2852,8 +2739,7 @@
               }
             ],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2865,8 +2751,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2878,8 +2763,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -2891,8 +2775,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     }

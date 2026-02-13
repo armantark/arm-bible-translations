@@ -6,6 +6,7 @@ import {
   readdirSync,
   existsSync,
   mkdirSync,
+  renameSync,
 } from 'node:fs';
 import { resolve, join } from 'node:path';
 import type { IncomingMessage, ServerResponse } from 'node:http';
@@ -102,6 +103,20 @@ function bibleApiPlugin(): Plugin {
                 res.writeHead(200, { 'Content-Type': 'application/json' });
                 res.end(JSON.stringify({ ok: true }));
               });
+              return;
+            }
+
+            if (req.method === 'DELETE') {
+              if (existsSync(filePath)) {
+                const trashDir = join(dataDir, '.trash');
+                if (!existsSync(trashDir)) mkdirSync(trashDir, { recursive: true });
+                renameSync(filePath, join(trashDir, `${bookId}.json`));
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ ok: true }));
+              } else {
+                res.writeHead(404, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Not found' }));
+              }
               return;
             }
           }

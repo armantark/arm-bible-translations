@@ -68,6 +68,36 @@ def _paragraph_indent_level(para: ET.Element) -> int | None:
     return level if level > 0 else None
 
 
+def _paragraph_first_line_indent_em(para: ET.Element) -> float | None:
+    """Best-effort first-line indent from DOCX paragraph properties.
+
+    Positive values indicate first-line indent; negative values indicate
+    hanging indent. Returned value is in approximate em units.
+    """
+    ppr = para.find("w:pPr", NS)
+    if ppr is None:
+        return None
+    ind = ppr.find("w:ind", NS)
+    if ind is None:
+        return None
+
+    first_line_twips = _parse_int(ind.get(f"{{{WML}}}firstLine")) or 0
+    hanging_twips = _parse_int(ind.get(f"{{{WML}}}hanging")) or 0
+    twips_delta = first_line_twips - hanging_twips
+
+    first_line_chars = _parse_int(ind.get(f"{{{WML}}}firstLineChars")) or 0
+    hanging_chars = _parse_int(ind.get(f"{{{WML}}}hangingChars")) or 0
+    chars_delta = first_line_chars - hanging_chars
+
+    # firstLineChars/hangingChars are in hundredths of a character.
+    em_from_chars = chars_delta / 100.0
+    em_from_twips = twips_delta / 360.0
+    em_value = em_from_chars if chars_delta != 0 else em_from_twips
+    if abs(em_value) < 0.01:
+        return None
+    return round(em_value, 2)
+
+
 # ── DOCX paragraph + footnote extraction ──────────────────────────
 
 
@@ -91,7 +121,7 @@ def _load_footnote_map(zf: zipfile.ZipFile) -> dict[int, str]:
 
 def extract_paragraphs(
     docx_path: Path, prefix: str
-) -> tuple[list[tuple[str, int | None]], dict[str, str]]:
+) -> tuple[list[tuple[str, int | None, float | None]], dict[str, str]]:
     """Read paragraphs with inline footnote markers, plus a prefixed fn map.
 
     Each footnote reference in the DOCX is replaced by a NUL-delimited marker
@@ -108,7 +138,7 @@ def extract_paragraphs(
     fn_map: dict[str, str] = {f"{prefix}:{k}": v for k, v in raw_fn.items()}
 
     doc_tree = ET.fromstring(doc_xml)
-    paragraphs: list[tuple[str, int | None]] = []
+    paragraphs: list[tuple[str, int | None, float | None]] = []
 
     for para in doc_tree.findall(".//w:body/w:p", NS):
         text = ""
@@ -122,9 +152,10 @@ def extract_paragraphs(
                 text += t_elem.text or ""
         line = text.strip()
         indent_level = _paragraph_indent_level(para)
+        first_line_indent = _paragraph_first_line_indent_em(para)
         # Keep paragraphs that have real text (ignoring markers)
         if _strip_markers(line):
-            paragraphs.append((line, indent_level))
+            paragraphs.append((line, indent_level, first_line_indent))
 
     return paragraphs, fn_map
 
@@ -159,6 +190,9 @@ def _extract_footnotes(
     tail = text[last_idx:]
     pieces.append(tail)
     raw_clean = "".join(pieces)
+    # Normalize DOCX hard/soft line breaks to plain spaces so imported source
+    # formatting doesn't accidentally act like manual poetry line overrides.
+    raw_clean = re.sub(r"\s+", " ", raw_clean)
     ltrim = len(raw_clean) - len(raw_clean.lstrip())
     clean_text = raw_clean.strip()
 
@@ -225,7 +259,7 @@ def split_verses(text: str) -> list[tuple[int, str]]:
 
 # ── Event-based paragraph stream ───────────────────────────────────
 
-ParagraphInfo = tuple[str, int | None]
+ParagraphInfo = tuple[str, int | None, float | None]
 TextEvent = dict[str, object]
 Event = tuple[str, object]  # ('chapter', int) | ('heading', str) | ('text', TextEvent)
 
@@ -233,21 +267,30 @@ Event = tuple[str, object]  # ('chapter', int) | ('heading', str) | ('text', Tex
 def paragraphs_to_events(paragraphs: list[ParagraphInfo]) -> list[Event]:
     """Convert raw paragraphs into a tagged event stream."""
     events: list[Event] = []
-    for para, indent_level in paragraphs:
+    for para, indent_level, first_line_indent in paragraphs:
         ch = is_chapter_number(para)
         if ch is not None:
             events.append(("chapter", ch))
         elif is_heading(para):
             events.append(("heading", para))
         else:
-            events.append(("text", {"text": para, "indentLevel": indent_level}))
+            events.append(
+                (
+                    "text",
+                    {
+                        "text": para,
+                        "indentLevel": indent_level,
+                        "firstLineIndent": first_line_indent,
+                    },
+                )
+            )
     return events
 
 
 # ── Multi-book parsing ─────────────────────────────────────────────
 
 # verses value keeps text + optional indent metadata
-VersePayload = dict[str, object]  # { "text": str, "indentLevel": int | None }
+VersePayload = dict[str, object]  # { "text": str, "indentLevel": int | None, "firstLineIndent": float | None }
 ChapterData = dict[str, list[tuple[int, str]] | dict[int, VersePayload]]
 BookChapters = dict[int, ChapterData]
 BookEntry = tuple[str, BookChapters]
@@ -319,10 +362,27 @@ def parse_multibook(docx_path: Path, prefix: str) -> tuple[list[BookEntry], dict
             if isinstance(para_text_raw, str):
                 indent_raw = val.get("indentLevel")
                 indent_level = indent_raw if isinstance(indent_raw, int) else None
-                for num, txt in split_verses(para_text_raw):
+                first_line_raw = val.get("firstLineIndent")
+                first_line_indent = (
+                    round(first_line_raw, 2)
+                    if isinstance(first_line_raw, (int, float))
+                    else None
+                )
+                # Negative firstLineIndent = Word ruler hanging indent,
+                # not intentional formatting.  Strip it and the related
+                # indentLevel so poetry mode works cleanly.
+                if first_line_indent is not None and first_line_indent < 0:
+                    first_line_indent = None
+                    indent_level = None
+                parsed_verses = split_verses(para_text_raw)
+                for v_idx, (num, txt) in enumerate(parsed_verses):
                     verse_dict[num] = {
                         "text": txt,  # still has footnote markers
                         "indentLevel": indent_level,
+                        # Only the first verse in a paragraph gets
+                        # the first-line indent; subsequent verses
+                        # within the same paragraph are continuations.
+                        "firstLineIndent": first_line_indent if v_idx == 0 else None,
                     }
                     last_verse = num
 
@@ -395,8 +455,14 @@ def merge_chapters(
                 hdg_idx += 1
 
             # Extract clean text + footnotes for each language
-            arm_payload = arm_verses.get(v_num, {"text": "", "indentLevel": None})
-            eng_payload = eng_verses.get(v_num, {"text": "", "indentLevel": None})
+            arm_payload = arm_verses.get(
+                v_num,
+                {"text": "", "indentLevel": None, "firstLineIndent": None},
+            )
+            eng_payload = eng_verses.get(
+                v_num,
+                {"text": "", "indentLevel": None, "firstLineIndent": None},
+            )
             arm_text_raw_obj = arm_payload.get("text")
             eng_text_raw_obj = eng_payload.get("text")
             arm_text_raw = arm_text_raw_obj if isinstance(arm_text_raw_obj, str) else ""
@@ -410,6 +476,15 @@ def merge_chapters(
                 if isinstance(arm_indent, int)
                 else eng_indent
                 if isinstance(eng_indent, int)
+                else None
+            )
+            arm_first_line = arm_payload.get("firstLineIndent")
+            eng_first_line = eng_payload.get("firstLineIndent")
+            first_line_indent = (
+                arm_first_line
+                if isinstance(arm_first_line, (int, float))
+                else eng_first_line
+                if isinstance(eng_first_line, (int, float))
                 else None
             )
 
@@ -427,6 +502,8 @@ def merge_chapters(
             }
             if indent_level is not None:
                 verse_item["indentLevel"] = indent_level
+            if first_line_indent is not None and abs(float(first_line_indent)) >= 0.01:
+                verse_item["firstLineIndent"] = round(float(first_line_indent), 2)
 
             content.append(verse_item)
 

@@ -25,8 +25,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "verse",
@@ -38,8 +37,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         },
         {
           "kind": "heading",
@@ -57,8 +55,7 @@
             "armenian": [],
             "english": [],
             "classical": []
-          },
-          "indentLevel": 1
+          }
         }
       ]
     },
@@ -81,7 +78,8 @@
             "armenian": [],
             "english": [],
             "classical": []
-          }
+          },
+          "firstLineIndent": 1.0
         }
       ]
     }

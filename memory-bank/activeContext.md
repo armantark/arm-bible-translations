@@ -1,9 +1,38 @@
 # Active Context
 
 ## Current State
-Editor now supports per-word footnotes with corrected word anchoring, drag-and-drop reordering (books/chapters/content/footnotes), snapshot undo/redo (Cmd/Ctrl+Z), add chapter/book controls, corner X delete buttons for verses/headings, clause-based poetry layout with hanging indents, imported DOCX paragraph indent metadata (`indentLevel`), and updated poetry/FAB/sidebar UX fixes. UI copy remains centralized/localized. App builds cleanly.
+Editor now supports per-word footnotes with corrected word anchoring, drag-and-drop reordering (books/chapters/content/footnotes), snapshot undo/redo (Cmd/Ctrl+Z), add chapter/book controls, corner X delete buttons for verses/headings, clause-based poetry layout with hanging indents, imported DOCX paragraph indent metadata (`indentLevel` + `firstLineIndent`), and updated poetry/FAB/sidebar UX fixes. UI copy remains centralized/localized. App builds cleanly.
 
 ## Recent Changes
+- **Copy verse button added:**
+  - Each verse cell (classical, Armenian, English) now has a copy icon (Material Symbols `content_copy`) positioned bottom-right, visible on hover.
+  - Copied text is formatted as `"verse text" --Book Chapter:Verse` with smart quotes and book name matching the language column.
+- **Double-space rendering fix:**
+  - Whitespace segments in the word tokenizer were rendering as `<span>{space}</span>` elements, which combined with Svelte template whitespace to produce doubled spaces.
+  - Fix: non-word segments now render as bare `{' '}` text nodes (no wrapper `<span>`).
+  - Also fixed one literal double space in Psalms data.
+- **Tooltip underline trailing-space fix:**
+  - Word `<span>` elements had template whitespace inside them (newlines/indentation between `>{seg.text}...{/if}</span>`), which was underlined by the `fn-word` dotted underline.
+  - Fix: tightened all word span content onto single lines (`>{seg.text}{#if ...}{/if}</span>`) and changed `.verse-word` from `white-space: pre-wrap` to `normal`.
+- **Empty tooltip bubble fix:**
+  - `title=""` (empty string) on word spans without footnotes was showing a tiny empty tooltip in some browsers.
+  - Changed to `title={undefined}` to omit the attribute entirely when no footnotes exist.
+- **Empty verse-row-tools bubble fix:**
+  - The `verse-row-tools` div (poetry toggle + delete button container) was always rendered even when empty (non-edit mode), showing as a tiny pill-shaped bubble on hover.
+  - Fix: conditionally render the container only when it has content.
+- **Poetry alternation uses global line index:**
+  - Alternation (even = left, odd = indented) is based on global line position within the verse, not couplet-relative position.
+- **DOCX newline normalization fix:**
+  - Import pipeline now collapses embedded DOCX line breaks/whitespace to single spaces during verse text extraction.
+  - Prevents source formatting artifacts from being interpreted as manual poetry line overrides.
+- **Poetry line-breaking + wrapping control refined:**
+  - Heuristic now uses punctuation nearest the midpoint, while respecting strong punctuation as multi-couplet boundaries.
+  - Manual newline overrides (`\n`) are now first-class and take precedence over heuristic splitting.
+  - Entering edit mode on poetry verses pre-populates the textarea with current heuristic line breaks, enabling precise add/remove control.
+  - Wrapped continuations on odd poetry lines now render one extra indent level (double indent behavior), while even-line behavior remains unchanged.
+- **DOCX indentation import tuned:**
+  - Negative Word ruler hanging indents are stripped at import (and related `indentLevel` removed) to avoid over-indentation when poetry mode is toggled.
+  - Positive first-line paragraph indents are preserved and applied only to paragraph-starting verses.
 - **README screenshots added:**
   - Captured current UI screenshots and added them under `docs/screenshots/`.
   - Updated `README.md` with a new Screenshots section linking:
@@ -40,6 +69,11 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
     - Restructured layout: book title, chapter heading, and column headers are now fixed (non-scrolling).
     - Only the verse grid scrolls (inside `.chapter-scroll` container).
     - Abandoned sticky positioning approach due to z-index stacking issues with dnd-kit library.
+- **DOCX first-line indentation import + rendering added:**
+  - `scripts/import_docx.py` now reads DOCX `w:ind` first-line/hanging metadata (`firstLine`, `hanging`, plus `*Chars` variants) and stores normalized `firstLineIndent` (em) per verse.
+  - `src/lib/types.ts` `VerseItem` now includes optional `firstLineIndent?: number`.
+  - `src/components/VerseRow.svelte` applies `firstLineIndent` to non-poetry verses via `text-indent` (first line only), keeping poetry behavior unchanged.
+  - Re-ran `python3 scripts/import_docx.py`; regenerated `data/*.json` now includes `firstLineIndent` where source metadata exists.
 - **Footnote anchoring bug fixed at import layer:**
   - Updated `scripts/import_docx.py` `_anchor_word_from_offset` to anchor based on `text[:offset].rstrip().split()` word count.
   - Re-ran `python3 scripts/import_docx.py` to regenerate all `data/*.json` files with corrected `anchorWord` output.
@@ -97,6 +131,7 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
 ## Localization Rule (Important)
 - **Any new UI copy must be added to locale files first** (`english.ts`, `armenian.ts`, `classical.ts`) and then referenced via store-driven localized strings.
 - No hardcoded user-facing strings should be introduced in Svelte components.
+- **CRITICAL: Do NOT attempt to write Armenian (or Classical Armenian) text.** Claude cannot produce correct Armenian. Only use English placeholders with `// TODO: translate` comments in `armenian.ts` and `classical.ts`. Armenian translations require explicit user approval and must be provided by the user or by Gemini. Never modify existing Armenian text in these files.
 
 ## Active Decisions
 - JSON data files remain the source of truth.
@@ -118,6 +153,11 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
   1. Validate reorder undo behavior interactively in browser across content/chapter/footnote DnD to confirm the hardened mutation path works correctly.
   2. Consider adding manual USFM-like per-line indent controls (`q1/q2/q3`) as an explicit editorial override beyond punctuation heuristics.
   3. Translate remaining locale placeholders (poetry strings and other TODO markers in `armenian.ts` and `classical.ts`).
+- **Deferred architecture idea (later project):**
+  - Evaluate styling strategy for agentic coding ergonomics:
+    - Keep plain CSS and modularize `src/app.css` into feature-focused files first.
+    - Then compare Sass (organization/mixins/partials) vs Tailwind (utility workflow) for long-term maintainability.
+    - Decision deferred until current UI/behavior work stabilizes; no immediate migration planned.
 - **AUTH:** Require authentication for edit mode before deployment.
 - Consider custom Armenian hyphenation strategy if browser-native support remains insufficient.
 - Consider export-to-DOCX tooling with word-anchored footnote round-trip.

@@ -29,12 +29,22 @@
   - DOCX importer now captures paragraph indentation metadata and stores per-verse `indentLevel` when present.
   - `python3 scripts/import_docx.py` re-run; `data/*.json` regenerated with imported indent metadata.
   - Column header scroll bleed-through resolved by restructuring layout (headers fixed outside scroll area; only verse grid scrolls).
+- DOCX first-line indentation pipeline completed:
+  - Importer now captures first-line/hanging paragraph indentation (`firstLineIndent`) in addition to paragraph indent level.
+  - Non-poetry verse rendering now applies imported `firstLineIndent` as CSS first-line indent.
+  - Data regenerated; `firstLineIndent` present across imported books where DOCX metadata exists.
 - Root `README.md` added with setup/install instructions, command reference, architecture summary, API routes, data model example, and workflow guidance.
 - Added root `LICENSE` with split licensing:
   - MIT for code
   - CC0 1.0 for translation/content data and documentation contributions
 - Updated `README.md` with non-binding attribution request and explicit license/scope notes.
 - Added README screenshots (`docs/screenshots/editor-overview.png`, `docs/screenshots/chapter-view.png`, `docs/screenshots/edit-mode.png`) and linked them in a new Screenshots section.
+- Copy verse button added (bottom-right of each verse cell, formats as `"text" --Book Ch:V`).
+- Double-space rendering fix (whitespace segments now render as bare text nodes).
+- Tooltip underline trailing-space fix (tightened word span content, `white-space: normal`).
+- Empty tooltip bubble fix (`title={undefined}` instead of `title=""`).
+- Empty verse-row-tools bubble fix (conditionally rendered).
+- Poetry alternation confirmed as global line index (no couplet reset).
 
 ## Remaining
 - End-to-end editing test in browser (browser MCP not connected for automated test).

@@ -69,6 +69,11 @@ export interface LocaleStrings {
   poetryOn: string;
   poetryOff: string;
 
+  confirmDeleteNonEmpty: string;
+  confirmDeleteChapter: string;
+  confirmDeleteBook: string;
+  editBookName: string;
+
   languageEnglish: string;
   languageArmenian: string;
   languageClassical: string;

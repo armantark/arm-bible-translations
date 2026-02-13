@@ -10,6 +10,7 @@
     uiLanguage,
     locale,
     updateVerse,
+    updateBookName,
     insertVerseAfter,
     insertHeadingAfter,
     deleteItemAt,
@@ -51,6 +52,61 @@
     updateVerse($currentChapter, verseNumber, field, value);
   }
 
+  /* ── Book title & subtitle editing ── */
+  type BookNameField = 'armenian' | 'english' | 'classical';
+  let editingBookTitle = $state<BookNameField | null>(null);
+  let editBookTitleValue = $state('');
+  let editingSubtitle = $state(false);
+  let editSubtitleValue = $state('');
+
+  /** Which language field does the subtitle display? */
+  let subtitleField = $derived<BookNameField>(
+    $uiLanguage === 'english' ? 'armenian' : 'english',
+  );
+
+  function startBookTitleEdit(): void {
+    if (!$editMode || !$bookData) return;
+    const field: BookNameField = $uiLanguage;
+    editingBookTitle = field;
+    editBookTitleValue = $bookData.name[field];
+  }
+
+  function commitBookTitleEdit(): void {
+    if (editingBookTitle && editBookTitleValue.trim()) {
+      updateBookName(editingBookTitle, editBookTitleValue.trim());
+    }
+    editingBookTitle = null;
+  }
+
+  function startSubtitleEdit(): void {
+    if (!$editMode || !$bookData) return;
+    editingSubtitle = true;
+    editSubtitleValue = $bookData.name[subtitleField];
+  }
+
+  function commitSubtitleEdit(): void {
+    if (editingSubtitle && editSubtitleValue.trim()) {
+      updateBookName(subtitleField, editSubtitleValue.trim());
+    }
+    editingSubtitle = false;
+  }
+
+  function handleBookTitleKeydown(e: KeyboardEvent): void {
+    if (e.key === 'Enter') commitBookTitleEdit();
+    if (e.key === 'Escape') { editingBookTitle = null; }
+  }
+
+  function handleSubtitleKeydown(e: KeyboardEvent): void {
+    if (e.key === 'Enter') commitSubtitleEdit();
+    if (e.key === 'Escape') { editingSubtitle = false; }
+  }
+
+  function initBookTitleInput(node: HTMLInputElement): { destroy: () => void } {
+    node.focus();
+    node.select();
+    return { destroy() {} };
+  }
+
   let hasAnyPoetry = $derived(
     $currentChapterData
       ? $currentChapterData.content.some((item) => isVerse(item) && item.poetry)
@@ -59,6 +115,20 @@
 
   function handleToggleChapterPoetry(): void {
     setChapterPoetry($currentChapter, !hasAnyPoetry);
+  }
+
+  function itemHasText(item: import('../lib/types').ChapterItem): boolean {
+    return !!(item.armenian.trim() || item.english.trim() || item.classical.trim());
+  }
+
+  function confirmDeleteItem(idx: number): void {
+    if (!$currentChapterData) return;
+    const item = $currentChapterData.content[idx];
+    if (!item) return;
+    if (itemHasText(item)) {
+      if (!window.confirm($locale.confirmDeleteNonEmpty)) return;
+    }
+    deleteItemAt($currentChapter, idx);
   }
 
   const CONTENT_ITEM_ID_PREFIX = 'chapter-item-';
@@ -123,12 +193,53 @@
 
 {#if $currentChapterData && $bookData}
   <div class="chapter-header">
-    <h1 class="book-title">{displayBookName}</h1>
-    {#if subtitleName}
-      <p class="book-subtitle">{subtitleName}</p>
-    {/if}
-
-    <h2 class="chapter-heading">{$locale.chapter} {$currentChapter}</h2>
+    <div class="header-title-row">
+      <div class="header-title-left">
+        {#if editingBookTitle}
+          <input
+            class="book-title-input"
+            type="text"
+            bind:value={editBookTitleValue}
+            onblur={commitBookTitleEdit}
+            onkeydown={handleBookTitleKeydown}
+            use:initBookTitleInput
+          />
+        {:else}
+          <h1
+            class="book-title"
+            class:editable={$editMode}
+            role={$editMode ? 'button' : undefined}
+            tabindex={$editMode ? 0 : undefined}
+            title={$editMode ? $locale.editBookName : undefined}
+            onclick={startBookTitleEdit}
+            onkeydown={(e) => e.key === 'Enter' && startBookTitleEdit()}
+          >{displayBookName}</h1>
+        {/if}
+        {#if !editingBookTitle}
+          {#if editingSubtitle}
+            <input
+              class="book-subtitle-input"
+              type="text"
+              bind:value={editSubtitleValue}
+              onblur={commitSubtitleEdit}
+              onkeydown={handleSubtitleKeydown}
+              use:initBookTitleInput
+            />
+          {:else if subtitleName}
+            <p
+              class="book-subtitle"
+              class:editable={$editMode}
+              role={$editMode ? 'button' : undefined}
+              tabindex={$editMode ? 0 : undefined}
+              title={$editMode ? $locale.editBookName : undefined}
+              onclick={startSubtitleEdit}
+              onkeydown={(e) => e.key === 'Enter' && startSubtitleEdit()}
+            >{subtitleName}</p>
+          {/if}
+        {/if}
+      </div>
+      <h2 class="chapter-heading">{$locale.chapter} {$currentChapter}</h2>
+    </div>
 
     {#if $editMode}
       <div class="chapter-poetry-bar">
@@ -184,7 +295,7 @@
               showEnglish={$showEnglish}
               canDelete={$editMode}
               deleteTitle={$locale.deleteHeading}
-              onDelete={() => deleteItemAt($currentChapter, idx)}
+              onDelete={() => confirmDeleteItem(idx)}
               sectionPoetryActive={sectionHasPoetry(idx)}
               onToggleSectionPoetry={(value) => setSectionPoetry($currentChapter, idx, value)}
             />
@@ -198,7 +309,7 @@
               onUpdate={handleVerseUpdate}
               canDelete={$editMode}
               deleteTitle={$locale.deleteVerse}
-              onDelete={() => deleteItemAt($currentChapter, idx)}
+              onDelete={() => confirmDeleteItem(idx)}
               onTogglePoetry={() => toggleVersePoetry($currentChapter, item.number)}
             />
           {/if}

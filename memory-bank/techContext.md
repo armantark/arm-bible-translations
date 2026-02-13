@@ -58,7 +58,10 @@
   - `WordFootnote = { id: string, text: string, anchorWord: number }`
 - Import script (`scripts/import_docx.py`) preserves inline footnote positions and maps them to `anchorWord`.
 - `_anchor_word_from_offset` now uses `text[:offset].rstrip().split()` semantics to avoid whitespace off-by-one anchors.
-- Import script now reads DOCX paragraph indentation metadata (`w:pPr/w:ind`) and stores optional `indentLevel` on verse records for poetry indentation overrides.
+- Import script now reads DOCX paragraph indentation metadata (`w:pPr/w:ind`) and stores:
+  - optional `indentLevel` for poetry indentation overrides
+  - optional `firstLineIndent` (em) derived from `firstLine` / `hanging` (`*Chars` preferred when available)
+- UI applies `firstLineIndent` to non-poetry verses using CSS `text-indent`.
 
 ## API Notes
 - `GET /api/books` returns summaries from `data/*.json`.
