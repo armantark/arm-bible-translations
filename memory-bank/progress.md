@@ -47,6 +47,8 @@
 - Poetry alternation confirmed as global line index (no couplet reset).
 
 ## Remaining
+- **Search** — search by word and search by verse across all books.
+- **Production edit lockdown** — env-var flag (`VITE_EDIT_ENABLED`) to disable edit mode UI and close all write API endpoints for public deployment; local dev retains full editing.
 - End-to-end editing test in browser (browser MCP not connected for automated test).
 - Locale placeholder translations remain in non-English locale files (poetry strings at minimum).
 - Genesis Chapter 10 has empty content (placeholder in source DOCX).

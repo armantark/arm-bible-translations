@@ -150,14 +150,19 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
 
 ## TODO / Next Steps
 - **USER PRIORITY (next session):**
-  1. Validate reorder undo behavior interactively in browser across content/chapter/footnote DnD to confirm the hardened mutation path works correctly.
-  2. Consider adding manual USFM-like per-line indent controls (`q1/q2/q3`) as an explicit editorial override beyond punctuation heuristics.
-  3. Translate remaining locale placeholders (poetry strings and other TODO markers in `armenian.ts` and `classical.ts`).
+  1. **Search by word and search by verse** — full-text search across the loaded books, with results navigating to the matching verse/word.
+  2. **Production edit-mode lockdown** — add an environment variable flag (e.g. `VITE_EDIT_ENABLED=false`) that:
+     - Completely disables the edit-mode toggle in the UI when not set/false.
+     - Closes all write API endpoints (`PUT /api/books/:id`, `POST /api/books`, `DELETE /api/books/:id`) so no mutations are possible from the public internet.
+     - Local dev keeps full editing capability; deployed site is read-only by default.
+     - Goal: prevent malicious data tampering on the public site while keeping the git repo as the easy rollback mechanism.
+  3. Validate reorder undo behavior interactively in browser across content/chapter/footnote DnD.
+  4. Consider adding manual USFM-like per-line indent controls (`q1/q2/q3`) as an explicit editorial override.
+  5. Translate remaining locale placeholders (poetry strings and other TODO markers in `armenian.ts` and `classical.ts`).
 - **Deferred architecture idea (later project):**
   - Evaluate styling strategy for agentic coding ergonomics:
     - Keep plain CSS and modularize `src/app.css` into feature-focused files first.
     - Then compare Sass (organization/mixins/partials) vs Tailwind (utility workflow) for long-term maintainability.
     - Decision deferred until current UI/behavior work stabilizes; no immediate migration planned.
-- **AUTH:** Require authentication for edit mode before deployment.
 - Consider custom Armenian hyphenation strategy if browser-native support remains insufficient.
 - Consider export-to-DOCX tooling with word-anchored footnote round-trip.
