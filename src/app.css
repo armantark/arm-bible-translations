@@ -592,11 +592,11 @@ body {
   transition: background var(--transition);
 }
 
-:global(.edit-mode) .heading-label {
+.edit-mode .heading-label {
   cursor: text;
 }
 
-:global(.edit-mode) .heading-label:hover {
+.edit-mode .heading-label:hover {
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -795,16 +795,22 @@ body {
 }
 
 /* Only show editable styling when edit mode is active */
-:global(.edit-mode) .verse-text {
+.edit-mode .verse-text {
   cursor: text;
-  border: 1px dashed rgba(201, 168, 76, 0.35);
-  background: rgba(201, 168, 76, 0.04);
-  min-height: 1.85em;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px dashed rgba(201, 168, 76, 0.62);
+  border-radius: 6px;
+  background: rgba(201, 168, 76, 0.10);
+  padding: 4px 8px;
+  margin: -4px -8px;
+  min-height: 2.1em;
 }
 
-:global(.edit-mode) .verse-text:hover {
+.edit-mode .verse-text:hover {
   border-color: var(--accent);
-  background: rgba(201, 168, 76, 0.08);
+  background: rgba(201, 168, 76, 0.16);
 }
 
 .verse-empty-placeholder {
@@ -813,7 +819,7 @@ body {
   user-select: none;
 }
 
-:global(.edit-mode) .verse-text.editable-empty {
+.edit-mode .verse-text.editable-empty {
   display: flex;
   align-items: center;
 }
@@ -1041,11 +1047,11 @@ body {
   transition: background var(--transition);
 }
 
-:global(.edit-mode) .footnote-row .fn-text {
+.edit-mode .footnote-row .fn-text {
   cursor: text;
 }
 
-:global(.edit-mode) .footnote-row .fn-text:hover {
+.edit-mode .footnote-row .fn-text:hover {
   background: rgba(255, 255, 255, 0.03);
 }
 

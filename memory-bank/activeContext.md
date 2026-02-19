@@ -7,7 +7,8 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
 - **Empty verse editing + edit affordance UX fixed:**
   - Empty verse cells now render a localized `(CLICK TO EDIT)` placeholder in edit mode, matching heading behavior and providing a reliable click target.
   - This resolves editing for existing empty blocks (e.g., Genesis 1:12 Armenian) and for newly inserted empty verses.
-  - Verse text blocks now show a clearer dashed editable bounding box in edit mode to make click-to-edit affordance obvious.
+  - Verse text blocks now show a high-contrast dashed bounding box in edit mode to make click-to-edit affordance obvious.
+  - Fixed all `:global()` CSS selectors in `app.css` — these are a Svelte-only pseudo-class that browsers silently discard in plain `.css` files. Replaced with plain `.edit-mode` descendant selectors. This also fixes edit-mode cursor and hover styling for headings and footnotes that were silently broken.
 - **Copy verse button added:**
   - Each verse cell (classical, Armenian, English) now has a copy icon (Material Symbols `content_copy`) positioned bottom-right, visible on hover.
   - Copied text is formatted as `"verse text" --Book Chapter:Verse` with smart quotes and book name matching the language column.
