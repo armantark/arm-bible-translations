@@ -29,6 +29,64 @@
     return tag === 'input' || tag === 'textarea' || tag === 'select';
   }
 
+  interface ScrollAnchor {
+    contentIndex: string;
+    relativeTop: number;
+    fallbackScrollTop: number;
+  }
+
+  function chapterScrollContainer(): HTMLElement | null {
+    return document.querySelector('.chapter-scroll');
+  }
+
+  function captureScrollAnchor(scroller: HTMLElement): ScrollAnchor | null {
+    const scrollerRect = scroller.getBoundingClientRect();
+    const rows = Array.from(
+      scroller.querySelectorAll<HTMLElement>('[data-content-index]'),
+    );
+    if (rows.length === 0) return null;
+
+    const top = scrollerRect.top + 8;
+    const anchor =
+      rows.find((row) => row.getBoundingClientRect().bottom > top) ?? rows[0];
+    const contentIndex = anchor?.dataset.contentIndex;
+    if (!anchor || !contentIndex) return null;
+
+    return {
+      contentIndex,
+      relativeTop: anchor.getBoundingClientRect().top - scrollerRect.top,
+      fallbackScrollTop: scroller.scrollTop,
+    };
+  }
+
+  function restoreScrollAnchor(anchor: ScrollAnchor): void {
+    const scroller = chapterScrollContainer();
+    if (!scroller) return;
+    const target = scroller.querySelector<HTMLElement>(
+      `[data-content-index="${anchor.contentIndex}"]`,
+    );
+    if (!target) {
+      scroller.scrollTop = anchor.fallbackScrollTop;
+      return;
+    }
+
+    const scrollerTop = scroller.getBoundingClientRect().top;
+    const targetTop = target.getBoundingClientRect().top - scrollerTop;
+    scroller.scrollTop += targetTop - anchor.relativeTop;
+  }
+
+  function toggleEditModePreserveLocation(): void {
+    const scroller = chapterScrollContainer();
+    const anchor = scroller ? captureScrollAnchor(scroller) : null;
+    editMode.update((v) => !v);
+    if (!anchor) return;
+
+    // Wait for the mode toggle render pass + layout recalculation, then realign.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => restoreScrollAnchor(anchor));
+    });
+  }
+
   onMount(() => {
     const onKeydown = (event: KeyboardEvent): void => {
       if (!$editMode) return;
@@ -106,7 +164,7 @@
   class="edit-fab"
   class:active={$editMode}
   title={$editMode ? $locale.editing : $locale.readOnly}
-  onclick={() => editMode.update((v) => !v)}
+  onclick={toggleEditModePreserveLocation}
 >
   <span class="material-symbols-outlined edit-fab-icon" aria-hidden="true">edit_square</span>
 </button>

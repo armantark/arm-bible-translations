@@ -66,6 +66,11 @@ export const CLASSICAL_LOCALE: LocaleStrings = {
   poetryMode: 'Տաղաչափութիւն',
   poetryOn: 'Եդ զտաղաչափութիւն',
   poetryOff: 'Լոյծ զտաղաչափութիւն',
+  firstLineIndent: 'First-line indent', // TODO: translate
+  increaseIndent: 'Increase indent', // TODO: translate
+  decreaseIndent: 'Decrease indent', // TODO: translate
+  resetIndent: 'Reset indent', // TODO: translate
+  indentUnavailableInPoetry: 'First-line indent is only for non-poetry verses', // TODO: translate
 
   confirmDeleteNonEmpty: 'Այս բաժին ունի զբնագիր: Վստա՞հ ես զի կամիս ջնջել:',
   confirmDeleteChapter: 'Վստա՞հ ես զի կամիս ջնջել զգլուխս զայս եւ զամենայն բովանդակութիւն նորա:',

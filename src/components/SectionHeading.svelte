@@ -61,7 +61,7 @@
   }
 </script>
 
-<div class="section-heading">
+<div class="section-heading" data-content-index={contentIndex}>
   {#if canDelete}
     <button class="x-delete-btn" type="button" onclick={onDelete} title={deleteTitle} aria-label={deleteTitle}>
       x

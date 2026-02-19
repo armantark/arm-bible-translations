@@ -1,6 +1,13 @@
 # Progress
 
 ## Completed
+- Manual non-poetry indent editing implemented:
+  - Added per-verse first-line indent controls in edit mode (decrease/reset/increase).
+  - Controls update `VerseItem.firstLineIndent` directly through store mutation helpers.
+  - Poetry verses intentionally disable indent controls to avoid conflicting indentation models.
+- Edit-mode toggle location preservation implemented:
+  - Toggle now captures a top-visible content anchor (`data-content-index`) and restores relative scroll offset after re-render.
+  - This keeps users at the same reading/edit location when switching between view/edit despite layout differences.
 - Edit affordance + scrollbar clearance polish completed:
   - Empty verse cells show `(CLICK TO EDIT)` placeholder in edit mode.
   - Verse text blocks show gray dashed bounding box at rest, gold on hover in edit mode.

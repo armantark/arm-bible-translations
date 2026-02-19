@@ -4,6 +4,11 @@
 Editor now supports per-word footnotes with corrected word anchoring, drag-and-drop reordering (books/chapters/content/footnotes), snapshot undo/redo (Cmd/Ctrl+Z), add chapter/book controls, corner X delete buttons for verses/headings, clause-based poetry layout with hanging indents, imported DOCX paragraph indent metadata (`indentLevel` + `firstLineIndent`), and updated poetry/FAB/sidebar UX fixes. UI copy remains centralized/localized. App builds cleanly.
 
 ## Recent Changes
+- **Manual non-poetry indent editing + mode-toggle location preservation added (on `main`):**
+  - Added per-verse first-line indent controls in edit mode (`-`, reset value, `+`) that update `VerseItem.firstLineIndent` in 0.5em steps, clamped to safe range.
+  - Controls are intentionally disabled for poetry verses; poetry indentation remains governed by poetry-specific logic.
+  - Added new localized UI keys for indent controls; Armenian/Classical files use English placeholders with `// TODO: translate` comments per no-Armenian-copy rule.
+  - Edit-mode toggle now preserves user location by capturing the top-visible content row (`data-content-index`) and restoring relative offset after the mode transition render.
 - **Edit affordance + scrollbar clearance polish (all on `main`):**
   - Empty verse cells now render a localized `(CLICK TO EDIT)` placeholder in edit mode, matching heading behavior and providing a reliable click target.
   - Verse text blocks now show a gray dashed bounding box at rest, transitioning to gold on hover in edit mode.
@@ -163,7 +168,7 @@ Editor now supports per-word footnotes with corrected word anchoring, drag-and-d
      - Local dev keeps full editing capability; deployed site is read-only by default.
      - Goal: prevent malicious data tampering on the public site while keeping the git repo as the easy rollback mechanism.
   3. Validate reorder undo behavior interactively in browser across content/chapter/footnote DnD.
-  4. Consider adding manual USFM-like per-line indent controls (`q1/q2/q3`) as an explicit editorial override.
+  4. Consider extending first-line indent controls into richer USFM-like per-line controls (`q1/q2/q3`) as an advanced editorial override.
   5. Translate remaining locale placeholders (poetry strings and other TODO markers in `armenian.ts` and `classical.ts`).
 - **Deferred architecture idea (later project):**
   - Evaluate styling strategy for agentic coding ergonomics:

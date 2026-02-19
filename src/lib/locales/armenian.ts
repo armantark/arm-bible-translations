@@ -67,6 +67,11 @@ export const ARMENIAN_LOCALE: LocaleStrings = {
   poetryMode: 'Տաղաչափութիւն',
   poetryOn: 'Միացնել տաղաչափութիւնը',
   poetryOff: 'Անջատել տաղաչափութիւնը',
+  firstLineIndent: 'First-line indent', // TODO: translate
+  increaseIndent: 'Increase indent', // TODO: translate
+  decreaseIndent: 'Decrease indent', // TODO: translate
+  resetIndent: 'Reset indent', // TODO: translate
+  indentUnavailableInPoetry: 'First-line indent is only for non-poetry verses', // TODO: translate
 
   confirmDeleteNonEmpty: 'Այս բաժինը տեքստ կը պարունակէ: Վստա՞հ էք որ կ՚ուզէք ջնջել:',
   confirmDeleteChapter: 'Վստա՞հ էք որ կ՚ուզէք ջնջել այս գլուխը եւ իր ամբողջ բովանդակութիւնը:',

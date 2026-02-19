@@ -664,6 +664,62 @@ body {
   opacity: 1;
 }
 
+.indent-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  padding: 1px 4px;
+}
+
+.indent-controls.disabled {
+  opacity: 0.6;
+}
+
+.indent-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+.indent-btn,
+.indent-reset-btn {
+  height: 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+}
+
+.indent-btn {
+  width: 18px;
+}
+
+.indent-reset-btn {
+  min-width: 34px;
+  padding: 0 6px;
+}
+
+.indent-btn:hover:not(:disabled),
+.indent-reset-btn:hover:not(:disabled) {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+.indent-btn:disabled,
+.indent-reset-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .verse-row:hover {
   background: rgba(255, 255, 255, 0.015);
 }

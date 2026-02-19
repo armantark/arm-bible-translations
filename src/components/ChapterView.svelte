@@ -10,6 +10,7 @@
     uiLanguage,
     locale,
     updateVerse,
+    updateVerseFirstLineIndent,
     updateBookName,
     insertVerseAfter,
     insertHeadingAfter,
@@ -50,6 +51,13 @@
     value: string,
   ): void {
     updateVerse($currentChapter, verseNumber, field, value);
+  }
+
+  function handleVerseIndentUpdate(
+    verseNumber: number,
+    nextIndent: number | null,
+  ): void {
+    updateVerseFirstLineIndent($currentChapter, verseNumber, nextIndent);
   }
 
   /* ── Book title & subtitle editing ── */
@@ -302,11 +310,13 @@
           {:else if isVerse(item)}
             <VerseRow
               verse={item}
+              contentIndex={idx}
               {gridClass}
               showClassical={$showClassical}
               showArmenian={$showArmenian}
               showEnglish={$showEnglish}
               onUpdate={handleVerseUpdate}
+              onUpdateFirstLineIndent={handleVerseIndentUpdate}
               canDelete={$editMode}
               deleteTitle={$locale.deleteVerse}
               onDelete={() => confirmDeleteItem(idx)}

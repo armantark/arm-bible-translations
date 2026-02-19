@@ -225,6 +225,32 @@ export function updateVerse(
   }));
 }
 
+export function updateVerseFirstLineIndent(
+  chapterNumber: number,
+  verseNumber: number,
+  nextIndent: number | null,
+): void {
+  applyBookMutation((data) => ({
+    ...data,
+    chapters: data.chapters.map((c) => {
+      if (c.number !== chapterNumber) return c;
+      return {
+        ...c,
+        content: c.content.map((item) => {
+          if (item.kind !== 'verse' || item.number !== verseNumber) return item;
+          if (nextIndent === null) {
+            const { firstLineIndent, ...rest } = item;
+            void firstLineIndent;
+            return rest;
+          }
+          const clamped = Math.max(-6, Math.min(6, nextIndent));
+          return { ...item, firstLineIndent: clamped };
+        }),
+      };
+    }),
+  }));
+}
+
 export function updateHeading(
   chapterNumber: number,
   contentIndex: number,

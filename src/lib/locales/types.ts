@@ -68,6 +68,11 @@ export interface LocaleStrings {
   poetryMode: string;
   poetryOn: string;
   poetryOff: string;
+  firstLineIndent: string;
+  increaseIndent: string;
+  decreaseIndent: string;
+  resetIndent: string;
+  indentUnavailableInPoetry: string;
 
   confirmDeleteNonEmpty: string;
   confirmDeleteChapter: string;

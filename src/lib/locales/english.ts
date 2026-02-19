@@ -66,6 +66,11 @@ export const ENGLISH_LOCALE: LocaleStrings = {
   poetryMode: 'Poetry',
   poetryOn: 'Set poetry',
   poetryOff: 'Unset poetry',
+  firstLineIndent: 'First-line indent',
+  increaseIndent: 'Increase indent',
+  decreaseIndent: 'Decrease indent',
+  resetIndent: 'Reset indent',
+  indentUnavailableInPoetry: 'First-line indent is only for non-poetry verses',
 
   confirmDeleteNonEmpty: 'This item contains text. Are you sure you want to delete it?',
   confirmDeleteChapter: 'Are you sure you want to delete this chapter and all its content?',

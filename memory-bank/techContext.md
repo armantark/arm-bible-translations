@@ -64,6 +64,7 @@ Three distinct branch categories exist and must never be conflated:
 - Global undo/redo shortcuts are handled in `App.svelte` and ignored while typing in inputs/textareas/selects.
 - Sortable UI uses `SortableItem.svelte` with `useSortable` from `@dnd-kit-svelte/svelte`.
 - Sidebar book ordering preference is persisted in `localStorage` under `armenian-bible-book-order`.
+- Edit-mode toggles in `App.svelte` preserve reading position using a captured `data-content-index` anchor + relative offset restoration after layout updates.
 
 ## Data Notes
 - Footnotes are per-language and per-word:

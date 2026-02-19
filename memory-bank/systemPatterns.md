@@ -30,9 +30,11 @@ Each book file (`data/{book-id}.json`) contains:
 - **Immutable store updates:** `updateVerse()` in `stores.ts` produces new objects via spread.
 - **Debounced auto-save:** Changes trigger a 1.5s debounce timer; saves via PUT to API.
 - **Click-to-edit:** Verses show plain text; clicking opens a textarea; blur commits.
+- **Manual non-poetry indent control:** `firstLineIndent` remains metadata-driven (not text-embedded); edit mode now provides per-verse +/-/reset controls that mutate `VerseItem.firstLineIndent` directly.
 - **Type guards:** `isVerse()` and `isHeading()` discriminate `ChapterItem` union.
 - **Retry with backoff:** API calls use `fetchWithRetry()` with 3 attempts.
 - **Poetry rendering:** When `verse.poetry === true`, text is split into punctuation-based clauses and rendered as one line per clause with hanging-indent CSS; optional imported `indentLevel` applies as a base override.
+- **Mode toggle scroll anchoring:** Edit-mode toggles capture the top-visible row via `data-content-index` and restore relative offset after re-render to keep users at the same textual location despite layout deltas.
 
 ## Component Hierarchy
 ```

@@ -14,6 +14,7 @@
 
   interface Props {
     verse: VerseItem;
+    contentIndex: number;
     gridClass: string;
     showClassical: boolean;
     showArmenian: boolean;
@@ -26,6 +27,7 @@
       field: 'armenian' | 'english' | 'classical',
       value: string,
     ) => void;
+    onUpdateFirstLineIndent?: (verseNumber: number, nextIndent: number | null) => void;
     onTogglePoetry?: () => void;
   }
 
@@ -38,6 +40,7 @@
 
   let {
     verse,
+    contentIndex,
     gridClass,
     showClassical,
     showArmenian,
@@ -46,6 +49,7 @@
     deleteTitle,
     onDelete,
     onUpdate,
+    onUpdateFirstLineIndent,
     onTogglePoetry,
   }: Props = $props();
 
@@ -463,6 +467,39 @@
     return `text-indent:${indent}em;`;
   }
 
+  const INDENT_STEP_EM = 0.5;
+
+  function indentControlValueEm(): number {
+    const raw = verse.firstLineIndent;
+    if (typeof raw !== 'number' || !Number.isFinite(raw)) return 0;
+    return Math.max(-6, Math.min(6, raw));
+  }
+
+  function normalizeIndent(value: number): number | null {
+    const rounded = Math.round(value * 4) / 4;
+    const clamped = Math.max(-6, Math.min(6, rounded));
+    if (Math.abs(clamped) < 0.01) return null;
+    return clamped;
+  }
+
+  function formattedIndentValue(): string {
+    const value = indentControlValueEm();
+    if (Math.abs(value) < 0.01) return '0';
+    const sign = value > 0 ? '+' : '';
+    return `${sign}${value.toFixed(2).replace(/\.00$/, '').replace(/(\.\d)0$/, '$1')}`;
+  }
+
+  function changeFirstLineIndent(delta: number): void {
+    if (!$editMode || verse.poetry === true || !onUpdateFirstLineIndent) return;
+    const next = normalizeIndent(indentControlValueEm() + delta);
+    onUpdateFirstLineIndent(verse.number, next);
+  }
+
+  function resetFirstLineIndent(): void {
+    if (!$editMode || verse.poetry === true || !onUpdateFirstLineIndent) return;
+    onUpdateFirstLineIndent(verse.number, null);
+  }
+
   function wordTooltip(lang: LangField, notes: WordFootnote[]): string {
     return notes
       .map((fn) => `[${footnoteNumber(lang, fn.id)}] ${fn.text}`)
@@ -543,7 +580,7 @@
   }
 </script>
 
-<div class="verse-row {gridClass}">
+<div class="verse-row {gridClass}" data-content-index={contentIndex}>
   {#if ($editMode && onTogglePoetry) || canDelete}
     <div class="verse-row-tools">
       {#if $editMode && onTogglePoetry}
@@ -555,6 +592,42 @@
         >
           {$locale.poetryMode}
         </button>
+      {/if}
+      {#if $editMode && onUpdateFirstLineIndent}
+        <div
+          class="indent-controls"
+          class:disabled={verse.poetry === true}
+          title={verse.poetry ? $locale.indentUnavailableInPoetry : undefined}
+        >
+          <span class="indent-label">{$locale.firstLineIndent}</span>
+          <button
+            class="indent-btn"
+            type="button"
+            onclick={() => changeFirstLineIndent(-INDENT_STEP_EM)}
+            title={$locale.decreaseIndent}
+            disabled={verse.poetry === true}
+          >
+            -
+          </button>
+          <button
+            class="indent-reset-btn"
+            type="button"
+            onclick={resetFirstLineIndent}
+            title={$locale.resetIndent}
+            disabled={verse.poetry === true}
+          >
+            {formattedIndentValue()}
+          </button>
+          <button
+            class="indent-btn"
+            type="button"
+            onclick={() => changeFirstLineIndent(INDENT_STEP_EM)}
+            title={$locale.increaseIndent}
+            disabled={verse.poetry === true}
+          >
+            +
+          </button>
+        </div>
       {/if}
       {#if canDelete}
         <button
