@@ -1,11 +1,12 @@
 # Progress
 
 ## Completed
-- Empty-verse editing UX fix completed:
-  - `VerseRow` now displays localized click-to-edit placeholder text for empty verse cells while in edit mode.
-  - Existing empty verses and newly added verses are now clearly editable.
-  - Edit mode now renders a high-contrast dashed bounding box around verse text blocks.
-  - Fixed all `:global()` CSS selectors in `app.css` that browsers were silently ignoring.
+- Edit affordance + scrollbar clearance polish completed:
+  - Empty verse cells show `(CLICK TO EDIT)` placeholder in edit mode.
+  - Verse text blocks show gray dashed bounding box at rest, gold on hover in edit mode.
+  - Fixed all `:global()` CSS selectors in `app.css` (were silently ignored by browsers outside Svelte `<style>` blocks).
+  - `padding-right: 14px` added to `.chapter-scroll` unconditionally for scrollbar clearance in both modes.
+  - Edit-mode-only inner padding and footnote bottom margin added to verse cells.
 - Memory bank initialized per cline-memory-bank rule.
 - Feature branch `feature/docx-bilingual-site` created.
 - Bun installed (v1.3.9).

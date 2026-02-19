@@ -4,11 +4,12 @@
 Editor now supports per-word footnotes with corrected word anchoring, drag-and-drop reordering (books/chapters/content/footnotes), snapshot undo/redo (Cmd/Ctrl+Z), add chapter/book controls, corner X delete buttons for verses/headings, clause-based poetry layout with hanging indents, imported DOCX paragraph indent metadata (`indentLevel` + `firstLineIndent`), and updated poetry/FAB/sidebar UX fixes. UI copy remains centralized/localized. App builds cleanly.
 
 ## Recent Changes
-- **Empty verse editing + edit affordance UX fixed:**
+- **Edit affordance + scrollbar clearance polish (all on `main`):**
   - Empty verse cells now render a localized `(CLICK TO EDIT)` placeholder in edit mode, matching heading behavior and providing a reliable click target.
-  - This resolves editing for existing empty blocks (e.g., Genesis 1:12 Armenian) and for newly inserted empty verses.
-  - Verse text blocks now show a high-contrast dashed bounding box in edit mode to make click-to-edit affordance obvious.
-  - Fixed all `:global()` CSS selectors in `app.css` — these are a Svelte-only pseudo-class that browsers silently discard in plain `.css` files. Replaced with plain `.edit-mode` descendant selectors. This also fixes edit-mode cursor and hover styling for headings and footnotes that were silently broken.
+  - Verse text blocks now show a gray dashed bounding box at rest, transitioning to gold on hover in edit mode.
+  - Fixed all `:global()` CSS selectors in `app.css` — Svelte-only pseudo-class that browsers silently discard in plain `.css` files. Replaced with plain `.edit-mode` descendant selectors, activating previously inert edit-mode cursor, hover, and bounding-box rules.
+  - Added `padding-right: 14px` to `.chapter-scroll` (unconditionally) so content sits clear of the macOS overlay scrollbar in both view and edit modes.
+  - Edit-mode-only: increased inner horizontal padding on `.verse-text` boxes and added bottom margin on `.verse-cell` to prevent footnote controls from crowding the dashed border.
 - **Copy verse button added:**
   - Each verse cell (classical, Armenian, English) now has a copy icon (Material Symbols `content_copy`) positioned bottom-right, visible on hover.
   - Copied text is formatted as `"verse text" --Book Chapter:Verse` with smart quotes and book name matching the language column.

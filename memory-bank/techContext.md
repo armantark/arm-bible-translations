@@ -38,12 +38,25 @@
 - `bun run check`  — Run svelte-check for type errors
 - `bun run import` — One-time DOCX import (python3)
 
+## Branching Strategy
+
+Three distinct branch categories exist and must never be conflated:
+
+- **`main`** — the perpetual integration branch. Receives all changes that should be permanently part of the codebase. Every completed unit of work — including UI hotfixes, CSS refinements, and infrastructure changes — must be committed directly to `main` (or merged into it via PR) before any downstream branch picks them up. No work lives on `main` in progress; it is always in a releasable state.
+
+- **Feature branches** (e.g. `feature/search`, `feature/export-docx`) — scoped development branches for discrete, potentially multi-session engineering tasks. They diverge from `main`, accumulate commits for the duration of their feature, and are merged back to `main` via PR upon completion. They must not carry translation data changes.
+
+- **Translation branches** (e.g. `translation-2025-02-18`) — short-lived working branches for active translation sessions. They are named by date, diverge from `main` at session start, and accumulate edits to `data/*.json` files only. When a translation session ends, the branch is committed and merged (or PR'd) into `main`. They must not carry UI/code changes — any UI fixes discovered during a translation session are committed to `main` first, then merged down into the translation branch before continuing.
+
+**Hotfix rule:** UI, CSS, and logic fixes discovered at any time — including mid-translation-session — go to `main` immediately. The translation branch is then fast-forward merged with `main` to receive them before the translation session resumes.
+
 ## Constraints
 - Must preserve Unicode Armenian text faithfully.
 - No heavy frameworks beyond Svelte.
 - Local-first: all data persists to filesystem JSON files.
 - IDE linter shows Svelte 5 rune warnings; `svelte-check` passes cleanly.
 - All user-facing copy must come from locale files; avoid hardcoded UI strings.
+- **`:global()` is not valid CSS outside Svelte `<style>` blocks.** All edit-mode selectors in `app.css` must use plain `.edit-mode` descendant combinators, not `:global(.edit-mode)`, which browsers silently discard.
 
 ## Interaction/State Patterns
 - All book-content mutations route through `stores.ts` helpers so undo snapshots and autosave stay consistent.
