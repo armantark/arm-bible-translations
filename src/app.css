@@ -411,6 +411,11 @@ body {
   padding-bottom: 32px;
 }
 
+/* In edit mode, pull the scrollbar lane inward from verse boxes. */
+.edit-mode .chapter-scroll {
+  margin-right: 10px;
+}
+
 .book-title,
 .book-subtitle,
 .chapter-heading,
