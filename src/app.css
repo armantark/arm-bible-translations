@@ -800,17 +800,17 @@ body {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  border: 1px dashed rgba(201, 168, 76, 0.62);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
   border-radius: 6px;
-  background: rgba(201, 168, 76, 0.10);
   padding: 4px 8px;
   margin: -4px -8px;
   min-height: 2.1em;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .edit-mode .verse-text:hover {
   border-color: var(--accent);
-  background: rgba(201, 168, 76, 0.16);
+  background: rgba(201, 168, 76, 0.10);
 }
 
 .verse-empty-placeholder {
