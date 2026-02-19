@@ -409,10 +409,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 32px;
-}
-
-/* In edit mode, inset content from the overlay scrollbar edge. */
-.edit-mode .chapter-scroll {
   padding-right: 14px;
 }
 
