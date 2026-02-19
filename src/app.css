@@ -411,9 +411,9 @@ body {
   padding-bottom: 32px;
 }
 
-/* In edit mode, pull the scrollbar lane inward from verse boxes. */
+/* In edit mode, inset content from the overlay scrollbar edge. */
 .edit-mode .chapter-scroll {
-  margin-right: 10px;
+  padding-right: 14px;
 }
 
 .book-title,
