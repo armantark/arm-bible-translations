@@ -217,6 +217,10 @@
     return m ? m.length : 1;
   }
 
+  function isEditableEmpty(text: string): boolean {
+    return $editMode && text.trim().length === 0;
+  }
+
   function getFootnotes(lang: LangField): WordFootnote[] {
     const raw = verse.footnotes as VerseFootnotes | Record<string, unknown> | undefined;
     if (!raw || typeof raw !== 'object') return [];
@@ -583,13 +587,16 @@
             class="verse-text"
             class:poetry-text={verse.poetry === true}
             class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            class:editable-empty={isEditableEmpty(verse.classical)}
             style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('classical')}
             onkeydown={(e) => e.key === 'Enter' && startEdit('classical')}
           >
-            {#if verse.poetry}
+            {#if isEditableEmpty(verse.classical)}
+              <span class="verse-empty-placeholder">{$locale.clickToEdit}</span>
+            {:else if verse.poetry}
               {#each poetryLines(verse.classical || '\u00A0', 'classical') as line, lineIdx}
                 <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}
@@ -736,13 +743,16 @@
             class="verse-text"
             class:poetry-text={verse.poetry === true}
             class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            class:editable-empty={isEditableEmpty(verse.armenian)}
             style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('armenian')}
             onkeydown={(e) => e.key === 'Enter' && startEdit('armenian')}
           >
-            {#if verse.poetry}
+            {#if isEditableEmpty(verse.armenian)}
+              <span class="verse-empty-placeholder">{$locale.clickToEdit}</span>
+            {:else if verse.poetry}
               {#each poetryLines(verse.armenian || '\u00A0', 'armenian') as line, lineIdx}
                 <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}
@@ -889,13 +899,16 @@
             class="verse-text"
             class:poetry-text={verse.poetry === true}
             class:first-line-indent={verse.poetry !== true && firstLineIndentEm() !== null}
+            class:editable-empty={isEditableEmpty(verse.english)}
             style={firstLineIndentStyle()}
             role="textbox"
             tabindex="0"
             onclick={() => startEdit('english')}
             onkeydown={(e) => e.key === 'Enter' && startEdit('english')}
           >
-            {#if verse.poetry}
+            {#if isEditableEmpty(verse.english)}
+              <span class="verse-empty-placeholder">{$locale.clickToEdit}</span>
+            {:else if verse.poetry}
               {#each poetryLines(verse.english || '\u00A0', 'english') as line, lineIdx}
                 <div class="poetry-line" style={poetryLineStyle(lineIdx)}>
                   {#each line as seg}

@@ -797,10 +797,25 @@ body {
 /* Only show editable styling when edit mode is active */
 :global(.edit-mode) .verse-text {
   cursor: text;
+  border: 1px dashed rgba(201, 168, 76, 0.35);
+  background: rgba(201, 168, 76, 0.04);
+  min-height: 1.85em;
 }
 
 :global(.edit-mode) .verse-text:hover {
-  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--accent);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.verse-empty-placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+  user-select: none;
+}
+
+:global(.edit-mode) .verse-text.editable-empty {
+  display: flex;
+  align-items: center;
 }
 
 /* ── Textarea (edit mode) ──────────────────────────────────────── */

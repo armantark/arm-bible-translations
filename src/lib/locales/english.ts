@@ -55,7 +55,7 @@ export const ENGLISH_LOCALE: LocaleStrings = {
   undo: 'Undo',
   redo: 'Redo',
 
-  clickToEdit: '(click to edit)',
+  clickToEdit: '(CLICK TO EDIT)',
   addFootnote: '+ footnote',
   deleteFootnote: 'Delete footnote',
   anchorWord: 'Word',

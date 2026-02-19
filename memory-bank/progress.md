@@ -1,6 +1,10 @@
 # Progress
 
 ## Completed
+- Empty-verse editing UX fix completed:
+  - `VerseRow` now displays localized click-to-edit placeholder text for empty verse cells while in edit mode.
+  - Existing empty verses and newly added verses are now clearly editable.
+  - Edit mode now renders a clearer dashed bounding box around verse text blocks.
 - Memory bank initialized per cline-memory-bank rule.
 - Feature branch `feature/docx-bilingual-site` created.
 - Bun installed (v1.3.9).
